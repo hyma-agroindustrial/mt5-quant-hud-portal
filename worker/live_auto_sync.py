@@ -1,9 +1,9 @@
 """
-MT5 Live Auto-Sync Daemon
+MT5 Live Auto-Sync Daemon (Resiliente y Continuo)
 Monitorea continuamente la terminal MT5 (cuenta 51567376 en Pepperstone Live01),
 detecta cambios en balance, equity, flotante y operaciones en tiempo real,
-actualiza client/js/live_data.json, sincroniza client/js/hud_app.js
-y opcionalmente sube a GitHub para reflejarse en GitHub Pages.
+actualiza client/js/live_data.json y client/js/hud_app.js,
+y sincroniza automáticamente con GitHub Pages.
 """
 
 import sys
@@ -17,7 +17,7 @@ from collections import defaultdict
 try:
     import MetaTrader5 as mt5
 except ImportError:
-    print("[ERROR] MetaTrader5 no instalado en Python.")
+    print("[ERROR] MetaTrader5 no instalado en Python.", flush=True)
     sys.exit(1)
 
 TERMINAL_PATH = r"C:\Program Files\MetaTrader 5\terminal64.exe"
@@ -28,9 +28,12 @@ JS_PATH = os.path.join(CLIENT_DIR, "js", "hud_app.js")
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 GIT_PATH = r"C:\Program Files\Git\cmd\git.exe"
 
-last_balance = None
-last_deals_count = 0
+last_saved_deals = None
+last_saved_balance = None
+last_pushed_deals = None
+last_pushed_balance = None
 last_git_push = 0
+pending_push = False
 
 def extraer_telemetria_completa():
     acc = mt5.account_info()
@@ -184,42 +187,47 @@ def guardar_telemetria(data):
             with open(JS_PATH, 'w', encoding='utf-8') as f:
                 f.write(new_js)
     except Exception as e:
-        print(f"[WARN] No se pudo actualizar hud_app.js: {e}")
+        print(f"[WARN] Error actualizando hud_app.js: {e}", flush=True)
 
-def subir_a_github():
-    global last_git_push
+def intentar_subir_a_github(cur_bal, cur_deals):
+    global last_git_push, pending_push, last_pushed_deals, last_pushed_balance
     if not os.path.exists(GIT_PATH):
         return
+
     now = time.time()
-    # Limitar push a mínimo cada 30 segundos para evitar saturación
-    if now - last_git_push < 30:
+    # Esperar al menos 15 segundos entre pushes para no sobrecargar git
+    if now - last_git_push < 15:
+        pending_push = True
         return
 
     try:
         subprocess.run([GIT_PATH, "add", "client/js/live_data.json", "client/js/hud_app.js"], cwd=REPO_DIR, capture_output=True)
-        subprocess.run([GIT_PATH, "commit", "-m", f"live: MT5 telemetry sync {datetime.datetime.now().strftime('%H:%M:%S')}"], cwd=REPO_DIR, capture_output=True)
-        res = subprocess.run([GIT_PATH, "push", "origin", "main"], cwd=REPO_DIR, capture_output=True, text=True)
+        subprocess.run([GIT_PATH, "commit", "-m", f"live: MT5 sync bal=${cur_bal:.2f} deals={cur_deals} ({datetime.datetime.now().strftime('%H:%M:%S')})"], cwd=REPO_DIR, capture_output=True)
+        res = subprocess.run([GIT_PATH, "push", "origin", "main"], cwd=REPO_DIR, capture_output=True, text=True, timeout=20)
         if res.returncode == 0:
-            print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] [GITHUB SYNC OK] Telemetría en la nube actualizada.")
+            print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] [GITHUB PUSH OK] Balance: ${cur_bal:.2f} | Deals: {cur_deals} subidos a la nube.", flush=True)
             last_git_push = now
+            last_pushed_deals = cur_deals
+            last_pushed_balance = cur_bal
+            pending_push = False
         else:
-            print(f"[GITHUB SYNC] Push pendiente o sin cambios.")
+            print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] [GITHUB PUSH PENDIENTE] Error en push: {res.stderr[:80]}", flush=True)
     except Exception as e:
-        print(f"[WARN] Error en git push: {e}")
+        print(f"[WARN] Excepción en push: {e}", flush=True)
 
 def ciclo_monitoreo():
-    global last_balance, last_deals_count
-    print("=" * 65)
-    print("  MT5 LIVE AUTO-SYNC WORKER - CUENTA 51567376")
-    print("  Monitoreando terminal local cada 3 segundos...")
-    print("=" * 65)
+    global last_saved_balance, last_saved_deals, pending_push
+    print("=" * 65, flush=True)
+    print("  MT5 LIVE AUTO-SYNC WORKER - CUENTA 51567376", flush=True)
+    print("  Monitoreando terminal MT5 cada 3 segundos...", flush=True)
+    print("=" * 65, flush=True)
 
     if not mt5.initialize(TERMINAL_PATH):
-        print("[ERROR] No se pudo conectar a MT5 en:", TERMINAL_PATH)
+        print(f"[ERROR] No se pudo conectar a MT5 en: {TERMINAL_PATH}", flush=True)
         return
 
     info = mt5.account_info()
-    print(f"[CONECTADO] Cuenta: {info.login} ({info.server}) | Balance: ${info.balance} | Equity: ${info.equity}")
+    print(f"[CONECTADO] Cuenta: {info.login} ({info.server}) | Balance: ${info.balance:.2f} | Equity: ${info.equity:.2f}", flush=True)
 
     try:
         while True:
@@ -228,23 +236,28 @@ def ciclo_monitoreo():
                 cur_bal = data['balance']
                 cur_deals = data['total_deals_raw']
                 cur_equity = data['equity']
+                cur_flotante = data['flotante']
 
-                # Detectar cambios
-                cambio = (last_balance is None) or (cur_bal != last_balance) or (cur_deals != last_deals_count)
-                if cambio:
-                    print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] NUEVA ACTIVIDAD MT5 DETECTADA:")
-                    print(f"   Balance: ${cur_bal:.2f} | Equity: ${cur_equity:.2f} | Deals: {cur_deals}")
-                    guardar_telemetria(data)
-                    subir_a_github()
-                    last_balance = cur_bal
-                    last_deals_count = cur_deals
-                else:
-                    # Siempre guardar el flotante si cambia el equity
-                    guardar_telemetria(data)
+                cambio_balance = (last_saved_balance != cur_bal)
+                cambio_deals = (last_saved_deals != cur_deals)
+
+                # Siempre guardar en disco local para que el portal local/navegador lo lea al instante
+                guardar_telemetria(data)
+
+                if cambio_balance or cambio_deals:
+                    print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] NUEVO TRADE/BALANCE DETECTADO:", flush=True)
+                    print(f"   Balance: ${cur_bal:.2f} | Equity: ${cur_equity:.2f} | Flotante: ${cur_flotante:.2f} | Deals: {cur_deals}", flush=True)
+                    last_saved_balance = cur_bal
+                    last_saved_deals = cur_deals
+                    pending_push = True
+
+                # Si hay push pendiente (por nuevo trade o porque pasaron 15s)
+                if pending_push or (cur_deals != last_pushed_deals) or (cur_bal != last_pushed_balance):
+                    intentar_subir_a_github(cur_bal, cur_deals)
 
             time.sleep(3)
     except KeyboardInterrupt:
-        print("\n[INFO] Worker detenido.")
+        print("\n[INFO] Worker detenido por el usuario.", flush=True)
     finally:
         mt5.shutdown()
 

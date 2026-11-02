@@ -14401,7 +14401,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ],
   "total_deals_raw": 1003,
-  "last_updated": "2026-11-02 00:45:28"
+  "last_updated": "2026-11-02 00:46:26"
 };
 
   let chartGrowth = null;
@@ -14948,11 +14948,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const indicator = document.getElementById('sync-status-indicator');
             if (indicator) {
-              indicator.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-accent-emerald animate-ping"></span> Actualizado en Vivo';
+              indicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-accent-emerald animate-ping"></span> ¡Trade MT5 Detectado!';
               setTimeout(() => {
-                indicator.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-accent-emerald animate-pulse"></span> En Vivo';
+                indicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span> En Vivo (' + (data.last_updated ? data.last_updated.substring(11) : 'Sync') + ')';
               }, 2500);
             }
+          } else {
+            const indicator = document.getElementById('sync-status-indicator');
+            if (indicator && !indicator.textContent.includes('Detectado')) {
+              indicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span> En Vivo (' + (data.last_updated ? data.last_updated.substring(11) : 'Sync') + ')';
+            }
+          }
           }
         }
       }
@@ -15110,5 +15116,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderizarTablaOperaciones();
 
   // Iniciar sondeo de actualización en vivo cada 3.5 segundos
-  setInterval(pollLiveData, 3500);
+  pollLiveData();
+  setInterval(pollLiveData, 3000);
 });
