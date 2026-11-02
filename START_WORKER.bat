@@ -1,8 +1,9 @@
 @echo off
-title MT5 Telemetry Worker
+title MT5 Live Auto-Sync Worker
 echo =======================================================
-echo [MT5 QUANT WORKER] Conectando con MetaTrader 5...
+echo [MT5 QUANT HUD] Conectando con MetaTrader 5 (En Vivo)...
+echo Sincronizando balance, equity y operaciones...
 echo =======================================================
 cd /d "%~dp0worker"
-python mt5_sync_worker.py
+python live_auto_sync.py
 pause

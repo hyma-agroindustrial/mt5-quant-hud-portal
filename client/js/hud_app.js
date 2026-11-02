@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 3970.41,
-  "equity": 3970.41,
+  "balance": 3971.39,
+  "equity": 3971.39,
   "flotante": 0.0,
-  "winrate": 71.6,
-  "total_trades": 497,
-  "total_wins": 356,
+  "winrate": 71.7,
+  "total_trades": 498,
+  "total_wins": 357,
   "growth_dates": [
     "2026-10-02",
     "2026-10-05",
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3676.37,
     3744.85,
     3912.72,
-    3970.41
+    3971.39
   ],
   "equity_curve": [
     1000.0,
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3676.37,
     3744.85,
     3912.72,
-    3970.41
+    3971.39
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-27": 104.55,
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
-    "2026-11-02": 57.69
+    "2026-11-02": 58.67
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-27": 107.79,
     "2026-10-29": 70.66,
     "2026-10-30": 178.41,
-    "2026-11-02": 61.43
+    "2026-11-02": 62.55
   },
   "daily_comm": {
     "2026-10-02": 0.0,
@@ -155,11 +155,11 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-27": -3.24,
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
-    "2026-11-02": -3.74
+    "2026-11-02": -3.88
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 57.69
+    "2026-11": 58.67
   },
   "calendar_by_month": {
     "2026-10": {
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 25.19,
+        "roi_pct": 25.18,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -346,17 +346,45 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     "2026-11": {
       "2026-11-02": {
-        "pnl": 57.69,
-        "gross": 61.43,
-        "commission": -3.74,
-        "roi_pct": 1.47,
-        "trades": 10,
-        "wins": 7,
+        "pnl": 58.67,
+        "gross": 62.55,
+        "commission": -3.88,
+        "roi_pct": 1.5,
+        "trades": 11,
+        "wins": 8,
         "losses": 3
       }
     }
   },
   "all_deals": [
+    {
+      "ticket": 301853224,
+      "time": "2026.11.02 09:19:42",
+      "date": "2026-11-02",
+      "month": "2026-11",
+      "symbol": "xauusd",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.02,
+      "price": 3906.84,
+      "commission": -0.07,
+      "profit": 1.12,
+      "net": 1.05
+    },
+    {
+      "ticket": 301853171,
+      "time": "2026.11.02 09:19:17",
+      "date": "2026-11-02",
+      "month": "2026-11",
+      "symbol": "xauusd",
+      "type": "buy",
+      "direction": "in",
+      "volume": 0.02,
+      "price": 3906.28,
+      "commission": -0.07,
+      "profit": 0.0,
+      "net": -0.07
+    },
     {
       "ticket": 301849479,
       "time": "2026.11.02 08:58:46",
@@ -14343,13 +14371,14 @@ document.addEventListener('DOMContentLoaded', () => {
       "profit": 1000.0,
       "net": 1000.0
     }
-  ]
+  ],
+  "total_deals_raw": 1001,
+  "last_updated": "2026-11-02 00:26:43"
 };
 
   let chartGrowth = null;
   let chartBars = null;
   let mesSeleccionado = '2026-11';
-  let modoRetorno = 'dia';
   let periodoCurva = 'TODO';
   let periodoTabla = 'TODO';
   let paginaActual = 1;
@@ -14362,33 +14391,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const equity = MT5_DATA.equity;
     const flotante = MT5_DATA.flotante;
 
-    // Calcular hoy (en base a la fecha de la terminal MT5: 2026-11-02)
     const fechaTerminalHoy = '2026-11-02';
     const datosHoy = (MT5_DATA.calendar_by_month['2026-11'] && MT5_DATA.calendar_by_month['2026-11'][fechaTerminalHoy]) || { pnl: 57.69, roi_pct: 1.48 };
-    const pnlHoy = datosHoy.pnl; // 57.69
-    const roiHoy = datosHoy.roi_pct; // 1.48
+    const pnlHoy = datosHoy.pnl;
+    const roiHoy = datosHoy.roi_pct;
 
-    // PnL Mes
     const pnlMes = MT5_DATA.monthly_net[mesSeleccionado] || 0.0;
     const roiMes = ((pnlMes / (balance - pnlMes)) * 100).toFixed(2);
 
-    document.getElementById('kpi-balance').textContent = '$' + balance.toLocaleString('en-US', { minimumFractionDigits: 2 });
-    document.getElementById('kpi-equity').textContent = '$' + equity.toLocaleString('en-US', { minimumFractionDigits: 2 });
+    const balEl = document.getElementById('kpi-balance');
+    if (balEl) balEl.textContent = '$' + balance.toLocaleString('en-US', { minimumFractionDigits: 2 });
+    
+    const eqEl = document.getElementById('kpi-equity');
+    if (eqEl) eqEl.textContent = '$' + equity.toLocaleString('en-US', { minimumFractionDigits: 2 });
     
     const flotanteSigno = flotante >= 0 ? '+' : '';
     const flotanteEl = document.getElementById('kpi-flotante');
-    flotanteEl.textContent = 'Flotante: ' + flotanteSigno + '$' + flotante.toFixed(2) + ' (' + flotanteSigno + '0.00%)';
+    if (flotanteEl) flotanteEl.textContent = 'Flotante: ' + flotanteSigno + '$' + flotante.toFixed(2) + ' (' + flotanteSigno + '0.00%)';
 
-    document.getElementById('kpi-roi-dia').textContent = '+' + roiHoy + '%';
-    document.getElementById('kpi-pnl-dia').textContent = 'PnL Hoy: +$' + pnlHoy.toFixed(2) + ' USD';
+    const roiDiaEl = document.getElementById('kpi-roi-dia');
+    if (roiDiaEl) roiDiaEl.textContent = '+' + roiHoy + '%';
+    const pnlDiaEl = document.getElementById('kpi-pnl-dia');
+    if (pnlDiaEl) pnlDiaEl.textContent = 'PnL Hoy: +$' + pnlHoy.toFixed(2) + ' USD';
     
-    document.getElementById('kpi-roi-mes').textContent = (pnlMes >= 0 ? '+' : '') + roiMes + '%';
-    document.getElementById('kpi-pnl-mes-text').textContent = 'PnL ' + (mesSeleccionado === '2026-11' ? 'Nov' : 'Oct') + ': ' + (pnlMes >= 0 ? '+' : '') + '$' + pnlMes.toFixed(2) + ' USD';
+    const roiMesEl = document.getElementById('kpi-roi-mes');
+    if (roiMesEl) roiMesEl.textContent = (pnlMes >= 0 ? '+' : '') + roiMes + '%';
+    const pnlMesTextEl = document.getElementById('kpi-pnl-mes-text');
+    if (pnlMesTextEl) pnlMesTextEl.textContent = 'PnL ' + (mesSeleccionado === '2026-11' ? 'Nov' : 'Oct') + ': ' + (pnlMes >= 0 ? '+' : '') + '$' + pnlMes.toFixed(2) + ' USD';
     
-    document.getElementById('kpi-winrate').textContent = MT5_DATA.winrate + '%';
-    document.getElementById('kpi-pf').textContent = '2.45';
-    document.getElementById('kpi-drawdown').textContent = '-2.80%';
-    document.getElementById('kpi-trades-count').textContent = MT5_DATA.total_wins + ' de ' + MT5_DATA.total_trades;
+    const winrateEl = document.getElementById('kpi-winrate');
+    if (winrateEl) winrateEl.textContent = MT5_DATA.winrate + '%';
+    const pfEl = document.getElementById('kpi-pf');
+    if (pfEl) pfEl.textContent = '2.45';
+    const ddEl = document.getElementById('kpi-drawdown');
+    if (ddEl) ddEl.textContent = '-2.80%';
+    const countEl = document.getElementById('kpi-trades-count');
+    if (countEl) countEl.textContent = MT5_DATA.total_wins + ' de ' + MT5_DATA.total_trades;
   }
 
   // 4. Filtrar y Renderizar Curva de Crecimiento
@@ -14402,32 +14440,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filtro === '1D') {
       indices = [todasFechas.length - 1];
     } else if (filtro === '1S') {
-      const count = Math.min(7, todasFechas.length);
-      indices = Array.from({ length: count }, (_, i) => todasFechas.length - count + i);
+      const start = Math.max(0, todasFechas.length - 5);
+      for (let i = start; i < todasFechas.length; i++) indices.push(i);
     } else if (filtro === '15D') {
-      const count = Math.min(15, todasFechas.length);
-      indices = Array.from({ length: count }, (_, i) => todasFechas.length - count + i);
+      const start = Math.max(0, todasFechas.length - 11);
+      for (let i = start; i < todasFechas.length; i++) indices.push(i);
     } else if (filtro === '1M') {
-      const count = Math.min(30, todasFechas.length);
-      indices = Array.from({ length: count }, (_, i) => todasFechas.length - count + i);
+      const start = Math.max(0, todasFechas.length - 21);
+      for (let i = start; i < todasFechas.length; i++) indices.push(i);
     } else if (filtro === 'YTD' || filtro === 'TODO') {
-      indices = Array.from({ length: todasFechas.length }, (_, i) => i);
+      for (let i = 0; i < todasFechas.length; i++) indices.push(i);
     } else if (filtro === 'CUSTOM') {
       const fromVal = document.getElementById('date-from-curva').value;
       const toVal = document.getElementById('date-to-curva').value;
-      indices = todasFechas
-        .map((f, idx) => ({ f, idx }))
-        .filter(item => (!fromVal || item.f >= fromVal) && (!toVal || item.f <= toVal))
-        .map(item => item.idx);
+      todasFechas.forEach((f, idx) => {
+        if ((!fromVal || f >= fromVal) && (!toVal || f <= toVal)) {
+          indices.push(idx);
+        }
+      });
+      if (indices.length === 0) indices = [todasFechas.length - 1];
     }
 
-    if (indices.length === 0) indices = [todasFechas.length - 1];
+    const subFechas = indices.map(i => todasFechas[i]);
+    const subBal = indices.map(i => todosBal[i]);
+    const subEq = indices.map(i => todosEq[i]);
 
-    const fechasFiltradas = indices.map(i => todasFechas[i].substring(5)); // MM-DD
-    const balFiltrado = indices.map(i => todosBal[i]);
-    const eqFiltrado = indices.map(i => todosEq[i]);
-
-    renderizarGraficaCrecimiento(fechasFiltradas, balFiltrado, eqFiltrado);
+    renderizarGraficaCrecimiento(subFechas, subBal, subEq);
   }
 
   function renderizarGraficaCrecimiento(fechas, balances, equities) {
@@ -14443,36 +14481,31 @@ document.addEventListener('DOMContentLoaded', () => {
         background: 'transparent'
       },
       colors: ['#06b6d4', '#10b981'],
+      stroke: { curve: 'smooth', width: 2 },
       fill: {
         type: 'gradient',
         gradient: {
           shadeIntensity: 1,
-          opacityFrom: 0.35,
-          opacityTo: 0.05,
-          stops: [0, 95, 100]
+          opacityFrom: 0.25,
+          opacityTo: 0.02,
+          stops: [0, 90, 100]
         }
       },
-      dataLabels: { enabled: false },
-      stroke: { curve: 'smooth', width: 2.5 },
       xaxis: {
-        categories: fechas,
-        labels: { style: { colors: '#94a3b8', fontFamily: 'JetBrains Mono' } },
-        axisBorder: { color: '#1e293b' },
-        axisTicks: { color: '#1e293b' }
+        categories: fechas.map(f => f.length > 5 ? f.substring(5) : f),
+        labels: { style: { colors: '#94a3b8', fontFamily: 'JetBrains Mono', fontSize: '11px' } },
+        axisBorder: { color: '#1e293b' }
       },
       yaxis: {
         labels: {
-          style: { colors: '#94a3b8', fontFamily: 'JetBrains Mono' },
-          formatter: (val) => '$' + Math.round(val).toLocaleString()
+          style: { colors: '#94a3b8', fontFamily: 'JetBrains Mono', fontSize: '11px' },
+          formatter: (val) => '$' + val.toFixed(0)
         }
       },
       grid: { borderColor: '#1e293b', strokeDashArray: 4 },
-      tooltip: { theme: 'dark' },
-      legend: {
-        position: 'top',
-        horizontalAlign: 'right',
-        labels: { colors: '#e2e8f0' },
-        fontFamily: 'Plus Jakarta Sans'
+      tooltip: {
+        theme: 'dark',
+        y: { formatter: (val) => '$' + val.toFixed(2) + ' USD' }
       }
     };
 
@@ -14481,152 +14514,148 @@ document.addEventListener('DOMContentLoaded', () => {
     chartGrowth.render();
   }
 
-  // 5. Gráfica de Barras ROI (Día / Mes) con Cálculo Dinámico
-  function renderizarBarrasROI() {
-    const fechaTerminalHoy = '2026-11-02';
-    const datosHoy = (MT5_DATA.calendar_by_month['2026-11'] && MT5_DATA.calendar_by_month['2026-11'][fechaTerminalHoy]) || { pnl: 57.69, roi_pct: 1.48 };
+  // 5. Apartado Retorno por Sesión: Escoger Día y Mes, y Aplicar Cálculo
+  function actualizarSelectorDias() {
+    const selectMes = document.getElementById('retorno-select-mes');
+    const selectDia = document.getElementById('retorno-select-dia');
+    if (!selectMes || !selectDia) return;
 
-    const tituloEl = document.getElementById('titulo-retorno-bars');
-    const subtituloEl = document.getElementById('subtitulo-retorno-bars');
-    const labelCalcEl = document.getElementById('label-retorno-calc');
-    const badgeCalcEl = document.getElementById('badge-retorno-resultado');
-    const kpiLabelEl = document.getElementById('kpi-roi-label');
-    const kpiRoiEl = document.getElementById('kpi-roi-dia');
-    const kpiPnlEl = document.getElementById('kpi-pnl-dia');
+    const mes = selectMes.value;
+    const diasMes = MT5_DATA.calendar_by_month[mes] || {};
+    const diasArray = Object.keys(diasMes).sort().reverse(); // Más recientes primero
+
+    let optionsHtml = `<option value="TODO_MES">Todo el Mes (Acumulado)</option>`;
+    diasArray.forEach(d => {
+      const info = diasMes[d] || {};
+      const signo = info.pnl >= 0 ? '+' : '-';
+      const roiSigno = info.roi_pct >= 0 ? '+' : '';
+      optionsHtml += `<option value="${d}">Día ${d.substring(8)} (${signo}$${Math.abs(info.pnl).toFixed(2)} | ${roiSigno}${info.roi_pct}%)</option>`;
+    });
+
+    selectDia.innerHTML = optionsHtml;
+
+    // Si es noviembre, seleccionar por defecto el día 2 de noviembre
+    if (mes === '2026-11' && diasMes['2026-11-02']) {
+      selectDia.value = '2026-11-02';
+    } else if (diasArray.length > 0) {
+      selectDia.value = diasArray[0];
+    } else {
+      selectDia.value = 'TODO_MES';
+    }
+  }
+
+  function calcularYAplicarRetorno() {
+    const selectMes = document.getElementById('retorno-select-mes');
+    const selectDia = document.getElementById('retorno-select-dia');
+    if (!selectMes || !selectDia) return;
+
+    const mes = selectMes.value;
+    const dia = selectDia.value;
+
+    const labelCalc = document.getElementById('label-retorno-calc');
+    const badgeResultado = document.getElementById('badge-retorno-resultado');
+    const kpiLabel = document.getElementById('kpi-roi-label');
+    const kpiRoi = document.getElementById('kpi-roi-dia');
+    const kpiPnl = document.getElementById('kpi-pnl-dia');
     const dotEl = document.getElementById('dot-retorno-bars');
 
-    const btnDia = document.getElementById('btn-retorno-dia');
-    const btnMes = document.getElementById('btn-retorno-mes');
+    let pnl = 0;
+    let roi = 0;
+    let labelTexto = '';
+    let kpiHeaderTexto = '';
 
-    let categories = [];
-    let seriesData = [];
-    let tooltipDetails = [];
+    const diasMes = MT5_DATA.calendar_by_month[mes] || {};
 
-    if (modoRetorno === 'dia') {
-      // Activar botón Día
-      if (btnDia) {
-        btnDia.className = 'btn-modo-retorno px-3 py-1 rounded-lg bg-dark-800 text-accent-emerald border border-accent-emerald/30 shadow-sm transition';
-      }
-      if (btnMes) {
-        btnMes.className = 'btn-modo-retorno px-3 py-1 rounded-lg text-slate-400 hover:text-white transition';
-      }
-
-      // Títulos y puntos indicadores
-      if (tituloEl) tituloEl.textContent = 'Retorno Diario (% por Sesión)';
-      if (subtituloEl) subtituloEl.textContent = 'Distribución de porcentaje de ganancia/pérdida diaria';
-      if (dotEl) dotEl.className = 'w-2.5 h-2.5 rounded-full bg-accent-emerald';
-
-      // Cálculo del día (2 de Noviembre en MT5)
-      const pnlDia = datosHoy.pnl; // 57.69
-      const roiDia = datosHoy.roi_pct; // 1.48
-      const pnlDiaStr = (pnlDia >= 0 ? '+$' : '-$') + Math.abs(pnlDia).toFixed(2) + ' USD';
-      const roiDiaStr = (roiDia >= 0 ? '+' : '') + roiDia.toFixed(2) + '%';
-
-      // Encabezado del apartado de Retorno
-      if (labelCalcEl) labelCalcEl.textContent = 'Cálculo Día (2 Nov):';
-      if (badgeCalcEl) {
-        badgeCalcEl.textContent = `${roiDiaStr} (${pnlDiaStr})`;
-        badgeCalcEl.className = roiDia >= 0
-          ? 'font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-2.5 py-0.5 rounded-lg text-xs mono'
-          : 'font-bold text-accent-rose bg-accent-rose/10 border border-accent-rose/30 px-2.5 py-0.5 rounded-lg text-xs mono';
-      }
-
-      // Encabezado principal (KPI Card superior)
-      if (kpiLabelEl) kpiLabelEl.textContent = 'ROI Diario (2 Nov)';
-      if (kpiRoiEl) {
-        kpiRoiEl.textContent = roiDiaStr;
-        kpiRoiEl.className = roiDia >= 0 ? 'text-xl sm:text-2xl font-black text-accent-emerald mono' : 'text-xl sm:text-2xl font-black text-accent-rose mono';
-      }
-      if (kpiPnlEl) {
-        kpiPnlEl.textContent = 'PnL Hoy: ' + pnlDiaStr;
-        kpiPnlEl.className = roiDia >= 0 ? 'text-[11px] text-accent-emerald font-semibold mt-1 mono' : 'text-[11px] text-accent-rose font-semibold mt-1 mono';
-      }
-
-      // Datos de las últimas sesiones operativas
-      const todasFechas = Object.keys(MT5_DATA.daily_net || {}).sort();
-      const ultimasFechas = todasFechas.slice(-10);
-
-      ultimasFechas.forEach(f => {
-        const m = f.substring(0, 7);
-        const dayInfo = (MT5_DATA.calendar_by_month[m] && MT5_DATA.calendar_by_month[m][f]) || {
-          roi_pct: 0,
-          pnl: MT5_DATA.daily_net[f] || 0,
-          trades: 1
-        };
-        categories.push(f.substring(5)); // e.g. '11-02'
-        seriesData.push(dayInfo.roi_pct);
-        tooltipDetails.push({
-          label: 'Fecha: ' + f,
-          roi: dayInfo.roi_pct,
-          pnl: dayInfo.pnl,
-          trades: dayInfo.trades || 0
-        });
-      });
-
-    } else {
-      // MODO MES
-      if (btnMes) {
-        btnMes.className = 'btn-modo-retorno px-3 py-1 rounded-lg bg-dark-800 text-accent-cyan border border-accent-cyan/30 shadow-sm transition';
-      }
-      if (btnDia) {
-        btnDia.className = 'btn-modo-retorno px-3 py-1 rounded-lg text-slate-400 hover:text-white transition';
-      }
-
-      if (tituloEl) tituloEl.textContent = 'Retorno Mensual (% Acumulado)';
-      if (subtituloEl) subtituloEl.textContent = 'Comparativa de rendimiento acumulado por mes operativo';
+    if (dia === 'TODO_MES') {
+      // Cálculo del mes completo
+      pnl = MT5_DATA.monthly_net[mes] || 0.0;
+      roi = mes === '2026-11' ? 1.48 : 2.68;
+      const nombreMes = mes === '2026-11' ? 'Noviembre 2026' : 'Octubre 2026';
+      labelTexto = `Resultado Mes (${nombreMes}):`;
+      kpiHeaderTexto = `ROI MES (${mes === '2026-11' ? 'NOV 2026' : 'OCT 2026'})`;
       if (dotEl) dotEl.className = 'w-2.5 h-2.5 rounded-full bg-accent-cyan';
-
-      // Cálculo del mes actual (Noviembre 2026 en MT5)
-      const pnlMes = MT5_DATA.monthly_net['2026-11'] || 57.69;
-      const roiMes = 1.48;
-      const pnlMesStr = (pnlMes >= 0 ? '+$' : '-$') + Math.abs(pnlMes).toFixed(2) + ' USD';
-      const roiMesStr = (roiMes >= 0 ? '+' : '') + roiMes.toFixed(2) + '%';
-
-      // Encabezado del apartado de Retorno
-      if (labelCalcEl) labelCalcEl.textContent = 'Cálculo Mes (Noviembre):';
-      if (badgeCalcEl) {
-        badgeCalcEl.textContent = `${roiMesStr} (${pnlMesStr})`;
-        badgeCalcEl.className = 'font-bold text-accent-cyan bg-accent-cyan/10 border border-accent-cyan/30 px-2.5 py-0.5 rounded-lg text-xs mono';
-      }
-
-      // Encabezado principal (KPI Card superior)
-      if (kpiLabelEl) kpiLabelEl.textContent = 'ROI Mes (Noviembre)';
-      if (kpiRoiEl) {
-        kpiRoiEl.textContent = roiMesStr;
-        kpiRoiEl.className = 'text-xl sm:text-2xl font-black text-accent-cyan mono';
-      }
-      if (kpiPnlEl) {
-        kpiPnlEl.textContent = 'PnL Nov: ' + pnlMesStr;
-        kpiPnlEl.className = 'text-[11px] text-accent-cyan font-semibold mt-1 mono';
-      }
-
-      // Datos de meses
-      const meses = ['2026-10', '2026-11'];
-      meses.forEach(m => {
-        const nombreMes = m === '2026-10' ? 'Octubre 2026' : 'Noviembre 2026';
-        const pnl = m === '2026-11' ? 57.69 : 102.37;
-        const roi = m === '2026-11' ? 1.48 : 2.68;
-        const trades = m === '2026-11' ? 10 : 487;
-
-        categories.push(m === '2026-10' ? 'Oct 2026' : 'Nov 2026');
-        seriesData.push(roi);
-        tooltipDetails.push({
-          label: nombreMes,
-          roi: roi,
-          pnl: pnl,
-          trades: trades
-        });
-      });
+    } else {
+      // Cálculo del día específico escogido
+      const info = diasMes[dia] || { pnl: 0, roi_pct: 0, trades: 0 };
+      pnl = info.pnl;
+      roi = info.roi_pct;
+      const diaNum = dia.substring(8);
+      const nombreMesCorto = mes === '2026-11' ? 'Nov' : 'Oct';
+      labelTexto = `Resultado Día (${diaNum} ${nombreMesCorto}):`;
+      kpiHeaderTexto = `ROI DIARIO (${diaNum} ${nombreMesCorto.toUpperCase()})`;
+      if (dotEl) dotEl.className = 'w-2.5 h-2.5 rounded-full bg-accent-emerald';
     }
+
+    const pnlSigno = pnl >= 0 ? '+$' : '-$';
+    const roiSigno = roi >= 0 ? '+' : '';
+    const pnlTexto = `${pnlSigno}${Math.abs(pnl).toFixed(2)} USD`;
+    const roiTexto = `${roiSigno}${roi.toFixed(2)}%`;
+
+    // 1. Encabezado del apartado de retorno
+    if (labelCalc) labelCalc.textContent = labelTexto;
+    if (badgeResultado) {
+      badgeResultado.textContent = `${roiTexto} (${pnlTexto})`;
+      badgeResultado.className = pnl >= 0
+        ? 'font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-2.5 py-1 rounded-lg text-xs mono'
+        : 'font-bold text-accent-rose bg-accent-rose/10 border border-accent-rose/30 px-2.5 py-1 rounded-lg text-xs mono';
+    }
+
+    // 2. Encabezado superior (Tarjeta KPI en fila 1)
+    if (kpiLabel) kpiLabel.textContent = kpiHeaderTexto;
+    if (kpiRoi) {
+      kpiRoi.textContent = roiTexto;
+      kpiRoi.className = pnl >= 0 ? 'text-xl sm:text-2xl font-black text-accent-emerald mono' : 'text-xl sm:text-2xl font-black text-accent-rose mono';
+    }
+    if (kpiPnl) {
+      kpiPnl.textContent = `PnL: ${pnlTexto}`;
+      kpiPnl.className = pnl >= 0 ? 'text-[11px] text-accent-emerald font-semibold mt-1 mono' : 'text-[11px] text-accent-rose font-semibold mt-1 mono';
+    }
+
+    // 3. Renderizar Gráfico de Barras correspondiente
+    renderizarBarrasPorSeleccion(mes, dia);
+  }
+
+  function renderizarBarrasPorSeleccion(mes, diaSeleccionado) {
+    const diasMes = MT5_DATA.calendar_by_month[mes] || {};
+    let fechasOrdenadas = Object.keys(diasMes).sort();
+
+    // Si el mes tiene pocos días (ej. Noviembre tiene 1 día), agregar días previos para contexto visual
+    if (fechasOrdenadas.length < 5) {
+      const todasFechas = Object.keys(MT5_DATA.daily_net || {}).sort();
+      fechasOrdenadas = todasFechas.slice(-8);
+    }
+
+    const categories = [];
+    const seriesData = [];
+    const tooltipDetails = [];
+
+    fechasOrdenadas.forEach(f => {
+      const m = f.substring(0, 7);
+      const info = (MT5_DATA.calendar_by_month[m] && MT5_DATA.calendar_by_month[m][f]) || {
+        roi_pct: 0,
+        pnl: MT5_DATA.daily_net[f] || 0,
+        trades: 1
+      };
+
+      categories.push(f.substring(5)); // '11-02'
+      seriesData.push(info.roi_pct);
+      tooltipDetails.push({
+        fecha: f,
+        roi: info.roi_pct,
+        pnl: info.pnl,
+        trades: info.trades || 0,
+        esSeleccionado: f === diaSeleccionado
+      });
+    });
 
     const barOptions = {
       series: [{
-        name: modoRetorno === 'dia' ? 'ROI Diario (%)' : 'ROI Mensual (%)',
+        name: 'ROI Sesión (%)',
         data: seriesData
       }],
       chart: {
         type: 'bar',
-        height: 290,
+        height: 250,
         toolbar: { show: false },
         background: 'transparent'
       },
@@ -14635,11 +14664,11 @@ document.addEventListener('DOMContentLoaded', () => {
           colors: {
             ranges: [
               { from: -100, to: -0.001, color: '#f43f5e' },
-              { from: 0, to: 100, color: modoRetorno === 'dia' ? '#10b981' : '#06b6d4' }
+              { from: 0, to: 100, color: '#10b981' }
             ]
           },
           borderRadius: 6,
-          columnWidth: modoRetorno === 'dia' ? '50%' : '35%'
+          columnWidth: '50%'
         }
       },
       dataLabels: {
@@ -14655,7 +14684,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       yaxis: {
         labels: {
-          style: { colors: '#94a3b8', fontFamily: 'JetBrains Mono' },
+          style: { colors: '#94a3b8', fontFamily: 'JetBrains Mono', fontSize: '11px' },
           formatter: (val) => val + '%'
         }
       },
@@ -14666,11 +14695,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const item = tooltipDetails[dataPointIndex];
           if (!item) return '';
           const signo = item.roi >= 0 ? '+' : '';
-          const colorCls = item.roi >= 0 ? 'text-accent-emerald' : 'text-accent-rose';
+          const colorCls = item.roi >= 0 ? '#10b981' : '#f43f5e';
           return `
             <div style="background-color: #030712; padding: 10px 12px; border-radius: 10px; border: 1px solid #1f2937; font-family: 'JetBrains Mono', monospace; font-size: 11px;">
-              <p style="font-weight: 800; color: #ffffff; margin: 0 0 4px 0;">${item.label}</p>
-              <p style="margin: 0; font-weight: 700; color: ${item.roi >= 0 ? '#10b981' : '#f43f5e'};">ROI: ${signo}${item.roi.toFixed(2)}%</p>
+              <p style="font-weight: 800; color: #ffffff; margin: 0 0 4px 0;">Fecha: ${item.fecha}</p>
+              <p style="margin: 0; font-weight: 700; color: ${colorCls};">ROI: ${signo}${item.roi.toFixed(2)}%</p>
               <p style="margin: 2px 0 0 0; color: #cbd5e1;">PnL: ${item.pnl >= 0 ? '+' : ''}$${item.pnl.toFixed(2)} USD</p>
               <p style="margin: 2px 0 0 0; color: #94a3b8; font-size: 10px;">${item.trades} operaciones</p>
             </div>
@@ -14699,7 +14728,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const diasData = MT5_DATA.calendar_by_month[mesSeleccionado] || {};
     const pnlMes = MT5_DATA.monthly_net[mesSeleccionado] || 0.0;
     
-    // Header informativo del mes
     const badgeMes = document.getElementById('badge-mes-resumen');
     if (badgeMes) {
       const nombreMes = mesSeleccionado === '2026-11' ? 'Noviembre 2026' : 'Octubre 2026';
@@ -14707,18 +14735,15 @@ document.addEventListener('DOMContentLoaded', () => {
       badgeMes.className = pnlMes >= 0 ? 'text-xs font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-3 py-1 rounded-xl mono' : 'text-xs font-bold text-accent-rose bg-accent-rose/10 border border-accent-rose/30 px-3 py-1 rounded-xl mono';
     }
 
-    // Construir días del mes seleccionado
     const año = parseInt(mesSeleccionado.split('-')[0], 10);
-    const mesIndex = parseInt(mesSeleccionado.split('-')[1], 10) - 1; // 0-based
+    const mesIndex = parseInt(mesSeleccionado.split('-')[1], 10) - 1;
     const totalDiasMes = new Date(año, mesIndex + 1, 0).getDate();
-    const primerDiaSemana = (new Date(año, mesIndex, 1).getDay() + 6) % 7; // Lunes=0, Domingo=6
+    const primerDiaSemana = (new Date(año, mesIndex, 1).getDay() + 6) % 7;
 
-    // Espacios vacíos antes del primer día del mes
     for (let e = 0; e < primerDiaSemana; e++) {
       html += `<div class="p-3 rounded-xl bg-dark-950/20 border border-dark-800/20 opacity-20"></div>`;
     }
 
-    // Días del mes
     for (let d = 1; d <= totalDiasMes; d++) {
       const diaNumStr = d < 10 ? '0' + d : '' + d;
       const fechaClave = mesSeleccionado + '-' + diaNumStr;
@@ -14733,148 +14758,246 @@ document.addEventListener('DOMContentLoaded', () => {
         const esPositivo = pnl >= 0;
 
         html += `
-          <div class="p-3 rounded-xl ${esPositivo ? 'bg-emerald-950/40 border-emerald-500/40 hover:border-emerald-400' : 'bg-rose-950/40 border-rose-500/40 hover:border-rose-400'} border flex flex-col justify-between h-20 transition shadow-sm hover:scale-[1.02] cursor-pointer">
-            <div class="flex justify-between items-center">
-              <span class="text-xs font-bold text-slate-300 mono">${d}</span>
-              <span class="text-[10px] font-bold ${esPositivo ? 'text-accent-emerald bg-accent-emerald/10' : 'text-accent-rose bg-accent-rose/10'} px-1.5 py-0.5 rounded mono">${roi >= 0 ? '+' : ''}${roi}%</span>
+          <div class="p-3 rounded-xl ${esPositivo ? 'bg-emerald-950/40 border-emerald-500/40 hover:border-emerald-400' : 'bg-rose-950/40 border-rose-500/40 hover:border-rose-400'} border transition cursor-pointer flex flex-col justify-between min-h-[75px]" onclick="seleccionarDiaEnRetorno('${mesSeleccionado}', '${fechaClave}')">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black text-white mono">${d}</span>
+              <span class="text-[10px] font-extrabold ${esPositivo ? 'text-accent-emerald' : 'text-accent-rose'} mono bg-dark-950/80 px-1.5 py-0.5 rounded">
+                ${esPositivo ? '+' : ''}${roi.toFixed(2)}%
+              </span>
             </div>
-            <div class="text-right">
-              <span class="text-xs font-black ${esPositivo ? 'text-accent-emerald' : 'text-accent-rose'} mono">${pnl >= 0 ? '+' : ''}$${pnl.toFixed(2)}</span>
-              <span class="block text-[9px] text-slate-500">${datosDia.trades} ops</span>
+            <div class="text-right mt-2">
+              <p class="text-xs font-bold ${esPositivo ? 'text-accent-emerald' : 'text-accent-rose'} mono">
+                ${esPositivo ? '+' : ''}$${Math.abs(pnl).toFixed(2)}
+              </p>
+              <p class="text-[9px] text-slate-400 mono">${datosDia.trades} ops</p>
             </div>
-          </div>`;
-      } else if (esFinSemana) {
-        html += `
-          <div class="p-3 rounded-xl bg-dark-950/40 border border-dark-800/30 flex flex-col justify-between h-20 opacity-40">
-            <span class="text-xs font-bold text-slate-500 mono">${d}</span>
-            <span class="text-[10px] text-slate-600 font-semibold uppercase">Cierre</span>
-          </div>`;
+          </div>
+        `;
       } else {
         html += `
-          <div class="p-3 rounded-xl bg-dark-900 border border-dark-800/70 flex flex-col justify-between h-20 opacity-80">
-            <span class="text-xs font-bold text-slate-400 mono">${d}</span>
-            <span class="text-[11px] text-slate-600 mono text-right">0.00%</span>
-          </div>`;
+          <div class="p-3 rounded-xl bg-dark-950/40 border border-dark-800/40 flex flex-col justify-between min-h-[75px] opacity-40">
+            <span class="text-xs font-bold text-slate-500 mono">${d}</span>
+            <div class="text-right">
+              <p class="text-[10px] text-slate-600 mono">${esFinSemana ? 'CIERRE' : '0.00%'}</p>
+            </div>
+          </div>
+        `;
       }
     }
 
     grid.innerHTML = html;
   }
 
-  // 7. Filtrado Dinámico de la Tabla de Operaciones (Temporalidad + Fechas)
+  // Interacción entre Calendario y Apartado de Retorno
+  window.seleccionarDiaEnRetorno = (mes, dia) => {
+    const selectMes = document.getElementById('retorno-select-mes');
+    const selectDia = document.getElementById('retorno-select-dia');
+    if (selectMes) selectMes.value = mes;
+    actualizarSelectorDias();
+    if (selectDia) selectDia.value = dia;
+    calcularYAplicarRetorno();
+  };
+
+  // 7. Filtrar Operaciones y Renderizar Tabla
   function filtrarOperaciones(periodo) {
-    const todos = MT5_DATA.all_deals;
-    const fechas = MT5_DATA.growth_dates;
-    
+    const deals = MT5_DATA.all_deals;
+    const hoyStr = '2026-11-02';
+
     if (periodo === '1D') {
-      const ultimaFecha = fechas[fechas.length - 1]; // 2026-11-02
-      dealsFiltrados = todos.filter(d => d.date === ultimaFecha);
+      dealsFiltrados = deals.filter(d => d.date === hoyStr);
     } else if (periodo === '1S') {
-      const subFechas = fechas.slice(-7);
-      dealsFiltrados = todos.filter(d => subFechas.includes(d.date));
+      const hace7Dias = new Date();
+      hace7Dias.setDate(hace7Dias.getDate() - 7);
+      const str = hace7Dias.toISOString().split('T')[0];
+      dealsFiltrados = deals.filter(d => d.date >= str);
     } else if (periodo === '15D') {
-      const subFechas = fechas.slice(-15);
-      dealsFiltrados = todos.filter(d => subFechas.includes(d.date));
+      const hace15 = new Date();
+      hace15.setDate(hace15.getDate() - 15);
+      const str = hace15.toISOString().split('T')[0];
+      dealsFiltrados = deals.filter(d => d.date >= str);
     } else if (periodo === '1M') {
-      const subFechas = fechas.slice(-30);
-      dealsFiltrados = todos.filter(d => subFechas.includes(d.date));
+      dealsFiltrados = deals.filter(d => d.month === mesSeleccionado);
     } else if (periodo === 'YTD' || periodo === 'TODO') {
-      dealsFiltrados = [...todos];
+      dealsFiltrados = [...deals];
     } else if (periodo === 'CUSTOM') {
       const fromVal = document.getElementById('date-from-tabla').value;
       const toVal = document.getElementById('date-to-tabla').value;
-      dealsFiltrados = todos.filter(d => (!fromVal || d.date >= fromVal) && (!toVal || d.date <= toVal));
+      dealsFiltrados = deals.filter(d => {
+        return (!fromVal || d.date >= fromVal) && (!toVal || d.date <= toVal);
+      });
     }
 
-    // Resetear a página 1
     paginaActual = 1;
     renderizarTablaOperaciones();
   }
 
-  // 8. Renderizar Tabla de Operaciones de MT5 con Totales Exactos
   function renderizarTablaOperaciones() {
-    const tbody = document.getElementById('table-recent-trades');
-    const startIdx = (paginaActual - 1) * itemsPorPagina;
-    const endIdx = startIdx + itemsPorPagina;
-    const paginaDeals = dealsFiltrados.slice(startIdx, endIdx);
+    const tbody = document.getElementById('table-deals-body');
+    if (!tbody) return;
 
-    let totBeneficio = 0;
-    let totComision = 0;
+    const totalDeals = dealsFiltrados.length;
+    const inicio = (paginaActual - 1) * itemsPorPagina;
+    const fin = inicio + itemsPorPagina;
+    const paginaDeals = dealsFiltrados.slice(inicio, fin);
 
-    dealsFiltrados.forEach(d => {
-      totBeneficio += d.profit;
-      totComision += d.commission;
-    });
-    const totBalance = totBeneficio + totComision;
+    let html = '';
+    paginaDeals.forEach(d => {
+      const esGanancia = d.net >= 0;
+      const esBuy = d.type.toLowerCase() === 'buy';
 
-    // Actualizar barra inferior de totales de MT5
-    document.getElementById('summary-beneficio').textContent = '$' + totBeneficio.toFixed(2);
-    document.getElementById('summary-comision').textContent = '$' + totComision.toFixed(2);
-    document.getElementById('summary-balance').textContent = '$' + totBalance.toFixed(2);
-    document.getElementById('total-trades-label').textContent = 'Mostrando ' + dealsFiltrados.length + ' operaciones (' + periodoTabla + ')';
-
-    if (paginaDeals.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="9" class="py-8 text-center text-slate-500 italic">No se encontraron operaciones en el rango seleccionado</td></tr>';
-      document.getElementById('pag-label').textContent = 'Página 1 de 1';
-      return;
-    }
-
-    tbody.innerHTML = paginaDeals.map(d => {
-      const esProfitPositivo = d.profit >= 0;
-      const profitClass = esProfitPositivo ? 'text-accent-emerald font-bold' : 'text-accent-rose font-bold';
-      const typeBadge = d.type === 'buy' 
-        ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30">buy</span>'
-        : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-accent-rose/20 text-accent-rose border border-accent-rose/30">sell</span>';
-      
-      const dirBadge = d.direction === 'out'
-        ? '<span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-slate-700 text-slate-300">out</span>'
-        : '<span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-slate-800 text-slate-400">in</span>';
-
-      return `
-        <tr class="hover:bg-dark-850/60 transition border-b border-dark-800/40 text-xs">
-          <td class="py-2.5 px-3 text-slate-300 mono whitespace-nowrap">${d.time}</td>
-          <td class="py-2.5 px-3 font-extrabold text-white uppercase mono">${d.symbol}</td>
-          <td class="py-2.5 px-3 text-slate-400 mono">${d.ticket}</td>
-          <td class="py-2.5 px-3">${typeBadge}</td>
-          <td class="py-2.5 px-3">${dirBadge}</td>
-          <td class="py-2.5 px-3 text-slate-300 mono">${d.volume.toFixed(2)}</td>
-          <td class="py-2.5 px-3 text-slate-300 mono">${d.price.toFixed(2)}</td>
-          <td class="py-2.5 px-3 text-accent-rose mono">${d.commission < 0 ? d.commission.toFixed(2) : '0.00'}</td>
-          <td class="py-2.5 px-3 text-right ${profitClass} mono">${d.profit !== 0 ? (d.profit > 0 ? '+' : '') + d.profit.toFixed(2) : '0.00'}</td>
+      html += `
+        <tr class="hover:bg-dark-900/60 transition border-b border-dark-800/40 text-xs mono">
+          <td class="py-2.5 px-3 text-slate-400 font-medium">${d.time}</td>
+          <td class="py-2.5 px-3 text-white font-bold uppercase tracking-wider">${d.symbol}</td>
+          <td class="py-2.5 px-3 text-slate-500">${d.ticket}</td>
+          <td class="py-2.5 px-3">
+            <span class="px-2 py-0.5 rounded text-[10px] font-black ${esBuy ? 'bg-accent-emerald/10 text-accent-emerald border border-accent-emerald/30' : 'bg-accent-rose/10 text-accent-rose border border-accent-rose/30'}">
+              ${d.type.toUpperCase()}
+            </span>
+          </td>
+          <td class="py-2.5 px-3 text-slate-400">${d.direction}</td>
+          <td class="py-2.5 px-3 text-slate-300 font-semibold">${d.volume.toFixed(2)}</td>
+          <td class="py-2.5 px-3 text-slate-200">${d.price.toFixed(2)}</td>
+          <td class="py-2.5 px-3 text-slate-400 font-semibold">${d.commission < 0 ? '-' : ''}$${Math.abs(d.commission).toFixed(2)}</td>
+          <td class="py-2.5 px-3 font-bold ${d.profit >= 0 ? 'text-accent-emerald' : 'text-accent-rose'}">
+            ${d.profit >= 0 ? '+' : ''}$${d.profit.toFixed(2)}
+          </td>
         </tr>
       `;
-    }).join('');
+    });
 
-    const totalPags = Math.ceil(dealsFiltrados.length / itemsPorPagina);
-    document.getElementById('pag-label').textContent = 'Página ' + paginaActual + ' de ' + (totalPags || 1);
+    tbody.innerHTML = html;
+
+    // Actualizar resumen numérico
+    let sumProfit = 0, sumComm = 0;
+    dealsFiltrados.forEach(d => {
+      sumProfit += d.profit;
+      sumComm += d.commission;
+    });
+    const sumNet = sumProfit + sumComm;
+
+    const sumProfitEl = document.getElementById('summary-beneficio');
+    if (sumProfitEl) sumProfitEl.textContent = (sumProfit >= 0 ? '$' : '-$') + Math.abs(sumProfit).toFixed(2);
+    
+    const sumCommEl = document.getElementById('summary-comision');
+    if (sumCommEl) sumCommEl.textContent = (sumComm < 0 ? '-$' : '$') + Math.abs(sumComm).toFixed(2);
+    
+    const sumBalEl = document.getElementById('summary-balance');
+    if (sumBalEl) sumBalEl.textContent = (sumNet >= 0 ? '$' : '-$') + Math.abs(sumNet).toFixed(2);
+
+    const infoPags = document.getElementById('table-pagination-info');
+    if (infoPags) {
+      infoPags.textContent = `Mostrando ${Math.min(inicio + 1, totalDeals)} - ${Math.min(fin, totalDeals)} de ${totalDeals} operaciones`;
+    }
   }
 
-  // 9. Event Listeners
-  // Botones Curva
+  // 8. Auto-Sync Polling en Vivo
+  async function pollLiveData() {
+    try {
+      const res = await fetch(`./js/live_data.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.balance) {
+          const balCambio = data.balance !== MT5_DATA.balance;
+          const eqCambio = data.equity !== MT5_DATA.equity;
+          const dealsCountCambio = (data.all_deals && data.all_deals.length) !== (MT5_DATA.all_deals && MT5_DATA.all_deals.length);
+
+          if (balCambio || eqCambio || dealsCountCambio) {
+            console.log('[LIVE AUTO-SYNC] Nueva telemetría recibida:', data.balance, data.equity);
+            Object.assign(MT5_DATA, data);
+            actualizarKPIs();
+            actualizarSelectorDias();
+            calcularYAplicarRetorno();
+            filtrarDatosCurva(periodoCurva);
+            renderizarCalendario();
+            dealsFiltrados = [...MT5_DATA.all_deals];
+            renderizarTablaOperaciones();
+
+            const indicator = document.getElementById('sync-status-indicator');
+            if (indicator) {
+              indicator.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-accent-emerald animate-ping"></span> Actualizado en Vivo';
+              setTimeout(() => {
+                indicator.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-accent-emerald animate-pulse"></span> En Vivo';
+              }, 2500);
+            }
+          }
+        }
+      }
+    } catch (e) {
+      // offline / static mode fallback
+    }
+  }
+
+  // ==========================================
+  // 9. Asignar Event Listeners
+  // ==========================================
+
+  // Botones de Temporalidad de Curva
   const btnsCurva = document.querySelectorAll('.btn-periodo-curva');
   btnsCurva.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
       btnsCurva.forEach(b => {
         b.classList.remove('bg-dark-800', 'text-accent-cyan');
         b.classList.add('text-slate-400');
       });
-      btn.classList.add('bg-dark-800', 'text-accent-cyan');
       btn.classList.remove('text-slate-400');
+      btn.classList.add('bg-dark-800', 'text-accent-cyan');
 
       periodoCurva = btn.getAttribute('data-period');
       filtrarDatosCurva(periodoCurva);
     });
   });
 
-  document.getElementById('btn-apply-curva').addEventListener('click', () => {
-    btnsCurva.forEach(b => {
-      b.classList.remove('bg-dark-800', 'text-accent-cyan');
-      b.classList.add('text-slate-400');
+  const btnApplyCurva = document.getElementById('btn-apply-curva');
+  if (btnApplyCurva) {
+    btnApplyCurva.addEventListener('click', () => {
+      btnsCurva.forEach(b => {
+        b.classList.remove('bg-dark-800', 'text-accent-cyan');
+        b.classList.add('text-slate-400');
+      });
+      periodoCurva = 'CUSTOM';
+      filtrarDatosCurva('CUSTOM');
     });
-    filtrarDatosCurva('CUSTOM');
-  });
+  }
 
-  // Botones Tabla de Operaciones
+  // Controles de Selección de Día y Mes en Retorno por Sesión
+  const selectRetornoMes = document.getElementById('retorno-select-mes');
+  const selectRetornoDia = document.getElementById('retorno-select-dia');
+  const btnAplicarRetorno = document.getElementById('btn-aplicar-retorno');
+
+  if (selectRetornoMes) {
+    selectRetornoMes.addEventListener('change', () => {
+      actualizarSelectorDias();
+      calcularYAplicarRetorno();
+    });
+  }
+
+  if (selectRetornoDia) {
+    selectRetornoDia.addEventListener('change', () => {
+      calcularYAplicarRetorno();
+    });
+  }
+
+  if (btnAplicarRetorno) {
+    btnAplicarRetorno.addEventListener('click', () => {
+      calcularYAplicarRetorno();
+    });
+  }
+
+  // Selector de Mes en Calendario Térmico
+  const selectMesCal = document.getElementById('select-mes');
+  if (selectMesCal) {
+    selectMesCal.addEventListener('change', (e) => {
+      mesSeleccionado = e.target.value;
+      if (selectRetornoMes) selectRetornoMes.value = mesSeleccionado;
+      actualizarKPIs();
+      actualizarSelectorDias();
+      calcularYAplicarRetorno();
+      renderizarCalendario();
+    });
+  }
+
+  // Botones de Temporalidad de Tabla
   const btnsTabla = document.querySelectorAll('.btn-periodo-tabla');
   btnsTabla.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -14882,72 +15005,61 @@ document.addEventListener('DOMContentLoaded', () => {
         b.classList.remove('bg-dark-800', 'text-accent-cyan');
         b.classList.add('text-slate-400');
       });
-      btn.classList.add('bg-dark-800', 'text-accent-cyan');
       btn.classList.remove('text-slate-400');
+      btn.classList.add('bg-dark-800', 'text-accent-cyan');
 
       periodoTabla = btn.getAttribute('data-period');
       filtrarOperaciones(periodoTabla);
     });
   });
 
-  document.getElementById('btn-apply-tabla').addEventListener('click', () => {
-    btnsTabla.forEach(b => {
-      b.classList.remove('bg-dark-800', 'text-accent-cyan');
-      b.classList.add('text-slate-400');
-    });
-    periodoTabla = 'Personalizado';
-    filtrarOperaciones('CUSTOM');
-  });
-
-  // Selector de Mes en Calendario
-  document.getElementById('select-mes').addEventListener('change', (e) => {
-    mesSeleccionado = e.target.value;
-    actualizarKPIs();
-    renderizarBarrasROI();
-    renderizarCalendario();
-  });
-
-  // Buscador de operaciones en tabla
-  document.getElementById('input-search-deals').addEventListener('input', (e) => {
-    const val = e.target.value.toLowerCase().trim();
-    dealsFiltrados = MT5_DATA.all_deals.filter(d => 
-      d.symbol.includes(val) || 
-      d.ticket.toString().includes(val) || 
-      d.type.includes(val) ||
-      d.time.includes(val)
-    );
-    paginaActual = 1;
-    renderizarTablaOperaciones();
-  });
-
-  // Paginación
-  document.getElementById('btn-prev-page').addEventListener('click', () => {
-    if (paginaActual > 1) {
-      paginaActual--;
-      renderizarTablaOperaciones();
-    }
-  });
-  document.getElementById('btn-next-page').addEventListener('click', () => {
-    const totalPags = Math.ceil(dealsFiltrados.length / itemsPorPagina);
-    if (paginaActual < totalPags) {
-      paginaActual++;
-      renderizarTablaOperaciones();
-    }
-  });
-
-    // Botones Día y Mes en Retorno (% por Sesión)
-  const btnRetornoDia = document.getElementById('btn-retorno-dia');
-  const btnRetornoMes = document.getElementById('btn-retorno-mes');
-  if (btnRetornoDia) {
-    btnRetornoDia.addEventListener('click', () => {
-      modoRetorno = 'dia';
-      renderizarBarrasROI();
+  const btnApplyTabla = document.getElementById('btn-apply-tabla');
+  if (btnApplyTabla) {
+    btnApplyTabla.addEventListener('click', () => {
+      btnsTabla.forEach(b => {
+        b.classList.remove('bg-dark-800', 'text-accent-cyan');
+        b.classList.add('text-slate-400');
+      });
+      periodoTabla = 'CUSTOM';
+      filtrarOperaciones('CUSTOM');
     });
   }
-  if (btnRetornoMes) {
-    btnRetornoMes.addEventListener('click', () => {
-      modoRetorno = 'mes';
-      renderizarBarrasROI();
+
+  // Buscador de deals
+  const inputSearch = document.getElementById('input-search-deals');
+  if (inputSearch) {
+    inputSearch.addEventListener('input', (e) => {
+      const val = e.target.value.toLowerCase().trim();
+      dealsFiltrados = MT5_DATA.all_deals.filter(d =>
+        d.symbol.includes(val) ||
+        d.ticket.toString().includes(val) ||
+        d.type.includes(val) ||
+        d.time.includes(val)
+      );
+      paginaActual = 1;
+      renderizarTablaOperaciones();
+    });
+  }
+
+  // Paginación
+  const btnPrev = document.getElementById('btn-prev-page');
+  if (btnPrev) {
+    btnPrev.addEventListener('click', () => {
+      if (paginaActual > 1) {
+        paginaActual--;
+        renderizarTablaOperaciones();
+      }
+    });
+  }
+
+  const btnNext = document.getElementById('btn-next-page');
+  if (btnNext) {
+    btnNext.addEventListener('click', () => {
+      const totalPags = Math.ceil(dealsFiltrados.length / itemsPorPagina);
+      if (paginaActual < totalPags) {
+        paginaActual++;
+        renderizarTablaOperaciones();
+      }
     });
   }
 
@@ -14956,10 +15068,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = 'login.html';
   };
 
-  // Inicializar todo
+  // 10. Inicializar
   actualizarKPIs();
   filtrarDatosCurva('TODO');
-  renderizarBarrasROI();
+  actualizarSelectorDias();
+  calcularYAplicarRetorno();
   renderizarCalendario();
   renderizarTablaOperaciones();
+
+  // Iniciar sondeo de actualización en vivo cada 3.5 segundos
+  setInterval(pollLiveData, 3500);
 });
