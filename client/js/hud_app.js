@@ -14373,7 +14373,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ],
   "total_deals_raw": 1001,
-  "last_updated": "2026-11-02 00:28:12"
+  "last_updated": "2026-11-02 00:36:26"
 };
 
   let chartGrowth = null;
@@ -14832,7 +14832,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderizarTablaOperaciones() {
-    const tbody = document.getElementById('table-deals-body');
+    const tbody = document.getElementById('table-recent-trades') || document.getElementById('table-deals-body');
     if (!tbody) return;
 
     const totalDeals = dealsFiltrados.length;
@@ -14885,9 +14885,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const sumBalEl = document.getElementById('summary-balance');
     if (sumBalEl) sumBalEl.textContent = (sumNet >= 0 ? '$' : '-$') + Math.abs(sumNet).toFixed(2);
 
-    const infoPags = document.getElementById('table-pagination-info');
+    const infoPags = document.getElementById('pag-label') || document.getElementById('table-pagination-info');
     if (infoPags) {
-      infoPags.textContent = `Mostrando ${Math.min(inicio + 1, totalDeals)} - ${Math.min(fin, totalDeals)} de ${totalDeals} operaciones`;
+      const totalPags = Math.max(1, Math.ceil(totalDeals / itemsPorPagina));
+      infoPags.textContent = 'Página ' + paginaActual + ' de ' + totalPags + ' (' + totalDeals + ' ops)';
+    }
+    const totalTradesLabel = document.getElementById('total-trades-label');
+    if (totalTradesLabel) {
+      totalTradesLabel.textContent = 'Mostrando ' + dealsFiltrados.length + ' operaciones registradas';
     }
   }
 
