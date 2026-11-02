@@ -139,7 +139,7 @@
       <!-- ROI Diario (Hoy: 2 Noviembre) -->
       <div class="bg-dark-900/80 border border-dark-800 rounded-2xl p-4 shadow-sm hover:border-accent-emerald/40 transition relative overflow-hidden">
         <div class="absolute top-0 right-0 w-16 h-16 bg-accent-emerald/5 rounded-full blur-xl pointer-events-none"></div>
-        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">ROI Diario (2 Nov)</p>
+        <p id="kpi-roi-label" class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">ROI Diario (2 Nov)</p>
         <p id="kpi-roi-dia" class="text-xl sm:text-2xl font-black text-accent-emerald mono">+1.48%</p>
         <p id="kpi-pnl-dia" class="text-[11px] text-accent-emerald font-semibold mt-1 mono">
           PnL Hoy: +$57.69 USD
@@ -223,16 +223,33 @@
         <div id="chart-growth" class="w-full h-80"></div>
       </div>
 
-      <!-- Retorno Diario en % -->
+            <!-- Retorno en % (Día / Mes) con Botones de Selección -->
       <div class="lg:col-span-4 bg-dark-900/90 border border-dark-800 rounded-2xl p-5 shadow-sm space-y-4">
-        <div>
-          <h2 class="text-sm font-extrabold text-white uppercase tracking-wider flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-accent-emerald"></span>
-            Retorno Diario (% por Sesión)
-          </h2>
-          <p class="text-xs text-slate-400">Distribución de porcentaje de ganancia/pérdida diaria</p>
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="text-sm font-extrabold text-white uppercase tracking-wider flex items-center gap-2">
+              <span id="dot-retorno-bars" class="w-2.5 h-2.5 rounded-full bg-accent-emerald"></span>
+              <span id="titulo-retorno-bars">Retorno Diario (% por Sesión)</span>
+            </h2>
+            <p id="subtitulo-retorno-bars" class="text-xs text-slate-400">Distribución de porcentaje de ganancia/pérdida diaria</p>
+          </div>
+
+          <!-- Botonera DÍA / MES -->
+          <div class="flex bg-dark-950 p-1 rounded-xl border border-dark-800 text-xs font-bold mono">
+            <button id="btn-retorno-dia" class="btn-modo-retorno px-3 py-1 rounded-lg bg-dark-800 text-accent-emerald border border-accent-emerald/30 shadow-sm transition" data-mode="dia">Día</button>
+            <button id="btn-retorno-mes" class="btn-modo-retorno px-3 py-1 rounded-lg text-slate-400 hover:text-white transition" data-mode="mes">Mes</button>
+          </div>
         </div>
-        <div id="chart-daily-bars" class="w-full h-80"></div>
+
+        <!-- Encabezado con Resultado Calculado -->
+        <div class="flex items-center justify-between bg-dark-950/70 px-3.5 py-2 rounded-xl border border-dark-800/80 text-xs mono">
+          <span id="label-retorno-calc" class="text-slate-400 font-bold uppercase tracking-wider text-[11px]">Cálculo Día (2 Nov):</span>
+          <span id="badge-retorno-resultado" class="font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-2.5 py-0.5 rounded-lg text-xs">
+            +1.48% (+$57.69 USD)
+          </span>
+        </div>
+
+        <div id="chart-daily-bars" class="w-full h-72"></div>
       </div>
     </section>
 
@@ -371,6 +388,6 @@
   </footer>
 
   <!-- Script con Rompedor de Caché Actualizado -->
-  <script src="./js/hud_app.js?v=20261102_3970_41_v6"></script>
+  <script src="./js/hud_app.js?v=20261102_diames_v7"></script>
 </body>
 </html>
