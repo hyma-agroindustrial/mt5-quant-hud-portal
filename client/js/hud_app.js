@@ -14373,7 +14373,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ],
   "total_deals_raw": 1001,
-  "last_updated": "2026-11-02 00:26:43"
+  "last_updated": "2026-11-02 00:28:12"
 };
 
   let chartGrowth = null;
