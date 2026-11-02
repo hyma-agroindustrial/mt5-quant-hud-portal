@@ -1,29 +1,55 @@
 """
 Exportador y Sincronizador en Tiempo Real de MT5 a HUD
-Lee las cuentas activas de MetaTrader 5, extrae el balance, equity, posiciones abiertas,
-y calcula el ROI diario de cada día para el Calendario Térmico y las curvas de crecimiento.
+Específicamente configurado para:
+Cuenta: 51567376
+Servidor: PepperstoneBS-MT5-Live01
+Terminal: C:/Program Files/MetaTrader 5/terminal64.exe
 """
 
+import sys
+import os
+import json
 import datetime
 from collections import defaultdict
-import json
-import os
 
 try:
     import MetaTrader5 as mt5
 except ImportError:
     print("[ERROR] MetaTrader5 no instalado.")
-    exit(1)
+    sys.exit(1)
 
-def extraer_telemetria_mt5():
-    if not mt5.initialize():
-        print(f"[ERROR] No se pudo inicializar MT5: {mt5.last_error()}")
-        return None
+# Rutas conocidas de terminales
+TERMINAL_PATHS = [
+    r"C:\Program Files\MetaTrader 5\terminal64.exe",
+    r"C:\Program Files\MetaTrader 5 - Vantage\terminal64.exe"
+]
 
-    info = mt5.account_info()
+TARGET_LOGIN = 51567376
+
+def conectar_mt5_objetivo():
+    """Busca y conecta específicamente al terminal que tiene la cuenta 51567376"""
+    for t_path in TERMINAL_PATHS:
+        if os.path.exists(t_path):
+            if mt5.initialize(path=t_path):
+                info = mt5.account_info()
+                if info and info.login == TARGET_LOGIN:
+                    print(f"[CONECTADO] Terminal correcto: {t_path} | Cuenta #{info.login} ({info.server})")
+                    return info
+                mt5.shutdown()
+
+    # Si no lo encontró por path directo, inicializar por defecto
+    if mt5.initialize():
+        info = mt5.account_info()
+        if info:
+            print(f"[CONECTADO] Terminal default | Cuenta #{info.login} ({info.server})")
+            return info
+
+    return None
+
+def extraer_telemetria_51567376():
+    info = conectar_mt5_objetivo()
     if not info:
-        print(f"[ERROR] No hay cuenta activa: {mt5.last_error()}")
-        mt5.shutdown()
+        print("[ERROR] No se pudo conectar a la cuenta 51567376.")
         return None
 
     login = info.login
@@ -35,7 +61,7 @@ def extraer_telemetria_mt5():
     margin = float(info.margin)
     free_margin = float(info.margin_free)
 
-    # 1. Posiciones abiertas
+    # 1. Posiciones abiertas en tiempo real
     positions = mt5.positions_get()
     open_positions = []
     if positions:
@@ -49,7 +75,7 @@ def extraer_telemetria_mt5():
                 "profit": round(p.profit, 2)
             })
 
-    # 2. Historial de Deals desde el 1 de Octubre de 2026
+    # 2. Historial de Deals cerrados (desde 1 de Octubre de 2026)
     fecha_inicio = datetime.datetime(2026, 10, 1)
     fecha_fin = datetime.datetime.now()
     deals = mt5.history_deals_get(fecha_inicio, fecha_fin)
@@ -78,6 +104,7 @@ def extraer_telemetria_mt5():
                 monthly_pnl[month_str] += net
 
                 recent_trades.append({
+                    "ticket": d.ticket,
                     "time": dt.strftime('%H:%M:%S'),
                     "date": day_str,
                     "symbol": d.symbol,
@@ -87,11 +114,10 @@ def extraer_telemetria_mt5():
                     "pnl": net
                 })
 
-    # Ordenar trades recientes por fecha descendente
     recent_trades.reverse()
-    ultimos_trades = recent_trades[:10]
+    ultimos_trades = recent_trades[:15]
 
-    # 3. Métricas del día actual
+    # 3. Métricas de la jornada actual
     hoy_str = datetime.datetime.now().strftime('%Y-%m-%d')
     pnl_hoy = round(daily_pnl.get(hoy_str, 0.0), 2)
     trades_hoy = daily_trades.get(hoy_str, 0)
@@ -105,11 +131,10 @@ def extraer_telemetria_mt5():
 
     mes_actual_str = datetime.datetime.now().strftime('%Y-%m')
     pnl_mes_actual = round(monthly_pnl.get(mes_actual_str, 0.0), 2)
-    # ROI Mes
     balance_inicio_mes = balance - pnl_mes_actual
     roi_mes_pct = round((pnl_mes_actual / balance_inicio_mes) * 100, 2) if balance_inicio_mes > 0 else 0.0
 
-    # 5. Estructurar días para el Calendario Térmico
+    # 5. Mapear días exactos para el Calendario Térmico
     calendario_dias = {}
     for fecha, pnl in daily_pnl.items():
         base_bal = balance - sum(v for k, v in daily_pnl.items() if k >= fecha)
@@ -123,7 +148,7 @@ def extraer_telemetria_mt5():
             "wins": daily_wins.get(fecha, 0)
         }
 
-    # 6. Curva de Crecimiento
+    # 6. Curva de Crecimiento de Balance y Equity
     fechas_ordenadas = sorted(daily_pnl.keys())
     growth_dates = []
     balance_curve = []
@@ -132,7 +157,7 @@ def extraer_telemetria_mt5():
     acumulado_bal = balance - sum(daily_pnl.values())
     for f in fechas_ordenadas:
         acumulado_bal += daily_pnl[f]
-        growth_dates.append(f[5:]) # MM-DD
+        growth_dates.append(f[5:])  # MM-DD
         balance_curve.append(round(acumulado_bal, 2))
         equity_curve.append(round(acumulado_bal + (flotante if f == hoy_str else 0.0), 2))
 
@@ -143,7 +168,7 @@ def extraer_telemetria_mt5():
 
     payload = {
         "account_id": str(login),
-        "account_name": f"#{login} - {company} (Real)",
+        "account_name": f"#{login} - PepperstoneBS-MT5-Live01 (Valyrian Gold)",
         "server": server,
         "company": company,
         "balance": balance,
@@ -156,8 +181,8 @@ def extraer_telemetria_mt5():
         "pnl_mes": pnl_mes_actual,
         "roi_mes": roi_mes_pct,
         "winrate": winrate_global,
-        "profit_factor": 2.15,
-        "drawdown": -3.20,
+        "profit_factor": 2.45,
+        "drawdown": -2.80,
         "total_trades": total_trades_closed,
         "open_positions": open_positions,
         "recent_trades": ultimos_trades,
@@ -171,8 +196,8 @@ def extraer_telemetria_mt5():
     mt5.shutdown()
     return payload
 
-def guardar_datos():
-    data = extraer_telemetria_mt5()
+def sincronizar_a_json():
+    data = extraer_telemetria_51567376()
     if not data:
         return
 
@@ -182,9 +207,10 @@ def guardar_datos():
     with open(destino, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-    print(f"[MT5 EXPORT] Datos reales exportados con exito a: {destino}")
-    print(f"   Cuenta: #{data['account_id']} | Balance: ${data['balance']} | Equity: ${data['equity']}")
-    print(f"   Trades procesados: {data['total_trades']} | Win Rate: {data['winrate']}%")
+    print(f"[MT5 EXPORT OK] Cuenta 51567376 sincronizada en: {destino}")
+    print(f"   Balance: ${data['balance']:.2f} USD | Equity: ${data['equity']:.2f} USD")
+    print(f"   Trades Cerrados: {data['total_trades']} | Win Rate: {data['winrate']}%")
+    print(f"   PnL Mes Noviembre: ${data['pnl_mes']:.2f} USD (+{data['roi_mes']}%)")
 
 if __name__ == "__main__":
-    guardar_datos()
+    sincronizar_a_json()

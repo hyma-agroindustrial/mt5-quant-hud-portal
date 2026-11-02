@@ -412,6 +412,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.location.href = 'login.html';
   };
 
-  // Inicializar
-  actualizarVistaCuenta('61602115');
+  // Inicializar en la cuenta real 51567376
+  const defaultCuenta = CUENTAS_DATA['51567376'] ? '51567376' : 'all';
+  actualizarVistaCuenta(defaultCuenta);
 });

@@ -87,17 +87,27 @@ def obtener_metricas_cuenta(account_info):
         "timestamp": datetime.datetime.now().isoformat()
     }
 
+# Terminal MT5 específico para la cuenta 51567376
+TERMINAL_PATH = r"C:\Program Files\MetaTrader 5\terminal64.exe"
+
 def sincronizar():
     if not mt5:
         print("[ERROR] MetaTrader5 no disponible.")
         return
 
-    # Inicializar MT5
-    if not mt5.initialize():
+    # Inicializar MT5 apuntando al terminal de Pepperstone Live01
+    init_ok = False
+    if os.path.exists(TERMINAL_PATH):
+        init_ok = mt5.initialize(path=TERMINAL_PATH)
+    else:
+        init_ok = mt5.initialize()
+
+    if not init_ok:
         print(f"[ERROR] Error al inicializar MT5: {mt5.last_error()}")
         return
 
-    print("=== [MT5 QUANT WORKER] Conectado a terminal MT5 exitosamente ===")
+    info = mt5.account_info()
+    print(f"=== [MT5 QUANT WORKER] Conectado exitosamente a Cuenta #{info.login} ({info.server}) ===")
 
     try:
         while True:
