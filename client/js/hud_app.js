@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4010.98,
-  "equity": 4009.07,
-  "flotante": -1.91,
+  "balance": 4009.23,
+  "equity": 4006.66,
+  "flotante": -2.57,
   "winrate": 72.1,
   "total_trades": 506,
   "total_wins": 365,
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4010.98
+    4009.23
   ],
   "equity_curve": [
     1000.0,
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4009.07
+    4006.66
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
     "2026-11-02": 98.51,
-    "2026-11-03": -0.25
+    "2026-11-03": -2.0
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -161,11 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
     "2026-11-02": -8.52,
-    "2026-11-03": -0.25
+    "2026-11-03": -2.0
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 98.26
+    "2026-11": 96.51
   },
   "calendar_by_month": {
     "2026-10": {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 24.93,
+        "roi_pct": 24.94,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -361,10 +361,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "losses": 3
       },
       "2026-11-03": {
-        "pnl": -0.25,
+        "pnl": -2.0,
         "gross": 0.0,
-        "commission": -0.25,
-        "roi_pct": -0.01,
+        "commission": -2.0,
+        "roi_pct": -0.05,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -372,6 +372,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   },
   "all_deals": [
+    {
+      "ticket": 302156186,
+      "time": "2026.11.03 01:49:30",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "in",
+      "volume": 0.5,
+      "price": 3947.59,
+      "sl": "",
+      "tp": "",
+      "commission": -1.75,
+      "profit": 0.0,
+      "net": -1.75
+    },
     {
       "ticket": 302156101,
       "time": "2026.11.03 01:48:28",
@@ -383,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3947.65,
       "sl": "",
-      "tp": "",
+      "tp": "3939.20",
       "commission": -0.18,
       "profit": 0.0,
       "net": -0.18
@@ -16677,8 +16693,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1019,
-  "last_updated": "2026-11-02 16:48:29"
+  "total_deals_raw": 1020,
+  "last_updated": "2026-11-02 16:49:31"
 };
 
   let chartGrowth = null;
