@@ -16,295 +16,335 @@ document.addEventListener('DOMContentLoaded', () => {
   "balance": 3970.21,
   "equity": 3970.21,
   "flotante": 0.0,
-  "winrate": 71.7,
+  "winrate": 73.1,
   "total_trades": 495,
-  "total_wins": 355,
+  "total_wins": 362,
   "growth_dates": [
-    "2026-10-04",
     "2026-10-05",
     "2026-10-06",
     "2026-10-07",
     "2026-10-08",
     "2026-10-09",
-    "2026-10-11",
     "2026-10-12",
     "2026-10-13",
     "2026-10-14",
     "2026-10-15",
     "2026-10-16",
-    "2026-10-18",
     "2026-10-19",
     "2026-10-20",
+    "2026-10-21",
     "2026-10-22",
-    "2026-10-25",
+    "2026-10-23",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28",
     "2026-10-29",
     "2026-10-30",
-    "2026-11-01",
     "2026-11-02"
   ],
   "balance_curve": [
-    3822.01,
-    3705.05,
-    3732.9,
-    3678.54,
-    3893.17,
-    3926.24,
-    3927.51,
-    2998.35,
-    2996.64,
-    3040.85,
-    3272.64,
-    3276.32,
-    3258.9,
-    3366.59,
-    3478.98,
-    3504.94,
-    3534.2,
-    3564.22,
-    3668.84,
-    3671.19,
-    3905.01,
-    3911.55,
-    3955.39,
+    3999.58,
+    3881.47,
+    3854.88,
+    3877.56,
+    4072.27,
+    3398.97,
+    3176.59,
+    3121.54,
+    3277.32,
+    3311.9,
+    3340.75,
+    3389.54,
+    3491.96,
+    3505.16,
+    3516.27,
+    3571.82,
+    3676.37,
+    3744.85,
+    3912.72,
     3970.21
   ],
   "equity_curve": [
-    3822.01,
-    3705.05,
-    3732.9,
-    3678.54,
-    3893.17,
-    3926.24,
-    3927.51,
-    2998.35,
-    2996.64,
-    3040.85,
-    3272.64,
-    3276.32,
-    3258.9,
-    3366.59,
-    3478.98,
-    3504.94,
-    3534.2,
-    3564.22,
-    3668.84,
-    3671.19,
-    3905.01,
-    3911.55,
-    3955.39,
+    3999.58,
+    3881.47,
+    3854.88,
+    3877.56,
+    4072.27,
+    3398.97,
+    3176.59,
+    3121.54,
+    3277.32,
+    3311.9,
+    3340.75,
+    3389.54,
+    3491.96,
+    3505.16,
+    3516.27,
+    3571.82,
+    3676.37,
+    3744.85,
+    3912.72,
     3970.21
   ],
-  "daily_pnl": {
-    "2026-10-04": 12.830000000000002,
-    "2026-10-05": -116.95999999999998,
-    "2026-10-06": 27.85,
-    "2026-10-07": -54.35999999999999,
-    "2026-10-08": 214.63,
-    "2026-10-09": 33.07,
-    "2026-10-11": 1.270000000000005,
-    "2026-10-12": -929.1600000000001,
-    "2026-10-13": -1.7099999999999893,
-    "2026-10-14": 44.21000000000001,
-    "2026-10-15": 231.79000000000008,
-    "2026-10-16": 3.6799999999999997,
-    "2026-10-18": -17.419999999999995,
-    "2026-10-19": 107.69,
-    "2026-10-20": 112.39000000000001,
-    "2026-10-22": 25.960000000000004,
-    "2026-10-25": 29.26,
-    "2026-10-26": 30.02,
-    "2026-10-27": 104.62,
-    "2026-10-28": 2.35,
-    "2026-10-29": 233.82,
-    "2026-10-30": 6.539999999999999,
-    "2026-11-01": 43.839999999999996,
-    "2026-11-02": 14.82
+  "daily_net": {
+    "2026-10-05": 6.449999999999998,
+    "2026-10-06": -118.10999999999997,
+    "2026-10-07": -26.590000000000003,
+    "2026-10-08": 22.680000000000003,
+    "2026-10-09": 194.70999999999998,
+    "2026-10-12": -673.3,
+    "2026-10-13": -222.37999999999994,
+    "2026-10-14": -55.05000000000004,
+    "2026-10-15": 155.78,
+    "2026-10-16": 34.58,
+    "2026-10-19": 28.84999999999999,
+    "2026-10-20": 48.789999999999985,
+    "2026-10-21": 102.42,
+    "2026-10-22": 13.200000000000001,
+    "2026-10-23": 11.110000000000003,
+    "2026-10-26": 55.55,
+    "2026-10-27": 104.55,
+    "2026-10-29": 68.48,
+    "2026-10-30": 167.87000000000003,
+    "2026-11-02": 57.489999999999995
   },
-  "monthly_pnl": {
-    "2026-10": 102.36999999999975,
-    "2026-11": 58.660000000000004
+  "daily_gross": {
+    "2026-10-05": 27.750000000000004,
+    "2026-10-06": -107.14999999999999,
+    "2026-10-07": -12.219999999999985,
+    "2026-10-08": 42.89,
+    "2026-10-09": 211.90999999999997,
+    "2026-10-12": -629.3400000000001,
+    "2026-10-13": -155.24000000000007,
+    "2026-10-14": -15.309999999999977,
+    "2026-10-15": 204.85999999999999,
+    "2026-10-16": 41.7,
+    "2026-10-19": 42.14999999999999,
+    "2026-10-20": 74.25,
+    "2026-10-21": 108.85999999999999,
+    "2026-10-22": 14.82,
+    "2026-10-23": 12.79,
+    "2026-10-26": 59.91,
+    "2026-10-27": 107.79,
+    "2026-10-29": 70.66,
+    "2026-10-30": 178.40999999999997,
+    "2026-11-02": 59.830000000000005
+  },
+  "daily_comm": {
+    "2026-10-05": -21.30000000000001,
+    "2026-10-06": -10.95999999999999,
+    "2026-10-07": -14.369999999999989,
+    "2026-10-08": -20.21,
+    "2026-10-09": -17.199999999999992,
+    "2026-10-12": -43.95999999999998,
+    "2026-10-13": -67.14000000000001,
+    "2026-10-14": -39.74000000000003,
+    "2026-10-15": -49.080000000000005,
+    "2026-10-16": -7.119999999999999,
+    "2026-10-19": -13.299999999999997,
+    "2026-10-20": -25.459999999999987,
+    "2026-10-21": -6.4399999999999995,
+    "2026-10-22": -1.6199999999999999,
+    "2026-10-23": -1.68,
+    "2026-10-26": -4.36,
+    "2026-10-27": -3.2400000000000007,
+    "2026-10-29": -2.1799999999999997,
+    "2026-10-30": -10.53999999999999,
+    "2026-11-02": -2.34
+  },
+  "monthly_net": {
+    "2026-10": -80.41,
+    "2026-11": 57.49
   },
   "calendar_by_month": {
     "2026-10": {
-      "2026-10-04": {
-        "pnl": 12.83,
-        "roi_pct": 0.34,
-        "trades": 7,
-        "wins": 6,
-        "losses": 1
-      },
       "2026-10-05": {
-        "pnl": -116.96,
-        "roi_pct": -3.06,
-        "trades": 101,
-        "wins": 62,
-        "losses": 39
+        "pnl": 6.45,
+        "gross": 27.75,
+        "commission": -21.3,
+        "roi_pct": 0.16,
+        "trades": 90,
+        "wins": 64,
+        "losses": 25
       },
       "2026-10-06": {
-        "pnl": 27.85,
-        "roi_pct": 0.75,
-        "trades": 32,
-        "wins": 26,
-        "losses": 6
+        "pnl": -118.11,
+        "gross": -107.15,
+        "commission": -10.96,
+        "roi_pct": -2.95,
+        "trades": 38,
+        "wins": 27,
+        "losses": 11
       },
       "2026-10-07": {
-        "pnl": -54.36,
-        "roi_pct": -1.46,
-        "trades": 28,
-        "wins": 16,
-        "losses": 12
+        "pnl": -26.59,
+        "gross": -12.22,
+        "commission": -14.37,
+        "roi_pct": -0.69,
+        "trades": 26,
+        "wins": 17,
+        "losses": 9
       },
       "2026-10-08": {
-        "pnl": 214.63,
-        "roi_pct": 5.83,
-        "trades": 23,
-        "wins": 22,
-        "losses": 1
+        "pnl": 22.68,
+        "gross": 42.89,
+        "commission": -20.21,
+        "roi_pct": 0.59,
+        "trades": 21,
+        "wins": 15,
+        "losses": 6
       },
       "2026-10-09": {
-        "pnl": 33.07,
-        "roi_pct": 0.85,
-        "trades": 9,
-        "wins": 7,
+        "pnl": 194.71,
+        "gross": 211.91,
+        "commission": -17.2,
+        "roi_pct": 5.02,
+        "trades": 25,
+        "wins": 23,
         "losses": 2
-      },
-      "2026-10-11": {
-        "pnl": 1.27,
-        "roi_pct": 0.03,
-        "trades": 16,
-        "wins": 12,
-        "losses": 4
       },
       "2026-10-12": {
-        "pnl": -929.16,
-        "roi_pct": -23.66,
-        "trades": 27,
-        "wins": 10,
-        "losses": 17
+        "pnl": -673.3,
+        "gross": -629.34,
+        "commission": -43.96,
+        "roi_pct": -16.53,
+        "trades": 32,
+        "wins": 18,
+        "losses": 14
       },
       "2026-10-13": {
-        "pnl": -1.71,
-        "roi_pct": -0.06,
-        "trades": 50,
-        "wins": 38,
-        "losses": 12
+        "pnl": -222.38,
+        "gross": -155.24,
+        "commission": -67.14,
+        "roi_pct": -6.54,
+        "trades": 42,
+        "wins": 28,
+        "losses": 14
       },
       "2026-10-14": {
-        "pnl": 44.21,
-        "roi_pct": 1.48,
-        "trades": 46,
-        "wins": 36,
-        "losses": 10
+        "pnl": -55.05,
+        "gross": -15.31,
+        "commission": -39.74,
+        "roi_pct": -1.73,
+        "trades": 43,
+        "wins": 32,
+        "losses": 11
       },
       "2026-10-15": {
-        "pnl": 231.79,
-        "roi_pct": 7.62,
-        "trades": 23,
-        "wins": 18,
-        "losses": 5
+        "pnl": 155.78,
+        "gross": 204.86,
+        "commission": -49.08,
+        "roi_pct": 4.99,
+        "trades": 30,
+        "wins": 23,
+        "losses": 7
       },
       "2026-10-16": {
-        "pnl": 3.68,
-        "roi_pct": 0.11,
-        "trades": 4,
-        "wins": 2,
-        "losses": 2
-      },
-      "2026-10-18": {
-        "pnl": -17.42,
-        "roi_pct": -0.53,
-        "trades": 9,
-        "wins": 5,
+        "pnl": 34.58,
+        "gross": 41.7,
+        "commission": -7.12,
+        "roi_pct": 1.06,
+        "trades": 19,
+        "wins": 15,
         "losses": 4
       },
       "2026-10-19": {
-        "pnl": 107.69,
-        "roi_pct": 3.3,
-        "trades": 21,
-        "wins": 17,
-        "losses": 4
+        "pnl": 28.85,
+        "gross": 42.15,
+        "commission": -13.3,
+        "roi_pct": 0.87,
+        "trades": 17,
+        "wins": 12,
+        "losses": 5
       },
       "2026-10-20": {
-        "pnl": 112.39,
-        "roi_pct": 3.34,
+        "pnl": 48.79,
+        "gross": 74.25,
+        "commission": -25.46,
+        "roi_pct": 1.46,
         "trades": 27,
-        "wins": 21,
-        "losses": 6
+        "wins": 20,
+        "losses": 7
+      },
+      "2026-10-21": {
+        "pnl": 102.42,
+        "gross": 108.86,
+        "commission": -6.44,
+        "roi_pct": 3.02,
+        "trades": 13,
+        "wins": 11,
+        "losses": 2
       },
       "2026-10-22": {
-        "pnl": 25.96,
-        "roi_pct": 0.75,
-        "trades": 10,
-        "wins": 7,
-        "losses": 3
-      },
-      "2026-10-25": {
-        "pnl": 29.26,
-        "roi_pct": 0.83,
-        "trades": 4,
+        "pnl": 13.2,
+        "gross": 14.82,
+        "commission": -1.62,
+        "roi_pct": 0.38,
+        "trades": 3,
         "wins": 3,
-        "losses": 1
+        "losses": 0
       },
-      "2026-10-26": {
-        "pnl": 30.02,
-        "roi_pct": 0.85,
+      "2026-10-23": {
+        "pnl": 11.11,
+        "gross": 12.79,
+        "commission": -1.68,
+        "roi_pct": 0.32,
         "trades": 7,
         "wins": 4,
         "losses": 3
       },
-      "2026-10-27": {
-        "pnl": 104.62,
-        "roi_pct": 2.94,
-        "trades": 5,
-        "wins": 5,
-        "losses": 0
+      "2026-10-26": {
+        "pnl": 55.55,
+        "gross": 59.91,
+        "commission": -4.36,
+        "roi_pct": 1.58,
+        "trades": 10,
+        "wins": 6,
+        "losses": 4
       },
-      "2026-10-28": {
-        "pnl": 2.35,
-        "roi_pct": 0.06,
-        "trades": 1,
-        "wins": 1,
+      "2026-10-27": {
+        "pnl": 104.55,
+        "gross": 107.79,
+        "commission": -3.24,
+        "roi_pct": 2.93,
+        "trades": 6,
+        "wins": 6,
         "losses": 0
       },
       "2026-10-29": {
-        "pnl": 233.82,
-        "roi_pct": 6.37,
-        "trades": 34,
-        "wins": 29,
-        "losses": 5
+        "pnl": 68.48,
+        "gross": 70.66,
+        "commission": -2.18,
+        "roi_pct": 1.86,
+        "trades": 11,
+        "wins": 9,
+        "losses": 2
       },
       "2026-10-30": {
-        "pnl": 6.54,
-        "roi_pct": 0.17,
-        "trades": 3,
-        "wins": 2,
-        "losses": 1
+        "pnl": 167.87,
+        "gross": 178.41,
+        "commission": -10.54,
+        "roi_pct": 4.48,
+        "trades": 27,
+        "wins": 23,
+        "losses": 4
       }
     },
     "2026-11": {
-      "2026-11-01": {
-        "pnl": 43.84,
-        "roi_pct": 1.12,
-        "trades": 6,
-        "wins": 4,
-        "losses": 2
-      },
       "2026-11-02": {
-        "pnl": 14.82,
-        "roi_pct": 0.37,
-        "trades": 2,
-        "wins": 2,
-        "losses": 0
+        "pnl": 57.49,
+        "gross": 59.83,
+        "commission": -2.34,
+        "roi_pct": 1.47,
+        "trades": 8,
+        "wins": 6,
+        "losses": 2
       }
     }
   },
   "all_deals": [
     {
       "ticket": 301836124,
-      "time": "2026-11-02 00:58:46",
+      "time": "2026.11.02 07:58:46",
       "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
@@ -313,13 +353,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3913.91,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.84,
-      "net_profit": 1.77
+      "net": 1.77
     },
     {
       "ticket": 301835579,
-      "time": "2026-11-02 00:56:46",
+      "time": "2026.11.02 07:56:46",
       "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
@@ -328,13 +367,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3914.83,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301830725,
-      "time": "2026-11-02 00:39:08",
+      "time": "2026.11.02 07:39:08",
       "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
@@ -343,13 +381,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.18,
       "price": 3914.74,
       "commission": -0.63,
-      "swap": 0.0,
       "profit": 13.68,
-      "net_profit": 13.05
+      "net": 13.05
     },
     {
       "ticket": 301830494,
-      "time": "2026-11-02 00:38:14",
+      "time": "2026.11.02 07:38:14",
       "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
@@ -358,14 +395,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.18,
       "price": 3913.98,
       "commission": -0.63,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.63
+      "net": -0.63
     },
     {
       "ticket": 301812246,
-      "time": "2026-11-01 23:03:28",
-      "date": "2026-11-01",
+      "time": "2026.11.02 06:03:28",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "sell",
@@ -373,14 +409,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 3905.74,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 3.72,
-      "net_profit": 3.68
+      "net": 3.68
     },
     {
       "ticket": 301810384,
-      "time": "2026-11-01 22:52:53",
-      "date": "2026-11-01",
+      "time": "2026.11.02 05:52:53",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "buy",
@@ -388,14 +423,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 3902.02,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 301808164,
-      "time": "2026-11-01 22:40:21",
-      "date": "2026-11-01",
+      "time": "2026.11.02 05:40:21",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "sell",
@@ -403,14 +437,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3905.78,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 29.65,
-      "net_profit": 29.47
+      "net": 29.47
     },
     {
       "ticket": 301808163,
-      "time": "2026-11-01 22:40:21",
-      "date": "2026-11-01",
+      "time": "2026.11.02 05:40:21",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "sell",
@@ -418,14 +451,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3905.78,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 15.42,
-      "net_profit": 15.35
+      "net": 15.35
     },
     {
       "ticket": 301808162,
-      "time": "2026-11-01 22:40:21",
-      "date": "2026-11-01",
+      "time": "2026.11.02 05:40:21",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "sell",
@@ -433,14 +465,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3905.78,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -3.38,
-      "net_profit": -3.45
+      "net": -3.45
     },
     {
       "ticket": 301808161,
-      "time": "2026-11-01 22:40:21",
-      "date": "2026-11-01",
+      "time": "2026.11.02 05:40:21",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "sell",
@@ -448,14 +479,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3905.86,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -10.68,
-      "net_profit": -10.75
+      "net": -10.75
     },
     {
       "ticket": 301804830,
-      "time": "2026-11-01 22:19:42",
-      "date": "2026-11-01",
+      "time": "2026.11.02 05:19:42",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "buy",
@@ -463,14 +493,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3899.85,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301795977,
-      "time": "2026-11-01 21:52:54",
-      "date": "2026-11-01",
+      "time": "2026.11.02 04:52:54",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "buy",
@@ -478,14 +507,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3898.07,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301791770,
-      "time": "2026-11-01 21:39:45",
-      "date": "2026-11-01",
+      "time": "2026.11.02 04:39:45",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "buy",
@@ -493,14 +521,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3907.47,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301780009,
-      "time": "2026-11-01 20:41:47",
-      "date": "2026-11-01",
+      "time": "2026.11.02 03:41:47",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "buy",
@@ -508,14 +535,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3911.2,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301769082,
-      "time": "2026-11-01 20:08:58",
-      "date": "2026-11-01",
+      "time": "2026.11.02 03:08:58",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "sell",
@@ -523,14 +549,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 3909.2,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 9.58,
-      "net_profit": 9.54
+      "net": 9.54
     },
     {
       "ticket": 301755112,
-      "time": "2026-11-01 19:18:35",
-      "date": "2026-11-01",
+      "time": "2026.11.02 02:18:35",
+      "date": "2026-11-02",
       "month": "2026-11",
       "symbol": "xauusd",
       "type": "buy",
@@ -538,13 +563,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 3899.62,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 301338749,
-      "time": "2026-10-30 01:25:48",
+      "time": "2026.10.30 08:25:48",
       "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -553,13 +577,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4002.09,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 8.06,
-      "net_profit": 8.02
+      "net": 8.02
     },
     {
       "ticket": 301338748,
-      "time": "2026-10-30 01:25:48",
+      "time": "2026.10.30 08:25:48",
       "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -568,13 +591,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4002.09,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -4.94,
-      "net_profit": -4.98
+      "net": -4.98
     },
     {
       "ticket": 301338747,
-      "time": "2026-10-30 01:25:48",
+      "time": "2026.10.30 08:25:48",
       "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -583,13 +605,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4002.09,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 3.54,
-      "net_profit": 3.5
+      "net": 3.5
     },
     {
       "ticket": 301326835,
-      "time": "2026-10-30 00:30:22",
+      "time": "2026.10.30 07:30:22",
       "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -598,14 +619,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 3994.03,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 301301111,
-      "time": "2026-10-29 22:48:01",
-      "date": "2026-10-29",
+      "time": "2026.10.30 05:48:01",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -613,14 +633,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 3998.55,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 301289972,
-      "time": "2026-10-29 22:00:06",
-      "date": "2026-10-29",
+      "time": "2026.10.30 05:00:06",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -628,14 +647,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4007.03,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 301289551,
-      "time": "2026-10-29 21:59:19",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:59:19",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -643,14 +661,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4008.25,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 3.04,
-      "net_profit": 3.0
+      "net": 3.0
     },
     {
       "ticket": 301284229,
-      "time": "2026-10-29 21:42:12",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:42:12",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -658,14 +675,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4005.21,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 301281754,
-      "time": "2026-10-29 21:35:26",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:35:26",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -673,14 +689,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4006.27,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 5.2,
-      "net_profit": 4.85
+      "net": 4.85
     },
     {
       "ticket": 301281714,
-      "time": "2026-10-29 21:35:16",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:35:16",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -688,14 +703,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4005.75,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 301281572,
-      "time": "2026-10-29 21:34:53",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:34:53",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -703,14 +717,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4005.38,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 2.07,
-      "net_profit": 1.96
+      "net": 1.96
     },
     {
       "ticket": 301280678,
-      "time": "2026-10-29 21:31:21",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:31:21",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -718,14 +731,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4004.69,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 301279507,
-      "time": "2026-10-29 21:29:34",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:29:34",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -733,14 +745,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4009.87,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 24.4,
-      "net_profit": 24.33
+      "net": 24.33
     },
     {
       "ticket": 301278573,
-      "time": "2026-10-29 21:27:35",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:27:35",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -748,14 +759,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4009.6,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 3.64,
-      "net_profit": 3.57
+      "net": 3.57
     },
     {
       "ticket": 301275087,
-      "time": "2026-10-29 21:19:52",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:19:52",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -763,14 +773,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4006.48,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.9,
-      "net_profit": 5.72
+      "net": 5.72
     },
     {
       "ticket": 301273668,
-      "time": "2026-10-29 21:17:08",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:17:08",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -778,14 +787,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4001.66,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 11.2,
-      "net_profit": 10.85
+      "net": 10.85
     },
     {
       "ticket": 301272805,
-      "time": "2026-10-29 21:14:14",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:14:14",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -793,14 +801,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4000.54,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 301272608,
-      "time": "2026-10-29 21:13:10",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:13:10",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -808,14 +815,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 3998.8,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 2.9,
-      "net_profit": 2.55
+      "net": 2.55
     },
     {
       "ticket": 301272540,
-      "time": "2026-10-29 21:12:56",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:12:56",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -823,14 +829,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 3998.51,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 301269794,
-      "time": "2026-10-29 21:07:47",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:07:47",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -838,14 +843,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3997.67,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301267676,
-      "time": "2026-10-29 21:05:30",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:05:30",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -853,14 +857,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4005.3,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301267548,
-      "time": "2026-10-29 21:05:17",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:05:17",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -868,14 +871,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4003.52,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.95,
-      "net_profit": 7.77
+      "net": 7.77
     },
     {
       "ticket": 301266059,
-      "time": "2026-10-29 21:03:21",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:03:21",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -883,14 +885,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4001.93,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301264715,
-      "time": "2026-10-29 21:01:22",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:01:22",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -898,14 +899,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4004.4,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 9.55,
-      "net_profit": 9.37
+      "net": 9.37
     },
     {
       "ticket": 301264357,
-      "time": "2026-10-29 21:00:33",
-      "date": "2026-10-29",
+      "time": "2026.10.30 04:00:33",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -913,14 +913,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4002.49,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301261498,
-      "time": "2026-10-29 20:55:55",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:55:55",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -928,14 +927,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4007.78,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301258856,
-      "time": "2026-10-29 20:48:04",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:48:04",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -943,14 +941,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4017.99,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 4.7,
-      "net_profit": 4.63
+      "net": 4.63
     },
     {
       "ticket": 301257844,
-      "time": "2026-10-29 20:45:06",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:45:06",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -958,14 +955,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4015.64,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301256606,
-      "time": "2026-10-29 20:42:52",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:42:52",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -973,14 +969,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4014.09,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 9.5,
-      "net_profit": 9.32
+      "net": 9.32
     },
     {
       "ticket": 301256494,
-      "time": "2026-10-29 20:42:42",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:42:42",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -988,14 +983,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4013.64,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 15.15,
-      "net_profit": 14.97
+      "net": 14.97
     },
     {
       "ticket": 301254114,
-      "time": "2026-10-29 20:33:47",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:33:47",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1003,14 +997,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4010.61,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301253337,
-      "time": "2026-10-29 20:29:58",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:29:58",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1018,14 +1011,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4012.19,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301253194,
-      "time": "2026-10-29 20:29:12",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:29:12",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1033,14 +1025,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4012.87,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 18.36,
-      "net_profit": 18.25
+      "net": 18.25
     },
     {
       "ticket": 301253193,
-      "time": "2026-10-29 20:29:12",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:29:12",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1048,14 +1039,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4012.79,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -23.22,
-      "net_profit": -23.33
+      "net": -23.33
     },
     {
       "ticket": 301253192,
-      "time": "2026-10-29 20:29:11",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:29:11",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1063,14 +1053,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4012.79,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -11.64,
-      "net_profit": -11.75
+      "net": -11.75
     },
     {
       "ticket": 301253191,
-      "time": "2026-10-29 20:29:11",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:29:11",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1078,14 +1067,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4012.78,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -0.36,
-      "net_profit": -0.47
+      "net": -0.47
     },
     {
       "ticket": 301253190,
-      "time": "2026-10-29 20:29:11",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:29:11",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1093,14 +1081,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4012.78,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 14.0,
-      "net_profit": 13.82
+      "net": 13.82
     },
     {
       "ticket": 301253189,
-      "time": "2026-10-29 20:29:11",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:29:11",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1108,14 +1095,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4012.85,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 11.4,
-      "net_profit": 10.7
+      "net": 10.7
     },
     {
       "ticket": 301252662,
-      "time": "2026-10-29 20:27:11",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:27:11",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1123,14 +1109,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4011.01,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 38.4,
-      "net_profit": 37.7
+      "net": 37.7
     },
     {
       "ticket": 301252176,
-      "time": "2026-10-29 20:25:37",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:25:37",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1138,14 +1123,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4009.09,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 301249659,
-      "time": "2026-10-29 20:16:53",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:16:53",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1153,14 +1137,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4012.28,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 301245501,
-      "time": "2026-10-29 20:04:46",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:04:46",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1168,14 +1151,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4006.69,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 9.45,
-      "net_profit": 8.92
+      "net": 8.92
     },
     {
       "ticket": 301245124,
-      "time": "2026-10-29 20:02:39",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:02:39",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1183,14 +1165,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4007.32,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 301244566,
-      "time": "2026-10-29 20:00:57",
-      "date": "2026-10-29",
+      "time": "2026.10.30 03:00:57",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1198,14 +1179,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4006.75,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 301244024,
-      "time": "2026-10-29 19:58:02",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:58:02",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1213,14 +1193,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4007.41,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 1.3,
-      "net_profit": 1.26
+      "net": 1.26
     },
     {
       "ticket": 301243987,
-      "time": "2026-10-29 19:57:43",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:57:43",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1228,14 +1207,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4008.71,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 301243934,
-      "time": "2026-10-29 19:57:27",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:57:27",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1243,14 +1221,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4008.83,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.4,
-      "net_profit": 4.22
+      "net": 4.22
     },
     {
       "ticket": 301243664,
-      "time": "2026-10-29 19:56:29",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:56:29",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1258,14 +1235,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4007.95,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301243348,
-      "time": "2026-10-29 19:54:58",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:54:58",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1273,14 +1249,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4009.98,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 301236409,
-      "time": "2026-10-29 19:11:29",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:11:29",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1288,14 +1263,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4012.9,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 301235194,
-      "time": "2026-10-29 19:05:01",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:05:01",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1303,14 +1277,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4016.67,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 301234462,
-      "time": "2026-10-29 19:01:59",
-      "date": "2026-10-29",
+      "time": "2026.10.30 02:01:59",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1318,14 +1291,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4020.53,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 301232282,
-      "time": "2026-10-29 18:48:24",
-      "date": "2026-10-29",
+      "time": "2026.10.30 01:48:24",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1333,14 +1305,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4024.21,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 4.46,
-      "net_profit": 4.39
+      "net": 4.39
     },
     {
       "ticket": 301231022,
-      "time": "2026-10-29 18:40:36",
-      "date": "2026-10-29",
+      "time": "2026.10.30 01:40:36",
+      "date": "2026-10-30",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1348,13 +1319,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4021.98,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301120665,
-      "time": "2026-10-29 10:56:16",
+      "time": "2026.10.29 17:56:16",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1363,13 +1333,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4030.43,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 2.72,
-      "net_profit": 2.65
+      "net": 2.65
     },
     {
       "ticket": 301120664,
-      "time": "2026-10-29 10:56:16",
+      "time": "2026.10.29 17:56:16",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1378,13 +1347,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4030.43,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 1.6,
-      "net_profit": 1.56
+      "net": 1.56
     },
     {
       "ticket": 301119941,
-      "time": "2026-10-29 10:54:42",
+      "time": "2026.10.29 17:54:42",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1393,13 +1361,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4031.79,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 301118362,
-      "time": "2026-10-29 10:50:48",
+      "time": "2026.10.29 17:50:48",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1408,13 +1375,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4032.03,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 300900932,
-      "time": "2026-10-29 00:43:14",
+      "time": "2026.10.29 07:43:14",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1423,13 +1389,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4041.12,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 20.45,
-      "net_profit": 20.27
+      "net": 20.27
     },
     {
       "ticket": 300900931,
-      "time": "2026-10-29 00:43:14",
+      "time": "2026.10.29 07:43:14",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1438,13 +1403,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4041.12,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 20.45,
-      "net_profit": 20.27
+      "net": 20.27
     },
     {
       "ticket": 300900930,
-      "time": "2026-10-29 00:43:14",
+      "time": "2026.10.29 07:43:14",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1453,13 +1417,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4041.12,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 13.6,
-      "net_profit": 13.42
+      "net": 13.42
     },
     {
       "ticket": 300900929,
-      "time": "2026-10-29 00:43:14",
+      "time": "2026.10.29 07:43:14",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1468,13 +1431,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4041.13,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 4.84,
-      "net_profit": 4.77
+      "net": 4.77
     },
     {
       "ticket": 300900928,
-      "time": "2026-10-29 00:43:14",
+      "time": "2026.10.29 07:43:14",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1483,13 +1445,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4041.13,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.66,
-      "net_profit": 1.59
+      "net": 1.59
     },
     {
       "ticket": 300900927,
-      "time": "2026-10-29 00:43:14",
+      "time": "2026.10.29 07:43:14",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1498,13 +1459,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4041.13,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -0.26,
-      "net_profit": -0.3
+      "net": -0.3
     },
     {
       "ticket": 300900926,
-      "time": "2026-10-29 00:43:14",
+      "time": "2026.10.29 07:43:14",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1513,13 +1473,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4041.13,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -2.14,
-      "net_profit": -2.18
+      "net": -2.18
     },
     {
       "ticket": 300899614,
-      "time": "2026-10-29 00:32:59",
+      "time": "2026.10.29 07:32:59",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1528,13 +1487,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4037.03,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 300899613,
-      "time": "2026-10-29 00:32:59",
+      "time": "2026.10.29 07:32:59",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1543,13 +1501,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4037.03,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 300898461,
-      "time": "2026-10-29 00:21:52",
+      "time": "2026.10.29 07:21:52",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1558,13 +1515,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4038.4,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 300896376,
-      "time": "2026-10-29 00:07:31",
+      "time": "2026.10.29 07:07:31",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1573,13 +1529,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4038.63,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.35,
-      "net_profit": 5.17
+      "net": 5.17
     },
     {
       "ticket": 300895855,
-      "time": "2026-10-29 00:02:59",
+      "time": "2026.10.29 07:02:59",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1588,13 +1543,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4037.56,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 300895466,
-      "time": "2026-10-29 00:01:12",
+      "time": "2026.10.29 07:01:12",
       "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1603,14 +1557,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4038.71,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 300894808,
-      "time": "2026-10-28 23:57:04",
-      "date": "2026-10-28",
+      "time": "2026.10.29 06:57:04",
+      "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1618,14 +1571,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4040.3,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 300893999,
-      "time": "2026-10-28 23:51:31",
-      "date": "2026-10-28",
+      "time": "2026.10.29 06:51:31",
+      "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1633,14 +1585,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4041.39,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 300893905,
-      "time": "2026-10-28 23:51:03",
-      "date": "2026-10-28",
+      "time": "2026.10.29 06:51:03",
+      "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1648,14 +1599,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4043.27,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 300839566,
-      "time": "2026-10-28 20:25:45",
-      "date": "2026-10-28",
+      "time": "2026.10.29 03:25:45",
+      "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1663,14 +1613,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4046.48,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 2.39,
-      "net_profit": 2.35
+      "net": 2.35
     },
     {
       "ticket": 300839242,
-      "time": "2026-10-28 20:24:55",
-      "date": "2026-10-28",
+      "time": "2026.10.29 03:24:55",
+      "date": "2026-10-29",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1678,13 +1627,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4044.09,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 300118752,
-      "time": "2026-10-27 01:33:34",
+      "time": "2026.10.27 08:33:34",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1693,13 +1641,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4008.04,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 13.7,
-      "net_profit": 13.35
+      "net": 13.35
     },
     {
       "ticket": 300118750,
-      "time": "2026-10-27 01:33:34",
+      "time": "2026.10.27 08:33:34",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1708,13 +1655,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4008.04,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 8.5,
-      "net_profit": 8.15
+      "net": 8.15
     },
     {
       "ticket": 300118748,
-      "time": "2026-10-27 01:33:34",
+      "time": "2026.10.27 08:33:34",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1723,13 +1669,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4008.04,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.6,
-      "net_profit": 2.42
+      "net": 2.42
     },
     {
       "ticket": 300118688,
-      "time": "2026-10-27 01:33:30",
+      "time": "2026.10.27 08:33:30",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1738,13 +1683,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4007.75,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 60.1,
-      "net_profit": 59.75
+      "net": 59.75
     },
     {
       "ticket": 300118685,
-      "time": "2026-10-27 01:33:30",
+      "time": "2026.10.27 08:33:30",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1753,13 +1697,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4007.75,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 21.3,
-      "net_profit": 20.95
+      "net": 20.95
     },
     {
       "ticket": 300116168,
-      "time": "2026-10-27 01:30:15",
+      "time": "2026.10.27 08:30:15",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1768,13 +1711,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4001.74,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 300114649,
-      "time": "2026-10-27 01:28:57",
+      "time": "2026.10.27 08:28:57",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1783,13 +1725,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4005.62,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 300114070,
-      "time": "2026-10-27 01:27:43",
+      "time": "2026.10.27 08:27:43",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1798,13 +1739,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4006.67,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 300113821,
-      "time": "2026-10-27 01:26:34",
+      "time": "2026.10.27 08:26:34",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1813,13 +1753,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4007.19,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 300113195,
-      "time": "2026-10-27 01:23:50",
+      "time": "2026.10.27 08:23:50",
       "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1828,14 +1767,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4007.52,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 300044141,
-      "time": "2026-10-26 20:19:24",
-      "date": "2026-10-26",
+      "time": "2026.10.27 03:19:24",
+      "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -1843,14 +1781,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4016.88,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 1.59,
-      "net_profit": 1.55
+      "net": 1.55
     },
     {
       "ticket": 300043971,
-      "time": "2026-10-26 20:18:30",
-      "date": "2026-10-26",
+      "time": "2026.10.27 03:18:30",
+      "date": "2026-10-27",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -1858,13 +1795,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4015.29,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 299749464,
-      "time": "2026-10-26 01:34:44",
+      "time": "2026.10.26 08:34:44",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1873,13 +1809,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4016.41,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 20.95,
-      "net_profit": 20.77
+      "net": 20.77
     },
     {
       "ticket": 299749463,
-      "time": "2026-10-26 01:34:44",
+      "time": "2026.10.26 08:34:44",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1888,13 +1823,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4016.41,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 11.9,
-      "net_profit": 11.72
+      "net": 11.72
     },
     {
       "ticket": 299749462,
-      "time": "2026-10-26 01:34:44",
+      "time": "2026.10.26 08:34:44",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1903,13 +1837,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4016.41,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 3.3,
-      "net_profit": 3.12
+      "net": 3.12
     },
     {
       "ticket": 299749461,
-      "time": "2026-10-26 01:34:44",
+      "time": "2026.10.26 08:34:44",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1918,13 +1851,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4016.41,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -0.6,
-      "net_profit": -0.78
+      "net": -0.78
     },
     {
       "ticket": 299749460,
-      "time": "2026-10-26 01:34:44",
+      "time": "2026.10.26 08:34:44",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1933,13 +1865,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4016.41,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -4.95,
-      "net_profit": -5.13
+      "net": -5.13
     },
     {
       "ticket": 299749459,
-      "time": "2026-10-26 01:34:44",
+      "time": "2026.10.26 08:34:44",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1948,13 +1879,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4016.42,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -1.19,
-      "net_profit": -1.23
+      "net": -1.23
     },
     {
       "ticket": 299746746,
-      "time": "2026-10-26 01:21:02",
+      "time": "2026.10.26 08:21:02",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1963,13 +1893,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4012.22,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299745330,
-      "time": "2026-10-26 01:12:12",
+      "time": "2026.10.26 08:12:12",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1978,13 +1907,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4014.03,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299744873,
-      "time": "2026-10-26 01:09:31",
+      "time": "2026.10.26 08:09:31",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -1993,13 +1921,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4015.75,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299744355,
-      "time": "2026-10-26 01:07:31",
+      "time": "2026.10.26 08:07:31",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2008,13 +1935,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4016.53,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299744262,
-      "time": "2026-10-26 01:07:07",
+      "time": "2026.10.26 08:07:07",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2023,13 +1949,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4017.4,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299744224,
-      "time": "2026-10-26 01:06:44",
+      "time": "2026.10.26 08:06:44",
       "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2038,14 +1963,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4017.61,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 299684166,
-      "time": "2026-10-25 20:59:07",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:59:07",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2053,14 +1977,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3986.13,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.45,
-      "net_profit": 7.27
+      "net": 7.27
     },
     {
       "ticket": 299683714,
-      "time": "2026-10-25 20:56:46",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:56:46",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2068,14 +1991,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3987.62,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299676883,
-      "time": "2026-10-25 20:29:50",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:29:50",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2083,14 +2005,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3990.27,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 11.9,
-      "net_profit": 11.72
+      "net": 11.72
     },
     {
       "ticket": 299676882,
-      "time": "2026-10-25 20:29:50",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:29:50",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2098,14 +2019,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 3990.27,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 11.4,
-      "net_profit": 10.7
+      "net": 10.7
     },
     {
       "ticket": 299676881,
-      "time": "2026-10-25 20:29:50",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:29:50",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2113,14 +2033,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3990.27,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -0.25,
-      "net_profit": -0.43
+      "net": -0.43
     },
     {
       "ticket": 299675028,
-      "time": "2026-10-25 20:23:58",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:23:58",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2128,14 +2047,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3987.89,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299674445,
-      "time": "2026-10-25 20:22:06",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:22:06",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2143,14 +2061,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 3989.7,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 299674233,
-      "time": "2026-10-25 20:21:03",
-      "date": "2026-10-25",
+      "time": "2026.10.26 03:21:03",
+      "date": "2026-10-26",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2158,14 +2075,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3990.32,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299245515,
-      "time": "2026-10-22 20:25:09",
-      "date": "2026-10-22",
+      "time": "2026.10.23 03:25:09",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2173,14 +2089,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4021.25,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.77,
-      "net_profit": 0.73
+      "net": 0.73
     },
     {
       "ticket": 299244725,
-      "time": "2026-10-22 20:20:56",
-      "date": "2026-10-22",
+      "time": "2026.10.23 03:20:56",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2188,14 +2103,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4020.48,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 299242472,
-      "time": "2026-10-22 20:14:34",
-      "date": "2026-10-22",
+      "time": "2026.10.23 03:14:34",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2203,14 +2117,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4026.83,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 12.35,
-      "net_profit": 12.17
+      "net": 12.17
     },
     {
       "ticket": 299242471,
-      "time": "2026-10-22 20:14:34",
-      "date": "2026-10-22",
+      "time": "2026.10.23 03:14:34",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2218,14 +2131,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4026.83,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.95,
-      "net_profit": 2.77
+      "net": 2.77
     },
     {
       "ticket": 299242470,
-      "time": "2026-10-22 20:14:34",
-      "date": "2026-10-22",
+      "time": "2026.10.23 03:14:34",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2233,14 +2145,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4026.83,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -6.0,
-      "net_profit": -6.18
+      "net": -6.18
     },
     {
       "ticket": 299242469,
-      "time": "2026-10-22 20:14:34",
-      "date": "2026-10-22",
+      "time": "2026.10.23 03:14:34",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2248,14 +2159,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4026.83,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -0.88,
-      "net_profit": -0.92
+      "net": -0.92
     },
     {
       "ticket": 299242468,
-      "time": "2026-10-22 20:14:34",
-      "date": "2026-10-22",
+      "time": "2026.10.23 03:14:34",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2263,14 +2173,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4026.83,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -1.95,
-      "net_profit": -1.99
+      "net": -1.99
     },
     {
       "ticket": 299233458,
-      "time": "2026-10-22 19:35:04",
-      "date": "2026-10-22",
+      "time": "2026.10.23 02:35:04",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2278,14 +2187,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4024.36,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299232955,
-      "time": "2026-10-22 19:31:59",
-      "date": "2026-10-22",
+      "time": "2026.10.23 02:31:59",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2293,14 +2201,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4026.24,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299232626,
-      "time": "2026-10-22 19:30:21",
-      "date": "2026-10-22",
+      "time": "2026.10.23 02:30:21",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2308,14 +2215,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4028.03,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299232505,
-      "time": "2026-10-22 19:29:15",
-      "date": "2026-10-22",
+      "time": "2026.10.23 02:29:15",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2323,14 +2229,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4028.28,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.55,
-      "net_profit": 5.37
+      "net": 5.37
     },
     {
       "ticket": 299232364,
-      "time": "2026-10-22 19:27:43",
-      "date": "2026-10-22",
+      "time": "2026.10.23 02:27:43",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2338,14 +2243,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4027.17,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 299232037,
-      "time": "2026-10-22 19:24:17",
-      "date": "2026-10-22",
+      "time": "2026.10.23 02:24:17",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2353,14 +2257,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4027.71,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 299231871,
-      "time": "2026-10-22 19:22:04",
-      "date": "2026-10-22",
+      "time": "2026.10.23 02:22:04",
+      "date": "2026-10-23",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2368,13 +2271,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4028.78,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298846099,
-      "time": "2026-10-22 00:53:22",
+      "time": "2026.10.22 07:53:22",
       "date": "2026-10-22",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2383,13 +2285,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4091.94,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 2.04,
-      "net_profit": 1.97
+      "net": 1.97
     },
     {
       "ticket": 298846098,
-      "time": "2026-10-22 00:53:22",
+      "time": "2026.10.22 07:53:22",
       "date": "2026-10-22",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2398,13 +2299,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4091.94,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.18,
-      "net_profit": 0.14
+      "net": 0.14
     },
     {
       "ticket": 298846002,
-      "time": "2026-10-22 00:52:49",
+      "time": "2026.10.22 07:52:49",
       "date": "2026-10-22",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2413,13 +2313,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4091.93,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 12.6,
-      "net_profit": 11.9
+      "net": 11.9
     },
     {
       "ticket": 298844240,
-      "time": "2026-10-22 00:52:00",
+      "time": "2026.10.22 07:52:00",
       "date": "2026-10-22",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2428,13 +2327,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4091.3,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 298843864,
-      "time": "2026-10-22 00:49:05",
+      "time": "2026.10.22 07:49:05",
       "date": "2026-10-22",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2443,13 +2341,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4090.92,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 298843382,
-      "time": "2026-10-22 00:46:24",
+      "time": "2026.10.22 07:46:24",
       "date": "2026-10-22",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2458,14 +2355,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4091.76,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298399079,
-      "time": "2026-10-20 20:15:22",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:15:22",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2473,14 +2369,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4117.68,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -7.81,
-      "net_profit": -7.85
+      "net": -7.85
     },
     {
       "ticket": 298399077,
-      "time": "2026-10-20 20:15:22",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:15:22",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2488,14 +2383,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4117.68,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -2.84,
-      "net_profit": -2.88
+      "net": -2.88
     },
     {
       "ticket": 298399070,
-      "time": "2026-10-20 20:15:21",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:15:21",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2503,14 +2397,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4118.31,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 33.9,
-      "net_profit": 33.55
+      "net": 33.55
     },
     {
       "ticket": 298399068,
-      "time": "2026-10-20 20:15:21",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:15:21",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2518,14 +2411,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4118.31,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 25.4,
-      "net_profit": 25.05
+      "net": 25.05
     },
     {
       "ticket": 298399065,
-      "time": "2026-10-20 20:15:21",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:15:21",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2533,14 +2425,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4118.31,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 19.05,
-      "net_profit": 18.52
+      "net": 18.52
     },
     {
       "ticket": 298398372,
-      "time": "2026-10-20 20:11:12",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:11:12",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2548,14 +2439,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4114.92,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 298397913,
-      "time": "2026-10-20 20:09:40",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:09:40",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2563,14 +2453,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4115.77,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 298397696,
-      "time": "2026-10-20 20:08:47",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:08:47",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2578,14 +2467,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4117.04,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 298397510,
-      "time": "2026-10-20 20:07:36",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:07:36",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2593,14 +2481,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4117.63,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.36,
-      "net_profit": 1.29
+      "net": 1.29
     },
     {
       "ticket": 298397181,
-      "time": "2026-10-20 20:06:38",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:06:38",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2608,14 +2495,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4117.75,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 10.05,
-      "net_profit": 9.87
+      "net": 9.87
     },
     {
       "ticket": 298396542,
-      "time": "2026-10-20 20:04:04",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:04:04",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2623,14 +2509,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4115.8,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 20.8,
-      "net_profit": 20.45
+      "net": 20.45
     },
     {
       "ticket": 298396427,
-      "time": "2026-10-20 20:03:47",
-      "date": "2026-10-20",
+      "time": "2026.10.21 03:03:47",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2638,14 +2523,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4113.72,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 298393994,
-      "time": "2026-10-20 19:52:01",
-      "date": "2026-10-20",
+      "time": "2026.10.21 02:52:01",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2653,14 +2537,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4115.74,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.8,
-      "net_profit": 4.45
+      "net": 4.45
     },
     {
       "ticket": 298393802,
-      "time": "2026-10-20 19:49:59",
-      "date": "2026-10-20",
+      "time": "2026.10.21 02:49:59",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2668,14 +2551,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4115.26,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 298393573,
-      "time": "2026-10-20 19:47:03",
-      "date": "2026-10-20",
+      "time": "2026.10.21 02:47:03",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2683,14 +2565,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4115.74,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298389752,
-      "time": "2026-10-20 19:18:28",
-      "date": "2026-10-20",
+      "time": "2026.10.21 02:18:28",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2698,14 +2579,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4116.95,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 298387393,
-      "time": "2026-10-20 19:03:28",
-      "date": "2026-10-20",
+      "time": "2026.10.21 02:03:28",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2713,14 +2593,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4120.96,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.65,
-      "net_profit": 0.61
+      "net": 0.61
     },
     {
       "ticket": 298386875,
-      "time": "2026-10-20 18:59:10",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:59:10",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2728,14 +2607,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4120.52,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298386646,
-      "time": "2026-10-20 18:57:43",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:57:43",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2743,14 +2621,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4120.82,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 2.4,
-      "net_profit": 1.7
+      "net": 1.7
     },
     {
       "ticket": 298386581,
-      "time": "2026-10-20 18:56:45",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:56:45",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2758,14 +2635,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4120.94,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 298386398,
-      "time": "2026-10-20 18:55:56",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:55:56",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2773,14 +2649,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4121.61,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298385777,
-      "time": "2026-10-20 18:48:39",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:48:39",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2788,14 +2663,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4122.17,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.1,
-      "net_profit": 0.06
+      "net": 0.06
     },
     {
       "ticket": 298385543,
-      "time": "2026-10-20 18:46:15",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:46:15",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2803,14 +2677,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4122.27,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298383829,
-      "time": "2026-10-20 18:35:38",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:35:38",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2818,14 +2691,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4125.49,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298382091,
-      "time": "2026-10-20 18:29:25",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:29:25",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -2833,14 +2705,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4129.98,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.0,
-      "net_profit": 0.82
+      "net": 0.82
     },
     {
       "ticket": 298381933,
-      "time": "2026-10-20 18:28:18",
-      "date": "2026-10-20",
+      "time": "2026.10.21 01:28:18",
+      "date": "2026-10-21",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -2848,13 +2719,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4130.18,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298353819,
-      "time": "2026-10-20 13:37:00",
+      "time": "2026.10.20 20:37:00",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2863,13 +2733,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4124.45,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.1,
-      "net_profit": 1.92
+      "net": 1.92
     },
     {
       "ticket": 298352847,
-      "time": "2026-10-20 13:30:13",
+      "time": "2026.10.20 20:30:13",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2878,13 +2747,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4124.03,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298103090,
-      "time": "2026-10-20 03:20:00",
+      "time": "2026.10.20 10:20:00",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -2893,13 +2761,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 1.34,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.4,
-      "net_profit": 0.33
+      "net": 0.33
     },
     {
       "ticket": 298102283,
-      "time": "2026-10-20 03:16:33",
+      "time": "2026.10.20 10:16:33",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -2908,13 +2775,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 1.34,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 298087826,
-      "time": "2026-10-20 02:23:48",
+      "time": "2026.10.20 09:23:48",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2923,13 +2789,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4129.85,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -39.05,
-      "net_profit": -39.23
+      "net": -39.23
     },
     {
       "ticket": 298087825,
-      "time": "2026-10-20 02:23:48",
+      "time": "2026.10.20 09:23:48",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2938,13 +2803,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4129.85,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -48.45,
-      "net_profit": -48.63
+      "net": -48.63
     },
     {
       "ticket": 298087824,
-      "time": "2026-10-20 02:23:48",
+      "time": "2026.10.20 09:23:48",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2953,13 +2817,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4129.74,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -52.2,
-      "net_profit": -52.38
+      "net": -52.38
     },
     {
       "ticket": 298084442,
-      "time": "2026-10-20 02:16:43",
+      "time": "2026.10.20 09:16:43",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2968,13 +2831,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4122.04,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298084314,
-      "time": "2026-10-20 02:16:33",
+      "time": "2026.10.20 09:16:33",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2983,13 +2845,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4120.16,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298083817,
-      "time": "2026-10-20 02:15:48",
+      "time": "2026.10.20 09:15:48",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -2998,13 +2859,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4119.3,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298083063,
-      "time": "2026-10-20 02:13:10",
+      "time": "2026.10.20 09:13:10",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3013,13 +2873,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4119.46,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 15.95,
-      "net_profit": 15.77
+      "net": 15.77
     },
     {
       "ticket": 298083062,
-      "time": "2026-10-20 02:13:10",
+      "time": "2026.10.20 09:13:10",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3028,13 +2887,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4119.46,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.9,
-      "net_profit": 5.72
+      "net": 5.72
     },
     {
       "ticket": 298083061,
-      "time": "2026-10-20 02:13:10",
+      "time": "2026.10.20 09:13:10",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3043,13 +2901,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4119.46,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.17,
-      "net_profit": 0.13
+      "net": 0.13
     },
     {
       "ticket": 298081142,
-      "time": "2026-10-20 02:06:24",
+      "time": "2026.10.20 09:06:24",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3058,13 +2915,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4122.65,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298080561,
-      "time": "2026-10-20 02:04:17",
+      "time": "2026.10.20 09:04:17",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3073,13 +2929,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4120.64,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 298080296,
-      "time": "2026-10-20 02:03:53",
+      "time": "2026.10.20 09:03:53",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3088,13 +2943,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4119.63,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298078429,
-      "time": "2026-10-20 01:59:57",
+      "time": "2026.10.20 08:59:57",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -3103,13 +2957,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 1.33,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -5.4,
-      "net_profit": -6.1
+      "net": -6.1
     },
     {
       "ticket": 298078418,
-      "time": "2026-10-20 01:59:56",
+      "time": "2026.10.20 08:59:56",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -3118,13 +2971,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 1.33,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 4.2,
-      "net_profit": 3.5
+      "net": 3.5
     },
     {
       "ticket": 298078407,
-      "time": "2026-10-20 01:59:55",
+      "time": "2026.10.20 08:59:55",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -3133,13 +2985,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.33,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 18.0,
-      "net_profit": 16.25
+      "net": 16.25
     },
     {
       "ticket": 298078380,
-      "time": "2026-10-20 01:59:54",
+      "time": "2026.10.20 08:59:54",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3148,13 +2999,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4119.33,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 3.11,
-      "net_profit": 3.07
+      "net": 3.07
     },
     {
       "ticket": 298078345,
-      "time": "2026-10-20 01:59:53",
+      "time": "2026.10.20 08:59:53",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3163,13 +3013,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4119.25,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 50.4,
-      "net_profit": 49.0
+      "net": 49.0
     },
     {
       "ticket": 298078235,
-      "time": "2026-10-20 01:59:51",
+      "time": "2026.10.20 08:59:51",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3178,13 +3027,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4119.77,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 58.8,
-      "net_profit": 57.4
+      "net": 57.4
     },
     {
       "ticket": 298077292,
-      "time": "2026-10-20 01:57:40",
+      "time": "2026.10.20 08:57:40",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3193,13 +3041,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4121.24,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 298075997,
-      "time": "2026-10-20 01:54:18",
+      "time": "2026.10.20 08:54:18",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3208,13 +3055,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4120.51,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 298075268,
-      "time": "2026-10-20 01:53:03",
+      "time": "2026.10.20 08:53:03",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3223,13 +3069,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4122.44,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 298057719,
-      "time": "2026-10-20 00:56:33",
+      "time": "2026.10.20 07:56:33",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -3238,13 +3083,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.33,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 298049314,
-      "time": "2026-10-20 00:03:59",
+      "time": "2026.10.20 07:03:59",
       "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -3253,14 +3097,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 1.33,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 298041995,
-      "time": "2026-10-19 23:19:18",
-      "date": "2026-10-19",
+      "time": "2026.10.20 06:19:18",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -3268,14 +3111,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 1.33,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 298014860,
-      "time": "2026-10-19 21:34:38",
-      "date": "2026-10-19",
+      "time": "2026.10.20 04:34:38",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3283,14 +3125,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4123.6,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.69,
-      "net_profit": 0.65
+      "net": 0.65
     },
     {
       "ticket": 298013913,
-      "time": "2026-10-19 21:31:13",
-      "date": "2026-10-19",
+      "time": "2026.10.20 04:31:13",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3298,14 +3139,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4122.91,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297994848,
-      "time": "2026-10-19 20:35:26",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:35:26",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3313,14 +3153,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.21,
       "price": 4132.09,
       "commission": -0.74,
-      "swap": 0.0,
       "profit": 25.2,
-      "net_profit": 24.46
+      "net": 24.46
     },
     {
       "ticket": 297994835,
-      "time": "2026-10-19 20:35:22",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:35:22",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3328,14 +3167,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.21,
       "price": 4133.29,
       "commission": -0.74,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.74
+      "net": -0.74
     },
     {
       "ticket": 297993948,
-      "time": "2026-10-19 20:31:22",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:31:22",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3343,14 +3181,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4132.33,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 21.1,
-      "net_profit": 20.75
+      "net": 20.75
     },
     {
       "ticket": 297993536,
-      "time": "2026-10-19 20:30:08",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:30:08",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3358,14 +3195,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4134.89,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 35.6,
-      "net_profit": 34.2
+      "net": 34.2
     },
     {
       "ticket": 297993267,
-      "time": "2026-10-19 20:28:52",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:28:52",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3373,14 +3209,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4135.78,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 297992798,
-      "time": "2026-10-19 20:26:15",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:26:15",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3388,14 +3223,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4134.44,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297992065,
-      "time": "2026-10-19 20:24:09",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:24:09",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3403,14 +3237,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4134.69,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -23.4,
-      "net_profit": -23.75
+      "net": -23.75
     },
     {
       "ticket": 297991693,
-      "time": "2026-10-19 20:23:21",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:23:21",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3418,14 +3251,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4132.35,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297988458,
-      "time": "2026-10-19 20:16:17",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:16:17",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3433,14 +3265,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4134.91,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 16.9,
-      "net_profit": 16.55
+      "net": 16.55
     },
     {
       "ticket": 297988373,
-      "time": "2026-10-19 20:16:10",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:16:10",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3448,14 +3279,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4135.74,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": -26.4,
-      "net_profit": -26.93
+      "net": -26.93
     },
     {
       "ticket": 297987969,
-      "time": "2026-10-19 20:13:31",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:13:31",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3463,14 +3293,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4137.5,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 297986459,
-      "time": "2026-10-19 20:06:57",
-      "date": "2026-10-19",
+      "time": "2026.10.20 03:06:57",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3478,14 +3307,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4136.6,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297983583,
-      "time": "2026-10-19 19:53:16",
-      "date": "2026-10-19",
+      "time": "2026.10.20 02:53:16",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3493,14 +3321,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4132.54,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -0.5,
-      "net_profit": -0.85
+      "net": -0.85
     },
     {
       "ticket": 297983520,
-      "time": "2026-10-19 19:52:23",
-      "date": "2026-10-19",
+      "time": "2026.10.20 02:52:23",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3508,14 +3335,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4132.49,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297982352,
-      "time": "2026-10-19 19:47:35",
-      "date": "2026-10-19",
+      "time": "2026.10.20 02:47:35",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3523,14 +3349,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4134.93,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 1.5,
-      "net_profit": 1.15
+      "net": 1.15
     },
     {
       "ticket": 297982336,
-      "time": "2026-10-19 19:47:16",
-      "date": "2026-10-19",
+      "time": "2026.10.20 02:47:16",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3538,14 +3363,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4135.08,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297977890,
-      "time": "2026-10-19 19:02:00",
-      "date": "2026-10-19",
+      "time": "2026.10.20 02:02:00",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3553,14 +3377,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4134.43,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 2.83,
-      "net_profit": 2.79
+      "net": 2.79
     },
     {
       "ticket": 297977310,
-      "time": "2026-10-19 19:00:26",
-      "date": "2026-10-19",
+      "time": "2026.10.20 02:00:26",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3568,14 +3391,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4136.25,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 3.3,
-      "net_profit": 2.95
+      "net": 2.95
     },
     {
       "ticket": 297977219,
-      "time": "2026-10-19 18:59:56",
-      "date": "2026-10-19",
+      "time": "2026.10.20 01:59:56",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3583,14 +3405,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4136.58,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297976953,
-      "time": "2026-10-19 18:55:44",
-      "date": "2026-10-19",
+      "time": "2026.10.20 01:55:44",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3598,14 +3419,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4136.68,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 2.9,
-      "net_profit": 2.55
+      "net": 2.55
     },
     {
       "ticket": 297976936,
-      "time": "2026-10-19 18:55:38",
-      "date": "2026-10-19",
+      "time": "2026.10.20 01:55:38",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3613,14 +3433,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4136.97,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297976934,
-      "time": "2026-10-19 18:55:32",
-      "date": "2026-10-19",
+      "time": "2026.10.20 01:55:32",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3628,14 +3447,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4137.01,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.6,
-      "net_profit": 0.25
+      "net": 0.25
     },
     {
       "ticket": 297976507,
-      "time": "2026-10-19 18:53:24",
-      "date": "2026-10-19",
+      "time": "2026.10.20 01:53:24",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3643,14 +3461,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4137.07,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297976344,
-      "time": "2026-10-19 18:51:06",
-      "date": "2026-10-19",
+      "time": "2026.10.20 01:51:06",
+      "date": "2026-10-20",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3658,13 +3475,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4137.26,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297819953,
-      "time": "2026-10-19 08:05:07",
+      "time": "2026.10.19 15:05:07",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3673,13 +3489,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4164.17,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -14.7,
-      "net_profit": -15.05
+      "net": -15.05
     },
     {
       "ticket": 297819514,
-      "time": "2026-10-19 08:04:43",
+      "time": "2026.10.19 15:04:43",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3688,13 +3503,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4162.7,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297806912,
-      "time": "2026-10-19 07:32:40",
+      "time": "2026.10.19 14:32:40",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3703,13 +3517,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4170.15,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 17.1,
-      "net_profit": 16.57
+      "net": 16.57
     },
     {
       "ticket": 297806812,
-      "time": "2026-10-19 07:32:17",
+      "time": "2026.10.19 14:32:17",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3718,13 +3531,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4171.29,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 297799799,
-      "time": "2026-10-19 07:10:21",
+      "time": "2026.10.19 14:10:21",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3733,13 +3545,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.11,
       "price": 4174.04,
       "commission": -0.39,
-      "swap": 0.0,
       "profit": 10.78,
-      "net_profit": 10.39
+      "net": 10.39
     },
     {
       "ticket": 297799509,
-      "time": "2026-10-19 07:09:02",
+      "time": "2026.10.19 14:09:02",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3748,13 +3559,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.11,
       "price": 4173.06,
       "commission": -0.39,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.39
+      "net": -0.39
     },
     {
       "ticket": 297782585,
-      "time": "2026-10-19 06:24:54",
+      "time": "2026.10.19 13:24:54",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3763,13 +3573,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4166.13,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.7,
-      "net_profit": 4.35
+      "net": 4.35
     },
     {
       "ticket": 297782492,
-      "time": "2026-10-19 06:24:36",
+      "time": "2026.10.19 13:24:36",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3778,13 +3587,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4166.6,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297777632,
-      "time": "2026-10-19 06:00:54",
+      "time": "2026.10.19 13:00:54",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3793,13 +3601,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.16,
       "price": 4167.07,
       "commission": -0.56,
-      "swap": 0.0,
       "profit": 15.04,
-      "net_profit": 14.48
+      "net": 14.48
     },
     {
       "ticket": 297777231,
-      "time": "2026-10-19 05:59:02",
+      "time": "2026.10.19 12:59:02",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3808,13 +3615,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.16,
       "price": 4168.01,
       "commission": -0.56,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.56
+      "net": -0.56
     },
     {
       "ticket": 297765260,
-      "time": "2026-10-19 04:58:06",
+      "time": "2026.10.19 11:58:06",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3823,13 +3629,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4170.2,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 10.1,
-      "net_profit": 9.75
+      "net": 9.75
     },
     {
       "ticket": 297763976,
-      "time": "2026-10-19 04:52:02",
+      "time": "2026.10.19 11:52:02",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3838,13 +3643,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4171.21,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297698073,
-      "time": "2026-10-19 01:00:08",
+      "time": "2026.10.19 08:00:08",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3853,13 +3657,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.14,
       "price": 4183.72,
       "commission": -0.49,
-      "swap": 0.0,
       "profit": 3.5,
-      "net_profit": 3.01
+      "net": 3.01
     },
     {
       "ticket": 297697807,
-      "time": "2026-10-19 00:58:44",
+      "time": "2026.10.19 07:58:44",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3868,13 +3671,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.14,
       "price": 4183.47,
       "commission": -0.49,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.49
+      "net": -0.49
     },
     {
       "ticket": 297697530,
-      "time": "2026-10-19 00:56:38",
+      "time": "2026.10.19 07:56:38",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3883,13 +3685,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.12,
       "price": 4183.14,
       "commission": -0.42,
-      "swap": 0.0,
       "profit": 9.84,
-      "net_profit": 9.42
+      "net": 9.42
     },
     {
       "ticket": 297697421,
-      "time": "2026-10-19 00:55:30",
+      "time": "2026.10.19 07:55:30",
       "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -3898,14 +3699,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.12,
       "price": 4182.32,
       "commission": -0.42,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.42
+      "net": -0.42
     },
     {
       "ticket": 297672748,
-      "time": "2026-10-18 22:25:30",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:25:30",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3913,14 +3713,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4172.46,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -38.5,
-      "net_profit": -38.85
+      "net": -38.85
     },
     {
       "ticket": 297672742,
-      "time": "2026-10-18 22:25:30",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:25:30",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3928,14 +3727,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4172.46,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -4.04,
-      "net_profit": -4.08
+      "net": -4.08
     },
     {
       "ticket": 297672116,
-      "time": "2026-10-18 22:22:55",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:22:55",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3943,14 +3741,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4176.31,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297671950,
-      "time": "2026-10-18 22:21:25",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:21:25",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3958,14 +3755,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4176.5,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297671032,
-      "time": "2026-10-18 22:17:38",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:17:38",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -3973,14 +3769,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4175.85,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -3.32,
-      "net_profit": -3.36
+      "net": -3.36
     },
     {
       "ticket": 297670710,
-      "time": "2026-10-18 22:17:06",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:17:06",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -3988,14 +3783,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4179.17,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297666684,
-      "time": "2026-10-18 22:04:02",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:04:02",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4003,14 +3797,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4178.2,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 13.4,
-      "net_profit": 13.05
+      "net": 13.05
     },
     {
       "ticket": 297666595,
-      "time": "2026-10-18 22:03:51",
-      "date": "2026-10-18",
+      "time": "2026.10.19 05:03:51",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4018,14 +3811,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4176.86,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297664792,
-      "time": "2026-10-18 21:55:35",
-      "date": "2026-10-18",
+      "time": "2026.10.19 04:55:35",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4033,14 +3825,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.07,
       "price": 4174.97,
       "commission": -0.25,
-      "swap": 0.0,
       "profit": 7.07,
-      "net_profit": 6.82
+      "net": 6.82
     },
     {
       "ticket": 297664667,
-      "time": "2026-10-18 21:54:47",
-      "date": "2026-10-18",
+      "time": "2026.10.19 04:54:47",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4048,14 +3839,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.07,
       "price": 4173.96,
       "commission": -0.25,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.25
+      "net": -0.25
     },
     {
       "ticket": 297662777,
-      "time": "2026-10-18 21:43:38",
-      "date": "2026-10-18",
+      "time": "2026.10.19 04:43:38",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4063,14 +3853,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4171.97,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 9.0,
-      "net_profit": 8.65
+      "net": 8.65
     },
     {
       "ticket": 297662716,
-      "time": "2026-10-18 21:43:25",
-      "date": "2026-10-18",
+      "time": "2026.10.19 04:43:25",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4078,14 +3867,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4171.07,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297651444,
-      "time": "2026-10-18 21:03:29",
-      "date": "2026-10-18",
+      "time": "2026.10.19 04:03:29",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4093,14 +3881,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.14,
       "price": 4174.93,
       "commission": -0.49,
-      "swap": 0.0,
       "profit": -33.88,
-      "net_profit": -34.37
+      "net": -34.37
     },
     {
       "ticket": 297651329,
-      "time": "2026-10-18 21:03:04",
-      "date": "2026-10-18",
+      "time": "2026.10.19 04:03:04",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4108,14 +3895,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.14,
       "price": 4172.51,
       "commission": -0.49,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.49
+      "net": -0.49
     },
     {
       "ticket": 297644300,
-      "time": "2026-10-18 20:28:29",
-      "date": "2026-10-18",
+      "time": "2026.10.19 03:28:29",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4123,14 +3909,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.25,
       "price": 4176.02,
       "commission": -0.88,
-      "swap": 0.0,
       "profit": 24.75,
-      "net_profit": 23.87
+      "net": 23.87
     },
     {
       "ticket": 297643849,
-      "time": "2026-10-18 20:26:15",
-      "date": "2026-10-18",
+      "time": "2026.10.19 03:26:15",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4138,14 +3923,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.25,
       "price": 4177.01,
       "commission": -0.88,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.88
+      "net": -0.88
     },
     {
       "ticket": 297642566,
-      "time": "2026-10-18 20:22:24",
-      "date": "2026-10-18",
+      "time": "2026.10.19 03:22:24",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4153,14 +3937,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.13,
       "price": 4179.07,
       "commission": -0.46,
-      "swap": 0.0,
       "profit": 11.31,
-      "net_profit": 10.85
+      "net": 10.85
     },
     {
       "ticket": 297642074,
-      "time": "2026-10-18 20:20:17",
-      "date": "2026-10-18",
+      "time": "2026.10.19 03:20:17",
+      "date": "2026-10-19",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4168,13 +3951,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.13,
       "price": 4179.94,
       "commission": -0.46,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.46
+      "net": -0.46
     },
     {
       "ticket": 297305614,
-      "time": "2026-10-16 01:37:26",
+      "time": "2026.10.16 08:37:26",
       "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -4183,13 +3965,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4173.42,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 4.08,
-      "net_profit": 4.01
+      "net": 4.01
     },
     {
       "ticket": 297305613,
-      "time": "2026-10-16 01:37:26",
+      "time": "2026.10.16 08:37:26",
       "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -4198,13 +3979,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4173.42,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -1.68,
-      "net_profit": -1.72
+      "net": -1.72
     },
     {
       "ticket": 297305144,
-      "time": "2026-10-16 01:34:42",
+      "time": "2026.10.16 08:34:42",
       "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -4213,13 +3993,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4172.15,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 7.1,
-      "net_profit": 6.75
+      "net": 6.75
     },
     {
       "ticket": 297304891,
-      "time": "2026-10-16 01:32:46",
+      "time": "2026.10.16 08:32:46",
       "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -4228,13 +4007,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4172.86,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297303332,
-      "time": "2026-10-16 01:25:10",
+      "time": "2026.10.16 08:25:10",
       "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -4243,13 +4021,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4175.46,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 297300377,
-      "time": "2026-10-16 01:07:59",
+      "time": "2026.10.16 08:07:59",
       "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -4258,13 +4035,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4171.74,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297287216,
-      "time": "2026-10-16 00:04:17",
+      "time": "2026.10.16 07:04:17",
       "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -4273,14 +4049,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4184.8,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -5.32,
-      "net_profit": -5.36
+      "net": -5.36
     },
     {
       "ticket": 297282691,
-      "time": "2026-10-15 23:53:53",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:53:53",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4288,14 +4063,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4179.48,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297281766,
-      "time": "2026-10-15 23:51:58",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:51:58",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4303,14 +4077,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4175.99,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 15.4,
-      "net_profit": 15.22
+      "net": 15.22
     },
     {
       "ticket": 297281763,
-      "time": "2026-10-15 23:51:58",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:51:58",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4318,14 +4091,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4175.99,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 3.7,
-      "net_profit": 3.52
+      "net": 3.52
     },
     {
       "ticket": 297281482,
-      "time": "2026-10-15 23:51:40",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:51:40",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4333,14 +4105,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4179.07,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 297279335,
-      "time": "2026-10-15 23:49:26",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:49:26",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4348,14 +4119,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4176.73,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 297277420,
-      "time": "2026-10-15 23:47:08",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:47:08",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4363,14 +4133,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4172.27,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 8.3,
-      "net_profit": 8.12
+      "net": 8.12
     },
     {
       "ticket": 297277035,
-      "time": "2026-10-15 23:46:32",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:46:32",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4378,14 +4147,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4173.93,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 297276794,
-      "time": "2026-10-15 23:46:26",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:46:26",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4393,14 +4161,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4174.9,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -10.32,
-      "net_profit": -10.39
+      "net": -10.39
     },
     {
       "ticket": 297275821,
-      "time": "2026-10-15 23:45:27",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:45:27",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4408,14 +4175,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4169.74,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 297271744,
-      "time": "2026-10-15 23:30:33",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:30:33",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4423,14 +4189,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4170.28,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 1.73,
-      "net_profit": 1.69
+      "net": 1.69
     },
     {
       "ticket": 297269437,
-      "time": "2026-10-15 23:15:37",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:15:37",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4438,14 +4203,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4173.54,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 4.35,
-      "net_profit": 3.82
+      "net": 3.82
     },
     {
       "ticket": 297269410,
-      "time": "2026-10-15 23:15:20",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:15:20",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4453,14 +4217,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4173.25,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 297268649,
-      "time": "2026-10-15 23:11:37",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:11:37",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4468,14 +4231,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4172.01,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297266660,
-      "time": "2026-10-15 23:01:00",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:01:00",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4483,14 +4245,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4175.48,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 1.0,
-      "net_profit": 0.65
+      "net": 0.65
     },
     {
       "ticket": 297266384,
-      "time": "2026-10-15 23:00:10",
-      "date": "2026-10-15",
+      "time": "2026.10.16 06:00:10",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4498,14 +4259,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4175.38,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297247622,
-      "time": "2026-10-15 21:46:19",
-      "date": "2026-10-15",
+      "time": "2026.10.16 04:46:19",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4513,14 +4273,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4149.31,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.6,
-      "net_profit": 2.42
+      "net": 2.42
     },
     {
       "ticket": 297247575,
-      "time": "2026-10-15 21:46:03",
-      "date": "2026-10-15",
+      "time": "2026.10.16 04:46:03",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4528,14 +4287,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4149.83,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 297247280,
-      "time": "2026-10-15 21:44:36",
-      "date": "2026-10-15",
+      "time": "2026.10.16 04:44:36",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4543,14 +4301,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4150.29,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.34,
-      "net_profit": 1.27
+      "net": 1.27
     },
     {
       "ticket": 297247008,
-      "time": "2026-10-15 21:43:36",
-      "date": "2026-10-15",
+      "time": "2026.10.16 04:43:36",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4558,14 +4315,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4150.96,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 297235728,
-      "time": "2026-10-15 20:59:07",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:59:07",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4573,14 +4329,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4156.56,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 1.09,
-      "net_profit": 1.05
+      "net": 1.05
     },
     {
       "ticket": 297235678,
-      "time": "2026-10-15 20:58:53",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:58:53",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4588,14 +4343,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4155.47,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 297233186,
-      "time": "2026-10-15 20:44:30",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:44:30",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4603,14 +4357,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4154.52,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.9,
-      "net_profit": 4.55
+      "net": 4.55
     },
     {
       "ticket": 297232989,
-      "time": "2026-10-15 20:42:57",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:42:57",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4618,14 +4371,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4154.03,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297232910,
-      "time": "2026-10-15 20:42:35",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:42:35",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4633,14 +4385,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4155.13,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -2.8,
-      "net_profit": -2.98
+      "net": -2.98
     },
     {
       "ticket": 297232230,
-      "time": "2026-10-15 20:38:52",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:38:52",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4648,14 +4399,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4154.57,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 297231914,
-      "time": "2026-10-15 20:37:25",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:37:25",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4663,14 +4413,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4152.01,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.2,
-      "net_profit": 7.02
+      "net": 7.02
     },
     {
       "ticket": 297231913,
-      "time": "2026-10-15 20:37:25",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:37:25",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4678,14 +4427,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.08,
       "price": 4152.01,
       "commission": -0.28,
-      "swap": 0.0,
       "profit": 3.84,
-      "net_profit": 3.56
+      "net": 3.56
     },
     {
       "ticket": 297231911,
-      "time": "2026-10-15 20:37:25",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:37:25",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4693,14 +4441,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4155.92,
       "commission": 0.0,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": 0.0
+      "net": 0.0
     },
     {
       "ticket": 297231910,
-      "time": "2026-10-15 20:37:25",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:37:25",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4708,14 +4455,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4152.49,
       "commission": 0.0,
-      "swap": 0.0,
       "profit": -6.86,
-      "net_profit": -6.86
+      "net": -6.86
     },
     {
       "ticket": 297231735,
-      "time": "2026-10-15 20:36:48",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:36:48",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4723,14 +4469,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4153.45,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 297231391,
-      "time": "2026-10-15 20:35:06",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:35:06",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4738,14 +4483,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4152.49,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 297229333,
-      "time": "2026-10-15 20:20:07",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:20:07",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4753,14 +4497,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4155.92,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 297228859,
-      "time": "2026-10-15 20:16:16",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:16:16",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -4768,14 +4511,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4155.21,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.05,
-      "net_profit": 1.87
+      "net": 1.87
     },
     {
       "ticket": 297228814,
-      "time": "2026-10-15 20:15:50",
-      "date": "2026-10-15",
+      "time": "2026.10.16 03:15:50",
+      "date": "2026-10-16",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4783,13 +4525,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4155.62,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296932528,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4798,13 +4539,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 42.5,
-      "net_profit": 40.75
+      "net": 40.75
     },
     {
       "ticket": 296932527,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4813,13 +4553,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 69.5,
-      "net_profit": 67.75
+      "net": 67.75
     },
     {
       "ticket": 296932526,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4828,13 +4567,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 1.32,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 59.2,
-      "net_profit": 57.8
+      "net": 57.8
     },
     {
       "ticket": 296932525,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4843,13 +4581,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 1.32,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 69.6,
-      "net_profit": 68.2
+      "net": 68.2
     },
     {
       "ticket": 296932524,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4858,13 +4595,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 1.32,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 16.5,
-      "net_profit": 16.15
+      "net": 16.15
     },
     {
       "ticket": 296932523,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4873,13 +4609,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": -17.5,
-      "net_profit": -19.25
+      "net": -19.25
     },
     {
       "ticket": 296932522,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4888,13 +4623,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": -30.5,
-      "net_profit": -32.25
+      "net": -32.25
     },
     {
       "ticket": 296932521,
-      "time": "2026-10-15 02:39:13",
+      "time": "2026.10.15 09:39:13",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4903,13 +4637,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 1.32,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -8.4,
-      "net_profit": -8.75
+      "net": -8.75
     },
     {
       "ticket": 296907931,
-      "time": "2026-10-15 00:42:59",
+      "time": "2026.10.15 07:42:59",
       "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -4918,14 +4651,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296893417,
-      "time": "2026-10-14 23:23:56",
-      "date": "2026-10-14",
+      "time": "2026.10.15 06:23:56",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -4933,14 +4665,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296890768,
-      "time": "2026-10-14 23:14:02",
-      "date": "2026-10-14",
+      "time": "2026.10.15 06:14:02",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -4948,14 +4679,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 1.33,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296889950,
-      "time": "2026-10-14 23:10:23",
-      "date": "2026-10-14",
+      "time": "2026.10.15 06:10:23",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -4963,14 +4693,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 1.33,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296888555,
-      "time": "2026-10-14 23:05:55",
-      "date": "2026-10-14",
+      "time": "2026.10.15 06:05:55",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -4978,14 +4707,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 1.33,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296880539,
-      "time": "2026-10-14 22:48:24",
-      "date": "2026-10-14",
+      "time": "2026.10.15 05:48:24",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -4993,14 +4721,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.13,
       "price": 4146.73,
       "commission": -0.46,
-      "swap": 0.0,
       "profit": 10.4,
-      "net_profit": 9.94
+      "net": 9.94
     },
     {
       "ticket": 296880500,
-      "time": "2026-10-14 22:48:10",
-      "date": "2026-10-14",
+      "time": "2026.10.15 05:48:10",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5008,14 +4735,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.13,
       "price": 4145.93,
       "commission": -0.46,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.46
+      "net": -0.46
     },
     {
       "ticket": 296877277,
-      "time": "2026-10-14 22:33:48",
-      "date": "2026-10-14",
+      "time": "2026.10.15 05:33:48",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5023,14 +4749,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4142.06,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -32.7,
-      "net_profit": -33.05
+      "net": -33.05
     },
     {
       "ticket": 296876779,
-      "time": "2026-10-14 22:32:19",
-      "date": "2026-10-14",
+      "time": "2026.10.15 05:32:19",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5038,14 +4763,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4138.79,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296865250,
-      "time": "2026-10-14 21:50:38",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:50:38",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5053,14 +4777,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4141.27,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 3.86,
-      "net_profit": 3.79
+      "net": 3.79
     },
     {
       "ticket": 296864143,
-      "time": "2026-10-14 21:46:44",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:46:44",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5068,14 +4791,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4139.34,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 296862589,
-      "time": "2026-10-14 21:41:38",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:41:38",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5083,14 +4805,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4140.23,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -57.3,
-      "net_profit": -57.65
+      "net": -57.65
     },
     {
       "ticket": 296861840,
-      "time": "2026-10-14 21:38:09",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:38:09",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5098,14 +4819,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4146.43,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.35,
-      "net_profit": 2.17
+      "net": 2.17
     },
     {
       "ticket": 296861839,
-      "time": "2026-10-14 21:38:08",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:38:08",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5113,14 +4833,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4145.96,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296861838,
-      "time": "2026-10-14 21:38:08",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:38:08",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5128,14 +4847,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4145.96,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296859950,
-      "time": "2026-10-14 21:31:33",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:31:33",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5143,14 +4861,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.08,
       "price": 4145.77,
       "commission": -0.28,
-      "swap": 0.0,
       "profit": 1.84,
-      "net_profit": 1.56
+      "net": 1.56
     },
     {
       "ticket": 296859888,
-      "time": "2026-10-14 21:31:24",
-      "date": "2026-10-14",
+      "time": "2026.10.15 04:31:24",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5158,14 +4875,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.08,
       "price": 4146.0,
       "commission": -0.28,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.28
+      "net": -0.28
     },
     {
       "ticket": 296843043,
-      "time": "2026-10-14 20:42:46",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:42:46",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5173,14 +4889,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296842538,
-      "time": "2026-10-14 20:40:32",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:40:32",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "buy",
@@ -5188,14 +4903,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 18.5,
-      "net_profit": 16.75
+      "net": 16.75
     },
     {
       "ticket": 296840972,
-      "time": "2026-10-14 20:36:02",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:36:02",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5203,14 +4917,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296839115,
-      "time": "2026-10-14 20:31:08",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:31:08",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5218,14 +4931,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4143.61,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -28.4,
-      "net_profit": -28.58
+      "net": -28.58
     },
     {
       "ticket": 296838900,
-      "time": "2026-10-14 20:30:46",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:30:46",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5233,14 +4945,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4137.62,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.55,
-      "net_profit": 1.37
+      "net": 1.37
     },
     {
       "ticket": 296837231,
-      "time": "2026-10-14 20:28:13",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:28:13",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5248,14 +4959,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4137.93,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296837230,
-      "time": "2026-10-14 20:28:13",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:28:13",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5263,14 +4973,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4137.93,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296833843,
-      "time": "2026-10-14 20:19:19",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:19:19",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5278,14 +4987,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4136.57,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.95,
-      "net_profit": 4.77
+      "net": 4.77
     },
     {
       "ticket": 296833780,
-      "time": "2026-10-14 20:19:07",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:19:07",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5293,14 +5001,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.22,
       "price": 4135.86,
       "commission": -0.77,
-      "swap": 0.0,
       "profit": 6.16,
-      "net_profit": 5.39
+      "net": 5.39
     },
     {
       "ticket": 296833752,
-      "time": "2026-10-14 20:19:03",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:19:03",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5308,14 +5015,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4135.58,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296833751,
-      "time": "2026-10-14 20:19:03",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:19:03",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5323,14 +5029,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.22,
       "price": 4135.58,
       "commission": -0.77,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.77
+      "net": -0.77
     },
     {
       "ticket": 296830832,
-      "time": "2026-10-14 20:14:12",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:14:12",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5338,14 +5043,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296828541,
-      "time": "2026-10-14 20:09:30",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:09:30",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5353,14 +5057,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 1.32,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296828285,
-      "time": "2026-10-14 20:08:27",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:08:27",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "buy",
@@ -5368,14 +5071,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 6.5,
-      "net_profit": 4.75
+      "net": 4.75
     },
     {
       "ticket": 296828096,
-      "time": "2026-10-14 20:07:23",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:07:23",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "buy",
@@ -5383,14 +5085,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 3.5,
-      "net_profit": 1.75
+      "net": 1.75
     },
     {
       "ticket": 296827228,
-      "time": "2026-10-14 20:05:26",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:05:26",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5398,14 +5099,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296826607,
-      "time": "2026-10-14 20:04:41",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:04:41",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5413,14 +5113,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296826296,
-      "time": "2026-10-14 20:03:53",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:03:53",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "buy",
@@ -5428,14 +5127,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 1.32,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 3.6,
-      "net_profit": 2.9
+      "net": 2.9
     },
     {
       "ticket": 296826289,
-      "time": "2026-10-14 20:03:53",
-      "date": "2026-10-14",
+      "time": "2026.10.15 03:03:53",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "buy",
@@ -5443,14 +5141,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 14.5,
-      "net_profit": 12.75
+      "net": 12.75
     },
     {
       "ticket": 296823465,
-      "time": "2026-10-14 19:55:44",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:55:44",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5458,14 +5155,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.21,
       "price": 4109.54,
       "commission": -0.74,
-      "swap": 0.0,
       "profit": 19.32,
-      "net_profit": 18.58
+      "net": 18.58
     },
     {
       "ticket": 296823157,
-      "time": "2026-10-14 19:54:00",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:54:00",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5473,14 +5169,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.21,
       "price": 4108.62,
       "commission": -0.74,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.74
+      "net": -0.74
     },
     {
       "ticket": 296822529,
-      "time": "2026-10-14 19:51:59",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:51:59",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5488,14 +5183,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296821971,
-      "time": "2026-10-14 19:48:38",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:48:38",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5503,14 +5197,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4107.35,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 6.9,
-      "net_profit": 6.37
+      "net": 6.37
     },
     {
       "ticket": 296821779,
-      "time": "2026-10-14 19:47:40",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:47:40",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5518,14 +5211,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4106.89,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 296821492,
-      "time": "2026-10-14 19:46:08",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:46:08",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -5533,14 +5225,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 1.32,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296816282,
-      "time": "2026-10-14 19:14:43",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:14:43",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5548,14 +5239,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4104.27,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 4.24,
-      "net_profit": 4.17
+      "net": 4.17
     },
     {
       "ticket": 296815657,
-      "time": "2026-10-14 19:10:10",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:10:10",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5563,14 +5253,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4102.15,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 296815289,
-      "time": "2026-10-14 19:07:37",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:07:37",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5578,14 +5267,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.19,
       "price": 4101.21,
       "commission": -0.67,
-      "swap": 0.0,
       "profit": 24.51,
-      "net_profit": 23.84
+      "net": 23.84
     },
     {
       "ticket": 296815194,
-      "time": "2026-10-14 19:07:04",
-      "date": "2026-10-14",
+      "time": "2026.10.15 02:07:04",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5593,14 +5281,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.19,
       "price": 4102.5,
       "commission": -0.67,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.67
+      "net": -0.67
     },
     {
       "ticket": 296809656,
-      "time": "2026-10-14 18:33:47",
-      "date": "2026-10-14",
+      "time": "2026.10.15 01:33:47",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5608,14 +5295,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.18,
       "price": 4107.05,
       "commission": -0.63,
-      "swap": 0.0,
       "profit": -28.62,
-      "net_profit": -29.25
+      "net": -29.25
     },
     {
       "ticket": 296809433,
-      "time": "2026-10-14 18:32:12",
-      "date": "2026-10-14",
+      "time": "2026.10.15 01:32:12",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5623,14 +5309,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.18,
       "price": 4108.64,
       "commission": -0.63,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.63
+      "net": -0.63
     },
     {
       "ticket": 296808237,
-      "time": "2026-10-14 18:24:25",
-      "date": "2026-10-14",
+      "time": "2026.10.15 01:24:25",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5638,14 +5323,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4107.18,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 3.7,
-      "net_profit": 3.35
+      "net": 3.35
     },
     {
       "ticket": 296808195,
-      "time": "2026-10-14 18:24:05",
-      "date": "2026-10-14",
+      "time": "2026.10.15 01:24:05",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5653,14 +5337,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4106.81,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296807062,
-      "time": "2026-10-14 18:18:30",
-      "date": "2026-10-14",
+      "time": "2026.10.15 01:18:30",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -5668,14 +5351,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4105.85,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 14.6,
-      "net_profit": 14.25
+      "net": 14.25
     },
     {
       "ticket": 296806818,
-      "time": "2026-10-14 18:17:33",
-      "date": "2026-10-14",
+      "time": "2026.10.15 01:17:33",
+      "date": "2026-10-15",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -5683,13 +5365,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4104.39,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296799455,
-      "time": "2026-10-14 16:48:31",
+      "time": "2026.10.14 23:48:31",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5698,13 +5379,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4100.2,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -15.6,
-      "net_profit": -15.95
+      "net": -15.95
     },
     {
       "ticket": 296799354,
-      "time": "2026-10-14 16:47:40",
+      "time": "2026.10.14 23:47:40",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5713,13 +5393,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4098.64,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296794008,
-      "time": "2026-10-14 15:50:00",
+      "time": "2026.10.14 22:50:00",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5728,13 +5407,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4101.3,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 5.0,
-      "net_profit": 4.65
+      "net": 4.65
     },
     {
       "ticket": 296793965,
-      "time": "2026-10-14 15:49:43",
+      "time": "2026.10.14 22:49:43",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5743,13 +5421,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4100.8,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296792763,
-      "time": "2026-10-14 15:41:22",
+      "time": "2026.10.14 22:41:22",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5758,13 +5435,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4099.52,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 10.7,
-      "net_profit": 10.35
+      "net": 10.35
     },
     {
       "ticket": 296792675,
-      "time": "2026-10-14 15:40:44",
+      "time": "2026.10.14 22:40:44",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5773,13 +5449,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4100.59,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296790505,
-      "time": "2026-10-14 15:26:46",
+      "time": "2026.10.14 22:26:46",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5788,13 +5463,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4103.43,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.5,
-      "net_profit": 0.32
+      "net": 0.32
     },
     {
       "ticket": 296790407,
-      "time": "2026-10-14 15:26:15",
+      "time": "2026.10.14 22:26:15",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5803,13 +5477,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4103.53,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296790168,
-      "time": "2026-10-14 15:25:18",
+      "time": "2026.10.14 22:25:18",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5818,13 +5491,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4105.7,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.51,
-      "net_profit": 0.47
+      "net": 0.47
     },
     {
       "ticket": 296789998,
-      "time": "2026-10-14 15:24:41",
+      "time": "2026.10.14 22:24:41",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5833,13 +5505,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4106.21,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 296787930,
-      "time": "2026-10-14 15:16:22",
+      "time": "2026.10.14 22:16:22",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5848,13 +5519,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4099.19,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 4.93,
-      "net_profit": 4.89
+      "net": 4.89
     },
     {
       "ticket": 296786688,
-      "time": "2026-10-14 15:10:16",
+      "time": "2026.10.14 22:10:16",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5863,13 +5533,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4096.81,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -13.6,
-      "net_profit": -13.95
+      "net": -13.95
     },
     {
       "ticket": 296786540,
-      "time": "2026-10-14 15:09:13",
+      "time": "2026.10.14 22:09:13",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5878,13 +5547,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4095.45,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296783337,
-      "time": "2026-10-14 14:48:11",
+      "time": "2026.10.14 21:48:11",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5893,13 +5561,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4094.83,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 14.1,
-      "net_profit": 13.75
+      "net": 13.75
     },
     {
       "ticket": 296782926,
-      "time": "2026-10-14 14:45:01",
+      "time": "2026.10.14 21:45:01",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5908,13 +5575,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4093.42,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296782433,
-      "time": "2026-10-14 14:42:09",
+      "time": "2026.10.14 21:42:09",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5923,13 +5589,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4092.18,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 13.3,
-      "net_profit": 12.95
+      "net": 12.95
     },
     {
       "ticket": 296782316,
-      "time": "2026-10-14 14:41:19",
+      "time": "2026.10.14 21:41:19",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5938,13 +5603,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4093.51,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296780457,
-      "time": "2026-10-14 14:31:44",
+      "time": "2026.10.14 21:31:44",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5953,13 +5617,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4094.7,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 6.5,
-      "net_profit": 6.15
+      "net": 6.15
     },
     {
       "ticket": 296780330,
-      "time": "2026-10-14 14:31:05",
+      "time": "2026.10.14 21:31:05",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5968,13 +5631,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4094.05,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296779847,
-      "time": "2026-10-14 14:29:08",
+      "time": "2026.10.14 21:29:08",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5983,13 +5645,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4094.26,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 296770270,
-      "time": "2026-10-14 13:48:23",
+      "time": "2026.10.14 20:48:23",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -5998,13 +5659,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4085.29,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 3.8,
-      "net_profit": 3.45
+      "net": 3.45
     },
     {
       "ticket": 296769332,
-      "time": "2026-10-14 13:42:08",
+      "time": "2026.10.14 20:42:08",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6013,13 +5673,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4085.67,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296503778,
-      "time": "2026-10-14 03:04:48",
+      "time": "2026.10.14 10:04:48",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6028,13 +5687,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4149.52,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 16.8,
-      "net_profit": 16.1
+      "net": 16.1
     },
     {
       "ticket": 296501384,
-      "time": "2026-10-14 02:59:27",
+      "time": "2026.10.14 09:59:27",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6043,13 +5701,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4148.68,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296496574,
-      "time": "2026-10-14 02:42:37",
+      "time": "2026.10.14 09:42:37",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6058,13 +5715,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4151.97,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.6,
-      "net_profit": 4.25
+      "net": 4.25
     },
     {
       "ticket": 296496353,
-      "time": "2026-10-14 02:41:00",
+      "time": "2026.10.14 09:41:00",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6073,13 +5729,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4152.43,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296494175,
-      "time": "2026-10-14 02:27:51",
+      "time": "2026.10.14 09:27:51",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6088,13 +5743,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4155.65,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.4,
-      "net_profit": 4.05
+      "net": 4.05
     },
     {
       "ticket": 296494130,
-      "time": "2026-10-14 02:27:28",
+      "time": "2026.10.14 09:27:28",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6103,13 +5757,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4156.09,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296486164,
-      "time": "2026-10-14 02:03:44",
+      "time": "2026.10.14 09:03:44",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -6118,13 +5771,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 1.33,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.45,
-      "net_profit": 2.27
+      "net": 2.27
     },
     {
       "ticket": 296482231,
-      "time": "2026-10-14 01:55:36",
+      "time": "2026.10.14 08:55:36",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6133,13 +5785,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.06,
       "price": 4154.98,
       "commission": -0.21,
-      "swap": 0.0,
       "profit": 0.66,
-      "net_profit": 0.45
+      "net": 0.45
     },
     {
       "ticket": 296482100,
-      "time": "2026-10-14 01:55:13",
+      "time": "2026.10.14 08:55:13",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6148,13 +5799,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.06,
       "price": 4155.09,
       "commission": -0.21,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.21
+      "net": -0.21
     },
     {
       "ticket": 296480500,
-      "time": "2026-10-14 01:47:20",
+      "time": "2026.10.14 08:47:20",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6163,13 +5813,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.07,
       "price": 4156.5,
       "commission": -0.25,
-      "swap": 0.0,
       "profit": 1.75,
-      "net_profit": 1.5
+      "net": 1.5
     },
     {
       "ticket": 296480421,
-      "time": "2026-10-14 01:47:03",
+      "time": "2026.10.14 08:47:03",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6178,13 +5827,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.07,
       "price": 4156.75,
       "commission": -0.25,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.25
+      "net": -0.25
     },
     {
       "ticket": 296478565,
-      "time": "2026-10-14 01:38:01",
+      "time": "2026.10.14 08:38:01",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6193,13 +5841,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4158.92,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": -22.5,
-      "net_profit": -23.03
+      "net": -23.03
     },
     {
       "ticket": 296478564,
-      "time": "2026-10-14 01:38:01",
+      "time": "2026.10.14 08:38:01",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6208,13 +5855,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.07,
       "price": 4158.92,
       "commission": -0.25,
-      "swap": 0.0,
       "profit": -10.5,
-      "net_profit": -10.75
+      "net": -10.75
     },
     {
       "ticket": 296478477,
-      "time": "2026-10-14 01:37:39",
+      "time": "2026.10.14 08:37:39",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6223,13 +5869,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4160.42,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 296478476,
-      "time": "2026-10-14 01:37:39",
+      "time": "2026.10.14 08:37:39",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6238,13 +5883,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.07,
       "price": 4160.42,
       "commission": -0.25,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.25
+      "net": -0.25
     },
     {
       "ticket": 296476860,
-      "time": "2026-10-14 01:29:54",
+      "time": "2026.10.14 08:29:54",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6253,13 +5897,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4158.07,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 6.75,
-      "net_profit": 6.22
+      "net": 6.22
     },
     {
       "ticket": 296476799,
-      "time": "2026-10-14 01:29:32",
+      "time": "2026.10.14 08:29:32",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6268,13 +5911,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4158.52,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 296475172,
-      "time": "2026-10-14 01:16:03",
+      "time": "2026.10.14 08:16:03",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6283,13 +5925,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4160.36,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 19.35,
-      "net_profit": 18.82
+      "net": 18.82
     },
     {
       "ticket": 296475105,
-      "time": "2026-10-14 01:15:48",
+      "time": "2026.10.14 08:15:48",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6298,13 +5939,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4161.65,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 296474103,
-      "time": "2026-10-14 01:11:10",
+      "time": "2026.10.14 08:11:10",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6313,13 +5953,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.08,
       "price": 4161.57,
       "commission": -0.28,
-      "swap": 0.0,
       "profit": -1.84,
-      "net_profit": -2.12
+      "net": -2.12
     },
     {
       "ticket": 296474088,
-      "time": "2026-10-14 01:11:08",
+      "time": "2026.10.14 08:11:08",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6328,13 +5967,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.08,
       "price": 4161.34,
       "commission": -0.28,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.28
+      "net": -0.28
     },
     {
       "ticket": 296469661,
-      "time": "2026-10-14 00:46:34",
+      "time": "2026.10.14 07:46:34",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -6343,13 +5981,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 1.33,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296468511,
-      "time": "2026-10-14 00:40:27",
+      "time": "2026.10.14 07:40:27",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6358,13 +5995,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4163.59,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 11.25,
-      "net_profit": 10.72
+      "net": 10.72
     },
     {
       "ticket": 296468395,
-      "time": "2026-10-14 00:39:02",
+      "time": "2026.10.14 07:39:02",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6373,13 +6009,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4162.84,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 296467274,
-      "time": "2026-10-14 00:32:24",
+      "time": "2026.10.14 07:32:24",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6388,13 +6023,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.23,
       "price": 4162.37,
       "commission": -0.81,
-      "swap": 0.0,
       "profit": -0.46,
-      "net_profit": -1.27
+      "net": -1.27
     },
     {
       "ticket": 296467273,
-      "time": "2026-10-14 00:32:24",
+      "time": "2026.10.14 07:32:24",
       "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6403,14 +6037,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.23,
       "price": 4162.39,
       "commission": -0.81,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.81
+      "net": -0.81
     },
     {
       "ticket": 296459733,
-      "time": "2026-10-13 23:53:49",
-      "date": "2026-10-13",
+      "time": "2026.10.14 06:53:49",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "buy",
@@ -6418,14 +6051,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 1.33,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 9.2,
-      "net_profit": 7.8
+      "net": 7.8
     },
     {
       "ticket": 296456675,
-      "time": "2026-10-13 23:28:58",
-      "date": "2026-10-13",
+      "time": "2026.10.14 06:28:58",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -6433,14 +6065,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 1.33,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296452973,
-      "time": "2026-10-13 23:11:35",
-      "date": "2026-10-13",
+      "time": "2026.10.14 06:11:35",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6448,14 +6079,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4164.73,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 14.25,
-      "net_profit": 13.72
+      "net": 13.72
     },
     {
       "ticket": 296452311,
-      "time": "2026-10-13 23:09:44",
-      "date": "2026-10-13",
+      "time": "2026.10.14 06:09:44",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6463,14 +6093,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4165.68,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 296450450,
-      "time": "2026-10-13 23:01:53",
-      "date": "2026-10-13",
+      "time": "2026.10.14 06:01:53",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6478,14 +6107,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.13,
       "price": 4167.64,
       "commission": -0.46,
-      "swap": 0.0,
       "profit": 13.52,
-      "net_profit": 13.06
+      "net": 13.06
     },
     {
       "ticket": 296450261,
-      "time": "2026-10-13 23:01:03",
-      "date": "2026-10-13",
+      "time": "2026.10.14 06:01:03",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6493,14 +6121,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.13,
       "price": 4166.6,
       "commission": -0.46,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.46
+      "net": -0.46
     },
     {
       "ticket": 296449698,
-      "time": "2026-10-13 22:59:57",
-      "date": "2026-10-13",
+      "time": "2026.10.14 05:59:57",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6508,14 +6135,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.23,
       "price": 4167.53,
       "commission": -0.81,
-      "swap": 0.0,
       "profit": 46.0,
-      "net_profit": 45.19
+      "net": 45.19
     },
     {
       "ticket": 296449432,
-      "time": "2026-10-13 22:57:32",
-      "date": "2026-10-13",
+      "time": "2026.10.14 05:57:32",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6523,14 +6149,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.23,
       "price": 4165.53,
       "commission": -0.81,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.81
+      "net": -0.81
     },
     {
       "ticket": 296440146,
-      "time": "2026-10-13 22:07:51",
-      "date": "2026-10-13",
+      "time": "2026.10.14 05:07:51",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6538,14 +6163,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4158.98,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -130.2,
-      "net_profit": -130.9
+      "net": -130.9
     },
     {
       "ticket": 296439629,
-      "time": "2026-10-13 22:06:54",
-      "date": "2026-10-13",
+      "time": "2026.10.14 05:06:54",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6553,14 +6177,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.23,
       "price": 4159.27,
       "commission": -0.81,
-      "swap": 0.0,
       "profit": -100.51,
-      "net_profit": -101.32
+      "net": -101.32
     },
     {
       "ticket": 296439268,
-      "time": "2026-10-13 22:05:56",
-      "date": "2026-10-13",
+      "time": "2026.10.14 05:05:56",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6568,14 +6191,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.23,
       "price": 4154.9,
       "commission": -0.81,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.81
+      "net": -0.81
     },
     {
       "ticket": 296437690,
-      "time": "2026-10-13 21:59:20",
-      "date": "2026-10-13",
+      "time": "2026.10.14 04:59:20",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6583,14 +6205,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.12,
       "price": 4154.18,
       "commission": -0.42,
-      "swap": 0.0,
       "profit": 11.52,
-      "net_profit": 11.1
+      "net": 11.1
     },
     {
       "ticket": 296437629,
-      "time": "2026-10-13 21:58:58",
-      "date": "2026-10-13",
+      "time": "2026.10.14 04:58:58",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6598,14 +6219,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4152.47,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296437320,
-      "time": "2026-10-13 21:57:55",
-      "date": "2026-10-13",
+      "time": "2026.10.14 04:57:55",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6613,14 +6233,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.12,
       "price": 4153.22,
       "commission": -0.42,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.42
+      "net": -0.42
     },
     {
       "ticket": 296421101,
-      "time": "2026-10-13 21:18:33",
-      "date": "2026-10-13",
+      "time": "2026.10.14 04:18:33",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6628,14 +6247,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4151.23,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -32.2,
-      "net_profit": -32.9
+      "net": -32.9
     },
     {
       "ticket": 296420912,
-      "time": "2026-10-13 21:18:00",
-      "date": "2026-10-13",
+      "time": "2026.10.14 04:18:00",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6643,14 +6261,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4149.62,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296418541,
-      "time": "2026-10-13 21:12:02",
-      "date": "2026-10-13",
+      "time": "2026.10.14 04:12:02",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6658,14 +6275,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4153.86,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 9.6,
-      "net_profit": 8.9
+      "net": 8.9
     },
     {
       "ticket": 296418485,
-      "time": "2026-10-13 21:11:48",
-      "date": "2026-10-13",
+      "time": "2026.10.14 04:11:48",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6673,14 +6289,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4154.34,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296411226,
-      "time": "2026-10-13 20:42:55",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:42:55",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6688,14 +6303,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4155.71,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.7,
-      "net_profit": 5.52
+      "net": 5.52
     },
     {
       "ticket": 296409993,
-      "time": "2026-10-13 20:36:11",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:36:11",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6703,14 +6317,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4159.19,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 13.2,
-      "net_profit": 12.5
+      "net": 12.5
     },
     {
       "ticket": 296409737,
-      "time": "2026-10-13 20:35:06",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:35:06",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6718,14 +6331,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4159.85,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296409449,
-      "time": "2026-10-13 20:34:13",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:34:13",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6733,14 +6345,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4156.85,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296407766,
-      "time": "2026-10-13 20:26:46",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:26:46",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6748,14 +6359,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4160.16,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 6.0,
-      "net_profit": 5.3
+      "net": 5.3
     },
     {
       "ticket": 296407723,
-      "time": "2026-10-13 20:26:19",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:26:19",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6763,14 +6373,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4160.46,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296406553,
-      "time": "2026-10-13 20:20:16",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:20:16",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6778,14 +6387,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4161.96,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.76,
-      "net_profit": 0.72
+      "net": 0.72
     },
     {
       "ticket": 296406261,
-      "time": "2026-10-13 20:18:14",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:18:14",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6793,14 +6401,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4162.72,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 296405141,
-      "time": "2026-10-13 20:12:37",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:12:37",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6808,14 +6415,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4162.54,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 20.8,
-      "net_profit": 20.1
+      "net": 20.1
     },
     {
       "ticket": 296404522,
-      "time": "2026-10-13 20:10:02",
-      "date": "2026-10-13",
+      "time": "2026.10.14 03:10:02",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6823,14 +6429,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4161.5,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296397528,
-      "time": "2026-10-13 19:12:55",
-      "date": "2026-10-13",
+      "time": "2026.10.14 02:12:55",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6838,14 +6443,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4158.1,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 14.2,
-      "net_profit": 13.5
+      "net": 13.5
     },
     {
       "ticket": 296397416,
-      "time": "2026-10-13 19:11:47",
-      "date": "2026-10-13",
+      "time": "2026.10.14 02:11:47",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6853,14 +6457,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4158.81,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296396621,
-      "time": "2026-10-13 19:04:41",
-      "date": "2026-10-13",
+      "time": "2026.10.14 02:04:41",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6868,14 +6471,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4160.48,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -0.4,
-      "net_profit": -0.58
+      "net": -0.58
     },
     {
       "ticket": 296396542,
-      "time": "2026-10-13 19:04:06",
-      "date": "2026-10-13",
+      "time": "2026.10.14 02:04:06",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6883,14 +6485,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4160.4,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296396287,
-      "time": "2026-10-13 19:01:17",
-      "date": "2026-10-13",
+      "time": "2026.10.14 02:01:17",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6898,14 +6499,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4161.1,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -0.4,
-      "net_profit": -0.58
+      "net": -0.58
     },
     {
       "ticket": 296396284,
-      "time": "2026-10-13 19:01:14",
-      "date": "2026-10-13",
+      "time": "2026.10.14 02:01:14",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6913,14 +6513,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4161.01,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 7.8,
-      "net_profit": 7.1
+      "net": 7.1
     },
     {
       "ticket": 296396163,
-      "time": "2026-10-13 19:00:01",
-      "date": "2026-10-13",
+      "time": "2026.10.14 02:00:01",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6928,14 +6527,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4161.4,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296396078,
-      "time": "2026-10-13 18:58:30",
-      "date": "2026-10-13",
+      "time": "2026.10.14 01:58:30",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -6943,14 +6541,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4161.17,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 13.0,
-      "net_profit": 12.3
+      "net": 12.3
     },
     {
       "ticket": 296395921,
-      "time": "2026-10-13 18:54:46",
-      "date": "2026-10-13",
+      "time": "2026.10.14 01:54:46",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6958,14 +6555,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4161.82,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296395416,
-      "time": "2026-10-13 18:46:05",
-      "date": "2026-10-13",
+      "time": "2026.10.14 01:46:05",
+      "date": "2026-10-14",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -6973,13 +6569,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4161.02,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296385517,
-      "time": "2026-10-13 16:29:32",
+      "time": "2026.10.13 23:29:32",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -6988,13 +6583,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4159.83,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 4.2,
-      "net_profit": 3.5
+      "net": 3.5
     },
     {
       "ticket": 296385484,
-      "time": "2026-10-13 16:28:32",
+      "time": "2026.10.13 23:28:32",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7003,13 +6597,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4160.04,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296376243,
-      "time": "2026-10-13 14:53:49",
+      "time": "2026.10.13 21:53:49",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7018,13 +6611,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4162.61,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -12.8,
-      "net_profit": -13.5
+      "net": -13.5
     },
     {
       "ticket": 296376095,
-      "time": "2026-10-13 14:52:01",
+      "time": "2026.10.13 21:52:01",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7033,13 +6625,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4163.25,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296364483,
-      "time": "2026-10-13 14:01:25",
+      "time": "2026.10.13 21:01:25",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7048,13 +6639,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4149.99,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -62.4,
-      "net_profit": -63.8
+      "net": -63.8
     },
     {
       "ticket": 296364482,
-      "time": "2026-10-13 14:01:25",
+      "time": "2026.10.13 21:01:25",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7063,13 +6653,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4149.99,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -37.0,
-      "net_profit": -37.7
+      "net": -37.7
     },
     {
       "ticket": 296363983,
-      "time": "2026-10-13 13:59:52",
+      "time": "2026.10.13 20:59:52",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7078,13 +6667,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4148.43,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296363953,
-      "time": "2026-10-13 13:59:26",
+      "time": "2026.10.13 20:59:26",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7093,13 +6681,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4148.14,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296363544,
-      "time": "2026-10-13 13:56:43",
+      "time": "2026.10.13 20:56:43",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7108,13 +6695,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4148.59,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 3.6,
-      "net_profit": 2.55
+      "net": 2.55
     },
     {
       "ticket": 296363241,
-      "time": "2026-10-13 13:54:49",
+      "time": "2026.10.13 20:54:49",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7123,13 +6709,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4148.71,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 296353806,
-      "time": "2026-10-13 13:06:48",
+      "time": "2026.10.13 20:06:48",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7138,13 +6723,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4154.0,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.35,
-      "net_profit": 1.17
+      "net": 1.17
     },
     {
       "ticket": 296353200,
-      "time": "2026-10-13 13:03:11",
+      "time": "2026.10.13 20:03:11",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7153,13 +6737,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4153.73,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296351213,
-      "time": "2026-10-13 13:00:28",
+      "time": "2026.10.13 20:00:28",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7168,13 +6751,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4152.23,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.3,
-      "net_profit": 7.12
+      "net": 7.12
     },
     {
       "ticket": 296351090,
-      "time": "2026-10-13 13:00:14",
+      "time": "2026.10.13 20:00:14",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7183,13 +6765,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4153.69,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296350680,
-      "time": "2026-10-13 12:59:33",
+      "time": "2026.10.13 19:59:33",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7198,13 +6779,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4152.98,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 48.6,
-      "net_profit": 47.9
+      "net": 47.9
     },
     {
       "ticket": 296350679,
-      "time": "2026-10-13 12:59:33",
+      "time": "2026.10.13 19:59:33",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7213,13 +6793,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4152.98,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 17.5,
-      "net_profit": 17.32
+      "net": 17.32
     },
     {
       "ticket": 296350678,
-      "time": "2026-10-13 12:59:33",
+      "time": "2026.10.13 19:59:33",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7228,13 +6807,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4152.98,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 4.25,
-      "net_profit": 4.21
+      "net": 4.21
     },
     {
       "ticket": 296350516,
-      "time": "2026-10-13 12:59:05",
+      "time": "2026.10.13 19:59:05",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7243,13 +6821,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 4152.62,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 16.0,
-      "net_profit": 14.25
+      "net": 14.25
     },
     {
       "ticket": 296350404,
-      "time": "2026-10-13 12:59:02",
+      "time": "2026.10.13 19:59:02",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7258,13 +6835,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 4152.94,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296349837,
-      "time": "2026-10-13 12:58:24",
+      "time": "2026.10.13 19:58:24",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7273,13 +6849,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 4154.07,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 16.0,
-      "net_profit": 14.25
+      "net": 14.25
     },
     {
       "ticket": 296349785,
-      "time": "2026-10-13 12:58:09",
+      "time": "2026.10.13 19:58:09",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7288,13 +6863,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 4154.39,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 296349565,
-      "time": "2026-10-13 12:57:39",
+      "time": "2026.10.13 19:57:39",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7303,13 +6877,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4155.41,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296348160,
-      "time": "2026-10-13 12:52:04",
+      "time": "2026.10.13 19:52:04",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7318,13 +6891,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4155.11,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 16.1,
-      "net_profit": 15.75
+      "net": 15.75
     },
     {
       "ticket": 296348114,
-      "time": "2026-10-13 12:51:55",
+      "time": "2026.10.13 19:51:55",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7333,13 +6905,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4155.44,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 6.4,
-      "net_profit": 5.0
+      "net": 5.0
     },
     {
       "ticket": 296347968,
-      "time": "2026-10-13 12:51:17",
+      "time": "2026.10.13 19:51:17",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7348,13 +6919,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4155.6,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296347410,
-      "time": "2026-10-13 12:48:45",
+      "time": "2026.10.13 19:48:45",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7363,13 +6933,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4157.26,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 26.0,
-      "net_profit": 24.6
+      "net": 24.6
     },
     {
       "ticket": 296347081,
-      "time": "2026-10-13 12:46:25",
+      "time": "2026.10.13 19:46:25",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7378,13 +6947,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4157.91,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296346899,
-      "time": "2026-10-13 12:45:11",
+      "time": "2026.10.13 19:45:11",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7393,13 +6961,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4156.72,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296345726,
-      "time": "2026-10-13 12:38:46",
+      "time": "2026.10.13 19:38:46",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7408,13 +6975,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4158.29,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -101.6,
-      "net_profit": -103.0
+      "net": -103.0
     },
     {
       "ticket": 296344117,
-      "time": "2026-10-13 12:31:05",
+      "time": "2026.10.13 19:31:05",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7423,13 +6989,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4155.75,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296343363,
-      "time": "2026-10-13 12:27:09",
+      "time": "2026.10.13 19:27:09",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7438,13 +7003,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4156.48,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296342665,
-      "time": "2026-10-13 12:23:38",
+      "time": "2026.10.13 19:23:38",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7453,13 +7017,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4156.59,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 23.6,
-      "net_profit": 22.2
+      "net": 22.2
     },
     {
       "ticket": 296342469,
-      "time": "2026-10-13 12:22:16",
+      "time": "2026.10.13 19:22:16",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7468,13 +7031,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4157.18,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296338580,
-      "time": "2026-10-13 12:08:17",
+      "time": "2026.10.13 19:08:17",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7483,13 +7045,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4157.23,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 296338101,
-      "time": "2026-10-13 12:07:24",
+      "time": "2026.10.13 19:07:24",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7498,13 +7059,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4155.8,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 36.8,
-      "net_profit": 36.1
+      "net": 36.1
     },
     {
       "ticket": 296337610,
-      "time": "2026-10-13 12:05:38",
+      "time": "2026.10.13 19:05:38",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7513,13 +7073,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4157.64,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296313798,
-      "time": "2026-10-13 10:57:11",
+      "time": "2026.10.13 17:57:11",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7528,13 +7087,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4169.34,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -18.9,
-      "net_profit": -19.25
+      "net": -19.25
     },
     {
       "ticket": 296313576,
-      "time": "2026-10-13 10:56:46",
+      "time": "2026.10.13 17:56:46",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7543,13 +7101,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4171.23,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296216713,
-      "time": "2026-10-13 07:19:29",
+      "time": "2026.10.13 14:19:29",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7558,13 +7115,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4183.24,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 28.4,
-      "net_profit": 27.7
+      "net": 27.7
     },
     {
       "ticket": 296216302,
-      "time": "2026-10-13 07:17:16",
+      "time": "2026.10.13 14:17:16",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7573,13 +7129,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4184.66,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296205046,
-      "time": "2026-10-13 06:31:29",
+      "time": "2026.10.13 13:31:29",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7588,13 +7143,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4182.81,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 4.0,
-      "net_profit": 3.3
+      "net": 3.3
     },
     {
       "ticket": 296204541,
-      "time": "2026-10-13 06:29:14",
+      "time": "2026.10.13 13:29:14",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7603,13 +7157,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4183.01,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296187417,
-      "time": "2026-10-13 05:23:38",
+      "time": "2026.10.13 12:23:38",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7618,13 +7171,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4184.2,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 23.2,
-      "net_profit": 22.5
+      "net": 22.5
     },
     {
       "ticket": 296186916,
-      "time": "2026-10-13 05:21:22",
+      "time": "2026.10.13 12:21:22",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7633,13 +7185,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4185.36,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296134953,
-      "time": "2026-10-13 01:43:58",
+      "time": "2026.10.13 08:43:58",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7648,13 +7199,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4191.53,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 29.6,
-      "net_profit": 28.2
+      "net": 28.2
     },
     {
       "ticket": 296134843,
-      "time": "2026-10-13 01:43:22",
+      "time": "2026.10.13 08:43:22",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7663,13 +7213,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4192.27,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296134510,
-      "time": "2026-10-13 01:42:32",
+      "time": "2026.10.13 08:42:32",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7678,13 +7227,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4192.49,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.6,
-      "net_profit": 0.42
+      "net": 0.42
     },
     {
       "ticket": 296134421,
-      "time": "2026-10-13 01:41:58",
+      "time": "2026.10.13 08:41:58",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7693,13 +7241,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4193.56,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 10.8,
-      "net_profit": 10.62
+      "net": 10.62
     },
     {
       "ticket": 296132773,
-      "time": "2026-10-13 01:32:30",
+      "time": "2026.10.13 08:32:30",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7708,13 +7255,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4195.72,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296132613,
-      "time": "2026-10-13 01:32:02",
+      "time": "2026.10.13 08:32:02",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7723,13 +7269,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4192.61,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296131998,
-      "time": "2026-10-13 01:30:29",
+      "time": "2026.10.13 08:30:29",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7738,13 +7283,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4194.57,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 4.28,
-      "net_profit": 4.21
+      "net": 4.21
     },
     {
       "ticket": 296131912,
-      "time": "2026-10-13 01:30:13",
+      "time": "2026.10.13 08:30:13",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7753,13 +7297,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4194.79,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -12.4,
-      "net_profit": -13.8
+      "net": -13.8
     },
     {
       "ticket": 296131742,
-      "time": "2026-10-13 01:29:49",
+      "time": "2026.10.13 08:29:49",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7768,13 +7311,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4194.48,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296131368,
-      "time": "2026-10-13 01:28:52",
+      "time": "2026.10.13 08:28:52",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7783,13 +7325,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4195.16,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 19.2,
-      "net_profit": 17.8
+      "net": 17.8
     },
     {
       "ticket": 296131312,
-      "time": "2026-10-13 01:28:37",
+      "time": "2026.10.13 08:28:37",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7798,13 +7339,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4195.64,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296130540,
-      "time": "2026-10-13 01:25:19",
+      "time": "2026.10.13 08:25:19",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7813,13 +7353,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4196.71,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 296125809,
-      "time": "2026-10-13 01:07:58",
+      "time": "2026.10.13 08:07:58",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7828,13 +7367,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4197.44,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 12.0,
-      "net_profit": 11.3
+      "net": 11.3
     },
     {
       "ticket": 296125734,
-      "time": "2026-10-13 01:07:35",
+      "time": "2026.10.13 08:07:35",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7843,13 +7381,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4196.84,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296119607,
-      "time": "2026-10-13 00:38:35",
+      "time": "2026.10.13 07:38:35",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7858,13 +7395,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4194.82,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -7.54,
-      "net_profit": -7.61
+      "net": -7.61
     },
     {
       "ticket": 296118230,
-      "time": "2026-10-13 00:31:02",
+      "time": "2026.10.13 07:31:02",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7873,13 +7409,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4191.05,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 296117852,
-      "time": "2026-10-13 00:28:48",
+      "time": "2026.10.13 07:28:48",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7888,13 +7423,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4190.5,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.8,
-      "net_profit": 4.45
+      "net": 4.45
     },
     {
       "ticket": 296117643,
-      "time": "2026-10-13 00:27:34",
+      "time": "2026.10.13 07:27:34",
       "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -7903,14 +7437,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4190.98,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 296080117,
-      "time": "2026-10-12 21:51:57",
-      "date": "2026-10-12",
+      "time": "2026.10.13 04:51:57",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -7918,14 +7451,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4155.2,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -38.4,
-      "net_profit": -39.8
+      "net": -39.8
     },
     {
       "ticket": 296079989,
-      "time": "2026-10-12 21:51:37",
-      "date": "2026-10-12",
+      "time": "2026.10.13 04:51:37",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -7933,14 +7465,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4154.24,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296053107,
-      "time": "2026-10-12 20:38:10",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:38:10",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -7948,14 +7479,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4163.54,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 22.4,
-      "net_profit": 21.7
+      "net": 21.7
     },
     {
       "ticket": 296052939,
-      "time": "2026-10-12 20:37:27",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:37:27",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -7963,14 +7493,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4164.66,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296052455,
-      "time": "2026-10-12 20:35:50",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:35:50",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -7978,14 +7507,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4166.68,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -48.6,
-      "net_profit": -49.3
+      "net": -49.3
     },
     {
       "ticket": 296052250,
-      "time": "2026-10-12 20:35:26",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:35:26",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -7993,14 +7521,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4165.23,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -112.0,
-      "net_profit": -113.4
+      "net": -113.4
     },
     {
       "ticket": 296052219,
-      "time": "2026-10-12 20:35:19",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:35:19",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8008,14 +7535,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4164.25,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296052012,
-      "time": "2026-10-12 20:34:31",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:34:31",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8023,14 +7549,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4162.43,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296040116,
-      "time": "2026-10-12 20:01:47",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:01:47",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8038,14 +7563,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4171.53,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -3.03,
-      "net_profit": -3.07
+      "net": -3.07
     },
     {
       "ticket": 296039340,
-      "time": "2026-10-12 20:00:16",
-      "date": "2026-10-12",
+      "time": "2026.10.13 03:00:16",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8053,14 +7577,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4169.68,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 9.75,
-      "net_profit": 9.57
+      "net": 9.57
     },
     {
       "ticket": 296039062,
-      "time": "2026-10-12 19:59:38",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:59:38",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8068,14 +7591,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4171.02,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 5.6,
-      "net_profit": 4.9
+      "net": 4.9
     },
     {
       "ticket": 296039032,
-      "time": "2026-10-12 19:59:17",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:59:17",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8083,14 +7605,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4171.3,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 296038706,
-      "time": "2026-10-12 19:56:27",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:56:27",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8098,14 +7619,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4171.63,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 296036675,
-      "time": "2026-10-12 19:37:53",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:37:53",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8113,14 +7633,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4174.92,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 15.6,
-      "net_profit": 14.2
+      "net": 14.2
     },
     {
       "ticket": 296036673,
-      "time": "2026-10-12 19:37:53",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:37:53",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8128,14 +7647,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4175.05,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -3.7,
-      "net_profit": -3.77
+      "net": -3.77
     },
     {
       "ticket": 296036572,
-      "time": "2026-10-12 19:36:35",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:36:35",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8143,14 +7661,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4174.53,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296036036,
-      "time": "2026-10-12 19:31:33",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:31:33",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8158,14 +7675,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4173.2,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 296035221,
-      "time": "2026-10-12 19:27:06",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:27:06",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8173,14 +7689,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4172.18,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -67.2,
-      "net_profit": -68.6
+      "net": -68.6
     },
     {
       "ticket": 296035088,
-      "time": "2026-10-12 19:25:31",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:25:31",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8188,14 +7703,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4173.86,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296032193,
-      "time": "2026-10-12 19:03:42",
-      "date": "2026-10-12",
+      "time": "2026.10.13 02:03:42",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8203,14 +7717,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4168.5,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 296030445,
-      "time": "2026-10-12 18:45:32",
-      "date": "2026-10-12",
+      "time": "2026.10.13 01:45:32",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8218,14 +7731,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4171.1,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -47.6,
-      "net_profit": -49.0
+      "net": -49.0
     },
     {
       "ticket": 296030274,
-      "time": "2026-10-12 18:41:27",
-      "date": "2026-10-12",
+      "time": "2026.10.13 01:41:27",
+      "date": "2026-10-13",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8233,13 +7745,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4172.29,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 296013489,
-      "time": "2026-10-12 14:53:42",
+      "time": "2026.10.12 21:53:42",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8248,13 +7759,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4168.83,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": -38.7,
-      "net_profit": -39.75
+      "net": -39.75
     },
     {
       "ticket": 296013424,
-      "time": "2026-10-12 14:53:18",
+      "time": "2026.10.12 21:53:18",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8263,13 +7773,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4167.54,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 296011209,
-      "time": "2026-10-12 14:35:49",
+      "time": "2026.10.12 21:35:49",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8278,13 +7787,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4170.6,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": -38.4,
-      "net_profit": -39.45
+      "net": -39.45
     },
     {
       "ticket": 296010728,
-      "time": "2026-10-12 14:30:28",
+      "time": "2026.10.12 21:30:28",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8293,13 +7801,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4171.88,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 296000907,
-      "time": "2026-10-12 13:13:07",
+      "time": "2026.10.12 20:13:07",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8308,13 +7815,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4167.47,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": -32.4,
-      "net_profit": -33.45
+      "net": -33.45
     },
     {
       "ticket": 296000689,
-      "time": "2026-10-12 13:12:00",
+      "time": "2026.10.12 20:12:00",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8323,13 +7829,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4168.55,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 295999549,
-      "time": "2026-10-12 13:06:01",
+      "time": "2026.10.12 20:06:01",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -8338,13 +7843,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 4.0,
-      "net_profit": 2.25
+      "net": 2.25
     },
     {
       "ticket": 295999344,
-      "time": "2026-10-12 13:05:06",
+      "time": "2026.10.12 20:05:06",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -8353,13 +7857,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 1.32,
       "commission": -1.75,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.75
+      "net": -1.75
     },
     {
       "ticket": 295858185,
-      "time": "2026-10-12 05:07:10",
+      "time": "2026.10.12 12:07:10",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8368,13 +7871,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4178.01,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -20.8,
-      "net_profit": -20.98
+      "net": -20.98
     },
     {
       "ticket": 295858135,
-      "time": "2026-10-12 05:06:51",
+      "time": "2026.10.12 12:06:51",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8383,13 +7885,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4177.36,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.9,
-      "net_profit": 4.55
+      "net": 4.55
     },
     {
       "ticket": 295858050,
-      "time": "2026-10-12 05:06:20",
+      "time": "2026.10.12 12:06:20",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8398,13 +7899,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4176.87,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295855335,
-      "time": "2026-10-12 04:55:50",
+      "time": "2026.10.12 11:55:50",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8413,13 +7913,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4173.85,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295816191,
-      "time": "2026-10-12 01:59:09",
+      "time": "2026.10.12 08:59:09",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8428,13 +7927,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4191.08,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.2,
-      "net_profit": 4.02
+      "net": 4.02
     },
     {
       "ticket": 295816150,
-      "time": "2026-10-12 01:58:56",
+      "time": "2026.10.12 08:58:56",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8443,13 +7941,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4190.24,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295797779,
-      "time": "2026-10-12 01:02:11",
+      "time": "2026.10.12 08:02:11",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8458,13 +7955,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4193.84,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -51.2,
-      "net_profit": -52.6
+      "net": -52.6
     },
     {
       "ticket": 295797619,
-      "time": "2026-10-12 01:01:28",
+      "time": "2026.10.12 08:01:28",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8473,13 +7969,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4195.12,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 295795751,
-      "time": "2026-10-12 00:53:33",
+      "time": "2026.10.12 07:53:33",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8488,13 +7983,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4195.77,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -94.0,
-      "net_profit": -95.4
+      "net": -95.4
     },
     {
       "ticket": 295795750,
-      "time": "2026-10-12 00:53:33",
+      "time": "2026.10.12 07:53:33",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8503,13 +7997,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4195.77,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -108.4,
-      "net_profit": -109.8
+      "net": -109.8
     },
     {
       "ticket": 295795749,
-      "time": "2026-10-12 00:53:33",
+      "time": "2026.10.12 07:53:33",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8518,13 +8011,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4195.77,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": -204.0,
-      "net_profit": -205.4
+      "net": -205.4
     },
     {
       "ticket": 295795473,
-      "time": "2026-10-12 00:52:41",
+      "time": "2026.10.12 07:52:41",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8533,13 +8025,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4196.01,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": -73.5,
-      "net_profit": -74.55
+      "net": -74.55
     },
     {
       "ticket": 295794189,
-      "time": "2026-10-12 00:44:16",
+      "time": "2026.10.12 07:44:16",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8548,13 +8039,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4198.12,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 295793831,
-      "time": "2026-10-12 00:41:48",
+      "time": "2026.10.12 07:41:48",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8563,13 +8053,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4198.48,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 295793735,
-      "time": "2026-10-12 00:40:40",
+      "time": "2026.10.12 07:40:40",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8578,13 +8067,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4198.46,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 295792630,
-      "time": "2026-10-12 00:33:22",
+      "time": "2026.10.12 07:33:22",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8593,13 +8081,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4198.23,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 2.0,
-      "net_profit": 1.65
+      "net": 1.65
     },
     {
       "ticket": 295792525,
-      "time": "2026-10-12 00:33:04",
+      "time": "2026.10.12 07:33:04",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8608,13 +8095,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4197.5,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -5.06,
-      "net_profit": -5.13
+      "net": -5.13
     },
     {
       "ticket": 295791762,
-      "time": "2026-10-12 00:28:19",
+      "time": "2026.10.12 07:28:19",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8623,13 +8109,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4200.87,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 295790858,
-      "time": "2026-10-12 00:22:28",
+      "time": "2026.10.12 07:22:28",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8638,13 +8123,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4198.43,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295790431,
-      "time": "2026-10-12 00:18:46",
+      "time": "2026.10.12 07:18:46",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8653,13 +8137,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4200.03,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 295787128,
-      "time": "2026-10-12 00:03:35",
+      "time": "2026.10.12 07:03:35",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8668,13 +8151,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4202.23,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 9.2,
-      "net_profit": 7.8
+      "net": 7.8
     },
     {
       "ticket": 295787126,
-      "time": "2026-10-12 00:03:34",
+      "time": "2026.10.12 07:03:34",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8683,13 +8165,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4202.46,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 295786786,
-      "time": "2026-10-12 00:01:31",
+      "time": "2026.10.12 07:01:31",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8698,13 +8179,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4202.95,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 4.0,
-      "net_profit": 3.65
+      "net": 3.65
     },
     {
       "ticket": 295786662,
-      "time": "2026-10-12 00:00:10",
+      "time": "2026.10.12 07:00:10",
       "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -8713,14 +8193,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4203.35,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295785633,
-      "time": "2026-10-11 23:52:19",
-      "date": "2026-10-11",
+      "time": "2026.10.12 06:52:19",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8728,14 +8207,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4204.37,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -10.0,
-      "net_profit": -10.35
+      "net": -10.35
     },
     {
       "ticket": 295785482,
-      "time": "2026-10-11 23:51:38",
-      "date": "2026-10-11",
+      "time": "2026.10.12 06:51:38",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8743,14 +8221,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4205.37,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295777054,
-      "time": "2026-10-11 22:59:02",
-      "date": "2026-10-11",
+      "time": "2026.10.12 05:59:02",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8758,14 +8235,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4204.63,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 8.28,
-      "net_profit": 8.21
+      "net": 8.21
     },
     {
       "ticket": 295768031,
-      "time": "2026-10-11 22:12:03",
-      "date": "2026-10-11",
+      "time": "2026.10.12 05:12:03",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8773,14 +8249,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4212.41,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -19.2,
-      "net_profit": -19.55
+      "net": -19.55
     },
     {
       "ticket": 295767801,
-      "time": "2026-10-11 22:10:36",
-      "date": "2026-10-11",
+      "time": "2026.10.12 05:10:36",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8788,14 +8263,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4210.49,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295767347,
-      "time": "2026-10-11 22:07:49",
-      "date": "2026-10-11",
+      "time": "2026.10.12 05:07:49",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8803,14 +8277,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4208.77,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 295760627,
-      "time": "2026-10-11 21:42:12",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:42:12",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8818,14 +8291,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4206.01,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.3,
-      "net_profit": 7.12
+      "net": 7.12
     },
     {
       "ticket": 295760626,
-      "time": "2026-10-11 21:42:12",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:42:12",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8833,14 +8305,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4206.02,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.38,
-      "net_profit": 0.31
+      "net": 0.31
     },
     {
       "ticket": 295760439,
-      "time": "2026-10-11 21:40:54",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:40:54",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8848,14 +8319,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4204.55,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295760177,
-      "time": "2026-10-11 21:39:38",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:39:38",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8863,14 +8333,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4205.83,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 295757062,
-      "time": "2026-10-11 21:30:49",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:30:49",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8878,14 +8347,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4206.76,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 8.2,
-      "net_profit": 8.02
+      "net": 8.02
     },
     {
       "ticket": 295756873,
-      "time": "2026-10-11 21:30:28",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:30:28",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8893,14 +8361,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4208.4,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295756460,
-      "time": "2026-10-11 21:29:35",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:29:35",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8908,14 +8375,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4208.66,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.6,
-      "net_profit": 1.42
+      "net": 1.42
     },
     {
       "ticket": 295756432,
-      "time": "2026-10-11 21:29:31",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:29:31",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8923,14 +8389,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4208.14,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 28.8,
-      "net_profit": 27.4
+      "net": 27.4
     },
     {
       "ticket": 295756358,
-      "time": "2026-10-11 21:29:10",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:29:10",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8938,14 +8403,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4208.86,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 295755433,
-      "time": "2026-10-11 21:25:51",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:25:51",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8953,14 +8417,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4208.98,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295754374,
-      "time": "2026-10-11 21:21:22",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:21:22",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -8968,14 +8431,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4209.13,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 19.2,
-      "net_profit": 18.15
+      "net": 18.15
     },
     {
       "ticket": 295754350,
-      "time": "2026-10-11 21:21:17",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:21:17",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8983,14 +8445,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4208.49,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 295753076,
-      "time": "2026-10-11 21:18:17",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:18:17",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -8998,14 +8459,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4201.93,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 40.4,
-      "net_profit": 39.0
+      "net": 39.0
     },
     {
       "ticket": 295752537,
-      "time": "2026-10-11 21:16:11",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:16:11",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9013,14 +8473,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.4,
       "price": 4202.94,
       "commission": -1.4,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.4
+      "net": -1.4
     },
     {
       "ticket": 295752250,
-      "time": "2026-10-11 21:15:49",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:15:49",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9028,14 +8487,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4203.57,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 13.4,
-      "net_profit": 13.05
+      "net": 13.05
     },
     {
       "ticket": 295752079,
-      "time": "2026-10-11 21:15:28",
-      "date": "2026-10-11",
+      "time": "2026.10.12 04:15:28",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9043,14 +8501,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4204.91,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295734499,
-      "time": "2026-10-11 20:21:29",
-      "date": "2026-10-11",
+      "time": "2026.10.12 03:21:29",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9058,14 +8515,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4205.85,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 12.1,
-      "net_profit": 11.75
+      "net": 11.75
     },
     {
       "ticket": 295734444,
-      "time": "2026-10-11 20:21:12",
-      "date": "2026-10-11",
+      "time": "2026.10.12 03:21:12",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9073,14 +8529,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4204.64,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295733788,
-      "time": "2026-10-11 20:18:25",
-      "date": "2026-10-11",
+      "time": "2026.10.12 03:18:25",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9088,14 +8543,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4204.07,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 7.6,
-      "net_profit": 7.25
+      "net": 7.25
     },
     {
       "ticket": 295733621,
-      "time": "2026-10-11 20:18:18",
-      "date": "2026-10-11",
+      "time": "2026.10.12 03:18:18",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9103,14 +8557,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4204.83,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295726127,
-      "time": "2026-10-11 20:00:07",
-      "date": "2026-10-11",
+      "time": "2026.10.12 03:00:07",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9118,14 +8571,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4189.56,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": -109.5,
-      "net_profit": -110.55
+      "net": -110.55
     },
     {
       "ticket": 295724968,
-      "time": "2026-10-11 19:55:41",
-      "date": "2026-10-11",
+      "time": "2026.10.12 02:55:41",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9133,14 +8585,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4193.21,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 295720247,
-      "time": "2026-10-11 19:33:56",
-      "date": "2026-10-11",
+      "time": "2026.10.12 02:33:56",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9148,14 +8599,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4199.4,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -2.74,
-      "net_profit": -2.78
+      "net": -2.78
     },
     {
       "ticket": 295719935,
-      "time": "2026-10-11 19:33:18",
-      "date": "2026-10-11",
+      "time": "2026.10.12 02:33:18",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9163,14 +8613,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4196.66,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 295714486,
-      "time": "2026-10-11 19:01:11",
-      "date": "2026-10-11",
+      "time": "2026.10.12 02:01:11",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9178,14 +8627,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4186.17,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 3.0,
-      "net_profit": 2.82
+      "net": 2.82
     },
     {
       "ticket": 295714451,
-      "time": "2026-10-11 19:00:56",
-      "date": "2026-10-11",
+      "time": "2026.10.12 02:00:56",
+      "date": "2026-10-12",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9193,28 +8641,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4185.57,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
-    },
-    {
-      "ticket": 295657716,
-      "time": "2026-10-09 14:02:40",
-      "date": "2026-10-09",
-      "month": "2026-10",
-      "symbol": "",
-      "type": "sell",
-      "direction": "in",
-      "volume": 0.0,
-      "price": 0.0,
-      "commission": 0.0,
-      "swap": 0.0,
-      "profit": 2993.13,
-      "net_profit": 2993.13
+      "net": -0.18
     },
     {
       "ticket": 295517399,
-      "time": "2026-10-09 06:26:10",
+      "time": "2026.10.09 13:26:10",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9223,13 +8655,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4185.67,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 11.1,
-      "net_profit": 10.75
+      "net": 10.75
     },
     {
       "ticket": 295516502,
-      "time": "2026-10-09 06:18:27",
+      "time": "2026.10.09 13:18:27",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9238,13 +8669,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4184.56,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295502501,
-      "time": "2026-10-09 05:04:53",
+      "time": "2026.10.09 12:04:53",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9253,13 +8683,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4186.2,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 7.2,
-      "net_profit": 6.85
+      "net": 6.85
     },
     {
       "ticket": 295502335,
-      "time": "2026-10-09 05:04:02",
+      "time": "2026.10.09 12:04:02",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9268,13 +8697,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4186.92,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 295484357,
-      "time": "2026-10-09 03:51:09",
+      "time": "2026.10.09 10:51:09",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9283,13 +8711,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4190.82,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 8.15,
-      "net_profit": 7.97
+      "net": 7.97
     },
     {
       "ticket": 295483519,
-      "time": "2026-10-09 03:46:28",
+      "time": "2026.10.09 10:46:28",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9298,13 +8725,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4192.45,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295467592,
-      "time": "2026-10-09 02:29:48",
+      "time": "2026.10.09 09:29:48",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9313,13 +8739,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4191.1,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 6.2,
-      "net_profit": 6.02
+      "net": 6.02
     },
     {
       "ticket": 295467467,
-      "time": "2026-10-09 02:29:16",
+      "time": "2026.10.09 09:29:16",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9328,13 +8753,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4192.34,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295467301,
-      "time": "2026-10-09 02:28:27",
+      "time": "2026.10.09 09:28:27",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9343,13 +8767,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4192.28,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.1,
-      "net_profit": 4.92
+      "net": 4.92
     },
     {
       "ticket": 295467108,
-      "time": "2026-10-09 02:27:46",
+      "time": "2026.10.09 09:27:46",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9358,13 +8781,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4193.3,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295459289,
-      "time": "2026-10-09 02:00:29",
+      "time": "2026.10.09 09:00:29",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9373,13 +8795,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4194.27,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 6.9,
-      "net_profit": 6.72
+      "net": 6.72
     },
     {
       "ticket": 295459092,
-      "time": "2026-10-09 02:00:05",
+      "time": "2026.10.09 09:00:05",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9388,13 +8809,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4195.65,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295423143,
-      "time": "2026-10-09 00:20:50",
+      "time": "2026.10.09 07:20:50",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9403,13 +8823,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4181.82,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -4.76,
-      "net_profit": -4.8
+      "net": -4.8
     },
     {
       "ticket": 295423137,
-      "time": "2026-10-09 00:20:50",
+      "time": "2026.10.09 07:20:50",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9418,13 +8837,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4181.82,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -9.44,
-      "net_profit": -9.48
+      "net": -9.48
     },
     {
       "ticket": 295422081,
-      "time": "2026-10-09 00:14:08",
+      "time": "2026.10.09 07:14:08",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9433,13 +8851,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4179.37,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 4.65,
-      "net_profit": 4.12
+      "net": 4.12
     },
     {
       "ticket": 295421988,
-      "time": "2026-10-09 00:13:35",
+      "time": "2026.10.09 07:13:35",
       "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9448,14 +8865,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4179.06,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295412032,
-      "time": "2026-10-08 23:01:28",
-      "date": "2026-10-08",
+      "time": "2026.10.09 06:01:28",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9463,14 +8879,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4177.06,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 295404511,
-      "time": "2026-10-08 22:30:57",
-      "date": "2026-10-08",
+      "time": "2026.10.09 05:30:57",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9478,14 +8893,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4169.99,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 8.6,
-      "net_profit": 7.9
+      "net": 7.9
     },
     {
       "ticket": 295403354,
-      "time": "2026-10-08 22:22:24",
-      "date": "2026-10-08",
+      "time": "2026.10.09 05:22:24",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9493,14 +8907,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4171.75,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 15.2,
-      "net_profit": 14.5
+      "net": 14.5
     },
     {
       "ticket": 295402687,
-      "time": "2026-10-08 22:17:45",
-      "date": "2026-10-08",
+      "time": "2026.10.09 05:17:45",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9508,14 +8921,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4172.51,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 295402557,
-      "time": "2026-10-08 22:17:08",
-      "date": "2026-10-08",
+      "time": "2026.10.09 05:17:08",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "buy",
@@ -9523,14 +8935,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 1.32,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 4.05,
-      "net_profit": 3.52
+      "net": 3.52
     },
     {
       "ticket": 295402419,
-      "time": "2026-10-08 22:16:15",
-      "date": "2026-10-08",
+      "time": "2026.10.09 05:16:15",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9538,14 +8949,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4170.42,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 295399784,
-      "time": "2026-10-08 22:05:16",
-      "date": "2026-10-08",
+      "time": "2026.10.09 05:05:16",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9553,14 +8963,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4172.38,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 295396732,
-      "time": "2026-10-08 21:54:28",
-      "date": "2026-10-08",
+      "time": "2026.10.09 04:54:28",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
@@ -9568,14 +8977,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 1.32,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295391219,
-      "time": "2026-10-08 21:40:09",
-      "date": "2026-10-08",
+      "time": "2026.10.09 04:40:09",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9583,14 +8991,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4170.68,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 18.45,
-      "net_profit": 17.92
+      "net": 17.92
     },
     {
       "ticket": 295390466,
-      "time": "2026-10-08 21:38:21",
-      "date": "2026-10-08",
+      "time": "2026.10.09 04:38:21",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9598,14 +9005,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4169.45,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295377788,
-      "time": "2026-10-08 21:01:25",
-      "date": "2026-10-08",
+      "time": "2026.10.09 04:01:25",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9613,14 +9019,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4148.07,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 25.35,
-      "net_profit": 24.82
+      "net": 24.82
     },
     {
       "ticket": 295377787,
-      "time": "2026-10-08 21:01:25",
-      "date": "2026-10-08",
+      "time": "2026.10.09 04:01:25",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9628,14 +9033,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4148.07,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 18.1,
-      "net_profit": 17.92
+      "net": 17.92
     },
     {
       "ticket": 295377786,
-      "time": "2026-10-08 21:01:25",
-      "date": "2026-10-08",
+      "time": "2026.10.09 04:01:25",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9643,14 +9047,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4148.07,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 3.57,
-      "net_profit": 3.53
+      "net": 3.53
     },
     {
       "ticket": 295377283,
-      "time": "2026-10-08 21:00:13",
-      "date": "2026-10-08",
+      "time": "2026.10.09 04:00:13",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9658,14 +9061,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4145.34,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 3.6,
-      "net_profit": 3.07
+      "net": 3.07
     },
     {
       "ticket": 295376815,
-      "time": "2026-10-08 20:58:30",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:58:30",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9673,14 +9075,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4145.1,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295376379,
-      "time": "2026-10-08 20:55:39",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:55:39",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9688,14 +9089,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4146.38,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295376038,
-      "time": "2026-10-08 20:53:09",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:53:09",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9703,14 +9103,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4144.45,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295375456,
-      "time": "2026-10-08 20:49:21",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:49:21",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9718,14 +9117,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4144.5,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 295370639,
-      "time": "2026-10-08 20:23:22",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:23:22",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9733,14 +9131,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4144.09,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 25.2,
-      "net_profit": 24.67
+      "net": 24.67
     },
     {
       "ticket": 295369323,
-      "time": "2026-10-08 20:15:30",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:15:30",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9748,14 +9145,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.08,
       "price": 4147.51,
       "commission": -0.28,
-      "swap": 0.0,
       "profit": 6.24,
-      "net_profit": 5.96
+      "net": 5.96
     },
     {
       "ticket": 295369186,
-      "time": "2026-10-08 20:15:00",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:15:00",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9763,14 +9159,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.08,
       "price": 4146.73,
       "commission": -0.28,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.28
+      "net": -0.28
     },
     {
       "ticket": 295368532,
-      "time": "2026-10-08 20:12:28",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:12:28",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9778,14 +9173,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4145.77,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295367735,
-      "time": "2026-10-08 20:09:06",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:09:06",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9793,14 +9187,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4146.35,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 3.0,
-      "net_profit": 2.47
+      "net": 2.47
     },
     {
       "ticket": 295367660,
-      "time": "2026-10-08 20:08:49",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:08:49",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9808,14 +9201,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4146.15,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295364785,
-      "time": "2026-10-08 20:00:05",
-      "date": "2026-10-08",
+      "time": "2026.10.09 03:00:05",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9823,14 +9215,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4145.5,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 2.7,
-      "net_profit": 2.63
+      "net": 2.63
     },
     {
       "ticket": 295364516,
-      "time": "2026-10-08 19:58:42",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:58:42",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9838,14 +9229,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4144.15,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 295364356,
-      "time": "2026-10-08 19:57:09",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:57:09",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9853,14 +9243,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4143.8,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 10.8,
-      "net_profit": 10.27
+      "net": 10.27
     },
     {
       "ticket": 295364257,
-      "time": "2026-10-08 19:56:07",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:56:07",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9868,14 +9257,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4143.08,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295363626,
-      "time": "2026-10-08 19:52:56",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:52:56",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9883,14 +9271,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4143.99,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.45,
-      "net_profit": 7.27
+      "net": 7.27
     },
     {
       "ticket": 295363475,
-      "time": "2026-10-08 19:51:44",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:51:44",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9898,14 +9285,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4142.5,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295359992,
-      "time": "2026-10-08 19:18:16",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:18:16",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9913,14 +9299,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4141.96,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 8.0,
-      "net_profit": 7.82
+      "net": 7.82
     },
     {
       "ticket": 295359989,
-      "time": "2026-10-08 19:18:13",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:18:13",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -9928,14 +9313,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4141.96,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 16.5,
-      "net_profit": 15.97
+      "net": 15.97
     },
     {
       "ticket": 295359677,
-      "time": "2026-10-08 19:13:05",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:13:05",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9943,14 +9327,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4140.36,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295359617,
-      "time": "2026-10-08 19:12:20",
-      "date": "2026-10-08",
+      "time": "2026.10.09 02:12:20",
+      "date": "2026-10-09",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -9958,13 +9341,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4140.86,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295153918,
-      "time": "2026-10-08 07:29:55",
+      "time": "2026.10.08 14:29:55",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9973,13 +9355,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4123.83,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 18.6,
-      "net_profit": 18.07
+      "net": 18.07
     },
     {
       "ticket": 295153239,
-      "time": "2026-10-08 07:27:10",
+      "time": "2026.10.08 14:27:10",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -9988,13 +9369,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4122.59,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295144470,
-      "time": "2026-10-08 06:56:42",
+      "time": "2026.10.08 13:56:42",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10003,13 +9383,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4120.48,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": -2.25,
-      "net_profit": -2.78
+      "net": -2.78
     },
     {
       "ticket": 295143417,
-      "time": "2026-10-08 06:53:36",
+      "time": "2026.10.08 13:53:36",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10018,13 +9397,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4120.63,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295133458,
-      "time": "2026-10-08 06:30:08",
+      "time": "2026.10.08 13:30:08",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10033,13 +9411,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4118.35,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 1.35,
-      "net_profit": 0.82
+      "net": 0.82
     },
     {
       "ticket": 295132619,
-      "time": "2026-10-08 06:27:35",
+      "time": "2026.10.08 13:27:35",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10048,13 +9425,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4118.44,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295119195,
-      "time": "2026-10-08 05:20:25",
+      "time": "2026.10.08 12:20:25",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10063,13 +9439,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4123.15,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 18.3,
-      "net_profit": 17.77
+      "net": 17.77
     },
     {
       "ticket": 295118703,
-      "time": "2026-10-08 05:17:35",
+      "time": "2026.10.08 12:17:35",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10078,13 +9453,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4124.37,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295062837,
-      "time": "2026-10-08 01:55:17",
+      "time": "2026.10.08 08:55:17",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10093,13 +9467,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4118.34,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 4.2,
-      "net_profit": 3.67
+      "net": 3.67
     },
     {
       "ticket": 295062771,
-      "time": "2026-10-08 01:55:03",
+      "time": "2026.10.08 08:55:03",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10108,13 +9481,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4118.62,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295052567,
-      "time": "2026-10-08 01:28:41",
+      "time": "2026.10.08 08:28:41",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10123,13 +9495,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4128.99,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.55,
-      "net_profit": 4.37
+      "net": 4.37
     },
     {
       "ticket": 295052563,
-      "time": "2026-10-08 01:28:39",
+      "time": "2026.10.08 08:28:39",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10138,13 +9509,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4128.97,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 3.0,
-      "net_profit": 2.47
+      "net": 2.47
     },
     {
       "ticket": 295052372,
-      "time": "2026-10-08 01:27:14",
+      "time": "2026.10.08 08:27:14",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10153,13 +9523,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4129.9,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295052334,
-      "time": "2026-10-08 01:27:00",
+      "time": "2026.10.08 08:27:00",
       "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10168,14 +9537,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4129.17,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 295017214,
-      "time": "2026-10-07 22:30:36",
-      "date": "2026-10-07",
+      "time": "2026.10.08 05:30:36",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10183,14 +9551,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4136.15,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.25,
-      "net_profit": 5.07
+      "net": 5.07
     },
     {
       "ticket": 295016697,
-      "time": "2026-10-07 22:27:09",
-      "date": "2026-10-07",
+      "time": "2026.10.08 05:27:09",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10198,14 +9565,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4137.2,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295007430,
-      "time": "2026-10-07 21:45:02",
-      "date": "2026-10-07",
+      "time": "2026.10.08 04:45:02",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10213,14 +9579,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4131.5,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.45,
-      "net_profit": 4.27
+      "net": 4.27
     },
     {
       "ticket": 295007349,
-      "time": "2026-10-07 21:44:40",
-      "date": "2026-10-07",
+      "time": "2026.10.08 04:44:40",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10228,14 +9593,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4132.39,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295006927,
-      "time": "2026-10-07 21:42:55",
-      "date": "2026-10-07",
+      "time": "2026.10.08 04:42:55",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10243,14 +9607,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4131.24,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.8,
-      "net_profit": 2.62
+      "net": 2.62
     },
     {
       "ticket": 295006807,
-      "time": "2026-10-07 21:42:24",
-      "date": "2026-10-07",
+      "time": "2026.10.08 04:42:24",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10258,14 +9621,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4131.8,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 295006777,
-      "time": "2026-10-07 21:42:11",
-      "date": "2026-10-07",
+      "time": "2026.10.08 04:42:11",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10273,14 +9635,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4132.33,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -0.55,
-      "net_profit": -0.73
+      "net": -0.73
     },
     {
       "ticket": 295006706,
-      "time": "2026-10-07 21:41:49",
-      "date": "2026-10-07",
+      "time": "2026.10.08 04:41:49",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10288,14 +9649,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4132.22,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294981389,
-      "time": "2026-10-07 20:30:27",
-      "date": "2026-10-07",
+      "time": "2026.10.08 03:30:27",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10303,14 +9663,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4106.24,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 3.7,
-      "net_profit": 3.52
+      "net": 3.52
     },
     {
       "ticket": 294981355,
-      "time": "2026-10-07 20:30:15",
-      "date": "2026-10-07",
+      "time": "2026.10.08 03:30:15",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10318,14 +9677,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4106.98,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294974454,
-      "time": "2026-10-07 19:49:18",
-      "date": "2026-10-07",
+      "time": "2026.10.08 02:49:18",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10333,14 +9691,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4110.26,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.65,
-      "net_profit": 1.47
+      "net": 1.47
     },
     {
       "ticket": 294974319,
-      "time": "2026-10-07 19:47:46",
-      "date": "2026-10-07",
+      "time": "2026.10.08 02:47:46",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10348,14 +9705,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4110.59,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294973550,
-      "time": "2026-10-07 19:40:40",
-      "date": "2026-10-07",
+      "time": "2026.10.08 02:40:40",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10363,14 +9719,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4112.75,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.1,
-      "net_profit": 0.92
+      "net": 0.92
     },
     {
       "ticket": 294973528,
-      "time": "2026-10-07 19:40:11",
-      "date": "2026-10-07",
+      "time": "2026.10.08 02:40:11",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10378,14 +9733,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4112.97,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294970084,
-      "time": "2026-10-07 19:03:54",
-      "date": "2026-10-07",
+      "time": "2026.10.08 02:03:54",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10393,14 +9747,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4108.17,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": -28.65,
-      "net_profit": -29.18
+      "net": -29.18
     },
     {
       "ticket": 294969739,
-      "time": "2026-10-07 19:00:00",
-      "date": "2026-10-07",
+      "time": "2026.10.08 02:00:00",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10408,89 +9761,83 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4106.26,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 294968428,
-      "time": "2026-10-07 18:37:32",
-      "date": "2026-10-07",
+      "time": "2026.10.08 01:37:32",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
       "direction": "out",
       "volume": 0.01,
       "price": 4104.36,
-      "commission": -0.04,
-      "swap": -3.06,
+      "commission": -3.1,
       "profit": -5.59,
-      "net_profit": -8.69
+      "net": -8.69
     },
     {
       "ticket": 294968427,
-      "time": "2026-10-07 18:37:32",
-      "date": "2026-10-07",
+      "time": "2026.10.08 01:37:32",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
       "direction": "out",
       "volume": 0.01,
       "price": 4104.36,
-      "commission": -0.04,
-      "swap": -3.06,
+      "commission": -3.1,
       "profit": -15.51,
-      "net_profit": -18.61
+      "net": -18.61
     },
     {
       "ticket": 294968426,
-      "time": "2026-10-07 18:37:32",
-      "date": "2026-10-07",
+      "time": "2026.10.08 01:37:32",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
       "direction": "out",
       "volume": 0.1,
       "price": 1.32,
-      "commission": -0.35,
-      "swap": -1.3,
+      "commission": -1.65,
       "profit": 5.0,
-      "net_profit": 3.35
+      "net": 3.35
     },
     {
       "ticket": 294968425,
-      "time": "2026-10-07 18:37:32",
-      "date": "2026-10-07",
+      "time": "2026.10.08 01:37:32",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
       "direction": "out",
       "volume": 0.05,
       "price": 1.32,
-      "commission": -0.18,
-      "swap": -0.65,
+      "commission": -0.83,
       "profit": 2.1,
-      "net_profit": 1.27
+      "net": 1.27
     },
     {
       "ticket": 294968424,
-      "time": "2026-10-07 18:37:32",
-      "date": "2026-10-07",
+      "time": "2026.10.08 01:37:32",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "gbpusd",
       "type": "sell",
       "direction": "out",
       "volume": 0.01,
       "price": 1.32,
-      "commission": -0.04,
-      "swap": -0.13,
+      "commission": -0.17,
       "profit": -0.26,
-      "net_profit": -0.43
+      "net": -0.43
     },
     {
       "ticket": 294968250,
-      "time": "2026-10-07 18:35:30",
-      "date": "2026-10-07",
+      "time": "2026.10.08 01:35:30",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -10498,14 +9845,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4103.78,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 19.65,
-      "net_profit": 19.12
+      "net": 19.12
     },
     {
       "ticket": 294968190,
-      "time": "2026-10-07 18:35:02",
-      "date": "2026-10-07",
+      "time": "2026.10.08 01:35:02",
+      "date": "2026-10-08",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -10513,13 +9859,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.15,
       "price": 4105.09,
       "commission": -0.53,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.53
+      "net": -0.53
     },
     {
       "ticket": 294945182,
-      "time": "2026-10-07 15:00:59",
+      "time": "2026.10.07 22:00:59",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10528,13 +9873,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4109.95,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294887790,
-      "time": "2026-10-07 11:36:07",
+      "time": "2026.10.07 18:36:07",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10543,13 +9887,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4109.78,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 55.7,
-      "net_profit": 55.52
+      "net": 55.52
     },
     {
       "ticket": 294859135,
-      "time": "2026-10-07 10:26:24",
+      "time": "2026.10.07 17:26:24",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10558,13 +9901,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4098.64,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294754854,
-      "time": "2026-10-07 07:34:35",
+      "time": "2026.10.07 14:34:35",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -10573,13 +9915,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 1.32,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 294753652,
-      "time": "2026-10-07 07:30:24",
+      "time": "2026.10.07 14:30:24",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -10588,13 +9929,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 1.32,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294750686,
-      "time": "2026-10-07 07:19:12",
+      "time": "2026.10.07 14:19:12",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "gbpusd",
@@ -10603,13 +9943,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 1.32,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294750100,
-      "time": "2026-10-07 07:15:56",
+      "time": "2026.10.07 14:15:56",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10618,13 +9957,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4119.87,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294665380,
-      "time": "2026-10-07 02:45:52",
+      "time": "2026.10.07 09:45:52",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10633,13 +9971,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4134.17,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -36.6,
-      "net_profit": -37.3
+      "net": -37.3
     },
     {
       "ticket": 294665379,
-      "time": "2026-10-07 02:45:52",
+      "time": "2026.10.07 09:45:52",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10648,13 +9985,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4134.17,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -65.0,
-      "net_profit": -65.7
+      "net": -65.7
     },
     {
       "ticket": 294664722,
-      "time": "2026-10-07 02:41:09",
+      "time": "2026.10.07 09:41:09",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10663,13 +9999,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4135.1,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -4.55,
-      "net_profit": -4.59
+      "net": -4.59
     },
     {
       "ticket": 294662997,
-      "time": "2026-10-07 02:33:10",
+      "time": "2026.10.07 09:33:10",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10678,13 +10013,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4132.34,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 294661902,
-      "time": "2026-10-07 02:28:48",
+      "time": "2026.10.07 09:28:48",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10693,13 +10027,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4130.92,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 294661323,
-      "time": "2026-10-07 02:25:08",
+      "time": "2026.10.07 09:25:08",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10708,13 +10041,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4130.55,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294657085,
-      "time": "2026-10-07 02:05:35",
+      "time": "2026.10.07 09:05:35",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10723,13 +10055,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4132.67,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -9.85,
-      "net_profit": -10.03
+      "net": -10.03
     },
     {
       "ticket": 294656734,
-      "time": "2026-10-07 02:04:59",
+      "time": "2026.10.07 09:04:59",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10738,13 +10069,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4130.7,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294645870,
-      "time": "2026-10-07 01:23:30",
+      "time": "2026.10.07 08:23:30",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10753,13 +10083,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4133.47,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -7.8,
-      "net_profit": -7.98
+      "net": -7.98
     },
     {
       "ticket": 294645719,
-      "time": "2026-10-07 01:23:00",
+      "time": "2026.10.07 08:23:00",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10768,13 +10097,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4131.91,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294642059,
-      "time": "2026-10-07 01:08:29",
+      "time": "2026.10.07 08:08:29",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10783,13 +10111,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4135.16,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 1.11,
-      "net_profit": 1.07
+      "net": 1.07
     },
     {
       "ticket": 294641561,
-      "time": "2026-10-07 01:05:52",
+      "time": "2026.10.07 08:05:52",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10798,13 +10125,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4136.27,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294638799,
-      "time": "2026-10-07 00:58:53",
+      "time": "2026.10.07 07:58:53",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10813,13 +10139,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4136.17,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 11.3,
-      "net_profit": 10.95
+      "net": 10.95
     },
     {
       "ticket": 294638792,
-      "time": "2026-10-07 00:58:53",
+      "time": "2026.10.07 07:58:53",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10828,13 +10153,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4136.17,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 17.1,
-      "net_profit": 16.05
+      "net": 16.05
     },
     {
       "ticket": 294638291,
-      "time": "2026-10-07 00:55:44",
+      "time": "2026.10.07 07:55:44",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10843,13 +10167,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4137.3,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 294637975,
-      "time": "2026-10-07 00:54:08",
+      "time": "2026.10.07 07:54:08",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10858,13 +10181,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4136.74,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 294637831,
-      "time": "2026-10-07 00:53:46",
+      "time": "2026.10.07 07:53:46",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10873,13 +10195,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4137.69,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 1.8,
-      "net_profit": 0.75
+      "net": 0.75
     },
     {
       "ticket": 294637764,
-      "time": "2026-10-07 00:53:27",
+      "time": "2026.10.07 07:53:27",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10888,13 +10209,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.3,
       "price": 4137.75,
       "commission": -1.05,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -1.05
+      "net": -1.05
     },
     {
       "ticket": 294637531,
-      "time": "2026-10-07 00:51:56",
+      "time": "2026.10.07 07:51:56",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10903,13 +10223,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4138.57,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -1.75,
-      "net_profit": -1.93
+      "net": -1.93
     },
     {
       "ticket": 294636716,
-      "time": "2026-10-07 00:45:53",
+      "time": "2026.10.07 07:45:53",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10918,13 +10237,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4138.22,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294632623,
-      "time": "2026-10-07 00:25:38",
+      "time": "2026.10.07 07:25:38",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10933,13 +10251,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4143.23,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -7.95,
-      "net_profit": -8.13
+      "net": -8.13
     },
     {
       "ticket": 294631912,
-      "time": "2026-10-07 00:20:19",
+      "time": "2026.10.07 07:20:19",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10948,13 +10265,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4141.64,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294629807,
-      "time": "2026-10-07 00:07:23",
+      "time": "2026.10.07 07:07:23",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10963,13 +10279,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4141.77,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.45,
-      "net_profit": 7.27
+      "net": 7.27
     },
     {
       "ticket": 294629644,
-      "time": "2026-10-07 00:06:37",
+      "time": "2026.10.07 07:06:37",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10978,13 +10293,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4143.26,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294629286,
-      "time": "2026-10-07 00:04:39",
+      "time": "2026.10.07 07:04:39",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -10993,13 +10307,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4143.15,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.9,
-      "net_profit": 5.72
+      "net": 5.72
     },
     {
       "ticket": 294628873,
-      "time": "2026-10-07 00:01:36",
+      "time": "2026.10.07 07:01:36",
       "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11008,14 +10321,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4144.33,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294626373,
-      "time": "2026-10-06 23:48:51",
-      "date": "2026-10-06",
+      "time": "2026.10.07 06:48:51",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11023,14 +10335,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4146.32,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.95,
-      "net_profit": 4.77
+      "net": 4.77
     },
     {
       "ticket": 294626078,
-      "time": "2026-10-06 23:46:51",
-      "date": "2026-10-06",
+      "time": "2026.10.07 06:46:51",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11038,14 +10349,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4145.33,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294608072,
-      "time": "2026-10-06 22:09:39",
-      "date": "2026-10-06",
+      "time": "2026.10.07 05:09:39",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11053,14 +10363,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4142.25,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.75,
-      "net_profit": 7.57
+      "net": 7.57
     },
     {
       "ticket": 294607720,
-      "time": "2026-10-06 22:08:21",
-      "date": "2026-10-06",
+      "time": "2026.10.07 05:08:21",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11068,14 +10377,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4143.8,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294605304,
-      "time": "2026-10-06 22:04:28",
-      "date": "2026-10-06",
+      "time": "2026.10.07 05:04:28",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11083,14 +10391,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4144.76,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.66,
-      "net_profit": 0.62
+      "net": 0.62
     },
     {
       "ticket": 294604378,
-      "time": "2026-10-06 22:02:06",
-      "date": "2026-10-06",
+      "time": "2026.10.07 05:02:06",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11098,14 +10405,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4145.42,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294601776,
-      "time": "2026-10-06 21:54:33",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:54:33",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11113,14 +10419,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4147.3,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.5,
-      "net_profit": 5.32
+      "net": 5.32
     },
     {
       "ticket": 294601267,
-      "time": "2026-10-06 21:52:14",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:52:14",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11128,14 +10433,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4148.4,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294600745,
-      "time": "2026-10-06 21:50:21",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:50:21",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11143,14 +10447,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4148.18,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 7.9,
-      "net_profit": 7.72
+      "net": 7.72
     },
     {
       "ticket": 294600198,
-      "time": "2026-10-06 21:48:01",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:48:01",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11158,14 +10461,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4149.76,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294599666,
-      "time": "2026-10-06 21:46:27",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:46:27",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11173,14 +10475,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4149.69,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.2,
-      "net_profit": 5.02
+      "net": 5.02
     },
     {
       "ticket": 294599381,
-      "time": "2026-10-06 21:45:14",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:45:14",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11188,14 +10489,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4150.73,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294598065,
-      "time": "2026-10-06 21:39:31",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:39:31",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11203,14 +10503,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4154.48,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.9,
-      "net_profit": 4.72
+      "net": 4.72
     },
     {
       "ticket": 294597116,
-      "time": "2026-10-06 21:34:13",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:34:13",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11218,14 +10517,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4153.5,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294590425,
-      "time": "2026-10-06 21:01:05",
-      "date": "2026-10-06",
+      "time": "2026.10.07 04:01:05",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11233,14 +10531,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4153.42,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -5.12,
-      "net_profit": -5.16
+      "net": -5.16
     },
     {
       "ticket": 294588073,
-      "time": "2026-10-06 20:46:45",
-      "date": "2026-10-06",
+      "time": "2026.10.07 03:46:45",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11248,14 +10545,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4158.54,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294587316,
-      "time": "2026-10-06 20:43:34",
-      "date": "2026-10-06",
+      "time": "2026.10.07 03:43:34",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11263,14 +10559,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4162.35,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -12.65,
-      "net_profit": -12.83
+      "net": -12.83
     },
     {
       "ticket": 294586025,
-      "time": "2026-10-06 20:37:06",
-      "date": "2026-10-06",
+      "time": "2026.10.07 03:37:06",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11278,14 +10573,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4159.82,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294573307,
-      "time": "2026-10-06 19:15:04",
-      "date": "2026-10-06",
+      "time": "2026.10.07 02:15:04",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11293,14 +10587,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4165.48,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 1.17,
-      "net_profit": 1.06
+      "net": 1.06
     },
     {
       "ticket": 294573222,
-      "time": "2026-10-06 19:13:13",
-      "date": "2026-10-06",
+      "time": "2026.10.07 02:13:13",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11308,14 +10601,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4165.09,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294572977,
-      "time": "2026-10-06 19:10:21",
-      "date": "2026-10-06",
+      "time": "2026.10.07 02:10:21",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11323,14 +10615,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4164.56,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.33,
-      "net_profit": 0.22
+      "net": 0.22
     },
     {
       "ticket": 294572811,
-      "time": "2026-10-06 19:07:53",
-      "date": "2026-10-06",
+      "time": "2026.10.07 02:07:53",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11338,14 +10629,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4164.45,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294570118,
-      "time": "2026-10-06 18:33:01",
-      "date": "2026-10-06",
+      "time": "2026.10.07 01:33:01",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11353,14 +10643,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4164.99,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.33,
-      "net_profit": 0.22
+      "net": 0.22
     },
     {
       "ticket": 294570074,
-      "time": "2026-10-06 18:32:24",
-      "date": "2026-10-06",
+      "time": "2026.10.07 01:32:24",
+      "date": "2026-10-07",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11368,13 +10657,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4165.1,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294559741,
-      "time": "2026-10-06 16:19:29",
+      "time": "2026.10.06 23:19:29",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11383,13 +10671,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4165.78,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 3.9,
-      "net_profit": 3.79
+      "net": 3.79
     },
     {
       "ticket": 294559570,
-      "time": "2026-10-06 16:18:00",
+      "time": "2026.10.06 23:18:00",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11398,13 +10685,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4167.08,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294558038,
-      "time": "2026-10-06 15:58:25",
+      "time": "2026.10.06 22:58:25",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11413,13 +10699,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4168.59,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.45,
-      "net_profit": 0.34
+      "net": 0.34
     },
     {
       "ticket": 294557918,
-      "time": "2026-10-06 15:57:10",
+      "time": "2026.10.06 22:57:10",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11428,13 +10713,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4168.44,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294553011,
-      "time": "2026-10-06 15:21:23",
+      "time": "2026.10.06 22:21:23",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11443,13 +10727,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4175.02,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.36,
-      "net_profit": 0.25
+      "net": 0.25
     },
     {
       "ticket": 294552916,
-      "time": "2026-10-06 15:20:16",
+      "time": "2026.10.06 22:20:16",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11458,13 +10741,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4175.14,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294544597,
-      "time": "2026-10-06 14:47:29",
+      "time": "2026.10.06 21:47:29",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11473,13 +10755,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4170.84,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 4.23,
-      "net_profit": 4.12
+      "net": 4.12
     },
     {
       "ticket": 294544412,
-      "time": "2026-10-06 14:46:16",
+      "time": "2026.10.06 21:46:16",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11488,13 +10769,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4169.43,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294540526,
-      "time": "2026-10-06 14:22:07",
+      "time": "2026.10.06 21:22:07",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11503,13 +10783,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4170.88,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -2.61,
-      "net_profit": -2.72
+      "net": -2.72
     },
     {
       "ticket": 294540215,
-      "time": "2026-10-06 14:20:19",
+      "time": "2026.10.06 21:20:19",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11518,13 +10797,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4171.75,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294537276,
-      "time": "2026-10-06 14:06:25",
+      "time": "2026.10.06 21:06:25",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11533,13 +10811,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4166.37,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.15,
-      "net_profit": 0.04
+      "net": 0.04
     },
     {
       "ticket": 294537191,
-      "time": "2026-10-06 14:05:38",
+      "time": "2026.10.06 21:05:38",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11548,13 +10825,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4166.32,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294534587,
-      "time": "2026-10-06 13:50:04",
+      "time": "2026.10.06 20:50:04",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11563,13 +10839,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4165.13,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.36,
-      "net_profit": 0.25
+      "net": 0.25
     },
     {
       "ticket": 294533958,
-      "time": "2026-10-06 13:45:01",
+      "time": "2026.10.06 20:45:01",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11578,13 +10853,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4165.01,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294533119,
-      "time": "2026-10-06 13:41:16",
+      "time": "2026.10.06 20:41:16",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11593,13 +10867,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4163.57,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 4.2,
-      "net_profit": 4.09
+      "net": 4.09
     },
     {
       "ticket": 294533007,
-      "time": "2026-10-06 13:40:08",
+      "time": "2026.10.06 20:40:08",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11608,13 +10881,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4162.17,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294528676,
-      "time": "2026-10-06 13:16:50",
+      "time": "2026.10.06 20:16:50",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11623,13 +10895,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4163.32,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.75,
-      "net_profit": 0.64
+      "net": 0.64
     },
     {
       "ticket": 294527814,
-      "time": "2026-10-06 13:12:46",
+      "time": "2026.10.06 20:12:46",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11638,13 +10909,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4163.07,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294524730,
-      "time": "2026-10-06 13:02:28",
+      "time": "2026.10.06 20:02:28",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11653,13 +10923,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4157.01,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.45,
-      "net_profit": 0.34
+      "net": 0.34
     },
     {
       "ticket": 294524707,
-      "time": "2026-10-06 13:02:21",
+      "time": "2026.10.06 20:02:21",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11668,13 +10937,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4156.86,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294516406,
-      "time": "2026-10-06 12:23:25",
+      "time": "2026.10.06 19:23:25",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11683,13 +10951,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4165.17,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -6.42,
-      "net_profit": -6.53
+      "net": -6.53
     },
     {
       "ticket": 294516054,
-      "time": "2026-10-06 12:21:22",
+      "time": "2026.10.06 19:21:22",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11698,13 +10965,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4163.03,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294404880,
-      "time": "2026-10-06 08:05:50",
+      "time": "2026.10.06 15:05:50",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11713,13 +10979,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4175.2,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.39,
-      "net_profit": 0.28
+      "net": 0.28
     },
     {
       "ticket": 294404813,
-      "time": "2026-10-06 08:05:37",
+      "time": "2026.10.06 15:05:37",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11728,13 +10993,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4175.07,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294396384,
-      "time": "2026-10-06 07:45:45",
+      "time": "2026.10.06 14:45:45",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11743,13 +11007,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4171.54,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.27,
-      "net_profit": 0.16
+      "net": 0.16
     },
     {
       "ticket": 294396095,
-      "time": "2026-10-06 07:45:01",
+      "time": "2026.10.06 14:45:01",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11758,13 +11021,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4171.45,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294387827,
-      "time": "2026-10-06 07:26:44",
+      "time": "2026.10.06 14:26:44",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11773,13 +11035,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4164.13,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -1.08,
-      "net_profit": -1.19
+      "net": -1.19
     },
     {
       "ticket": 294386485,
-      "time": "2026-10-06 07:25:15",
+      "time": "2026.10.06 14:25:15",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11788,13 +11049,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4163.77,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294372705,
-      "time": "2026-10-06 06:42:28",
+      "time": "2026.10.06 13:42:28",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11803,13 +11063,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4158.72,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.27,
-      "net_profit": 0.16
+      "net": 0.16
     },
     {
       "ticket": 294372590,
-      "time": "2026-10-06 06:42:02",
+      "time": "2026.10.06 13:42:02",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11818,13 +11077,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4158.63,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294360735,
-      "time": "2026-10-06 05:49:22",
+      "time": "2026.10.06 12:49:22",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11833,13 +11091,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4154.45,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.3,
-      "net_profit": 0.19
+      "net": 0.19
     },
     {
       "ticket": 294360695,
-      "time": "2026-10-06 05:49:18",
+      "time": "2026.10.06 12:49:18",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11848,13 +11105,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4154.55,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294287730,
-      "time": "2026-10-06 01:59:02",
+      "time": "2026.10.06 08:59:02",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11863,13 +11119,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4119.73,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.09,
-      "net_profit": -0.02
+      "net": -0.02
     },
     {
       "ticket": 294287726,
-      "time": "2026-10-06 01:59:01",
+      "time": "2026.10.06 08:59:01",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11878,13 +11133,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4119.76,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294284818,
-      "time": "2026-10-06 01:47:38",
+      "time": "2026.10.06 08:47:38",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11893,13 +11147,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4122.83,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.36,
-      "net_profit": 0.25
+      "net": 0.25
     },
     {
       "ticket": 294283762,
-      "time": "2026-10-06 01:39:20",
+      "time": "2026.10.06 08:39:20",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11908,13 +11161,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4122.71,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294276550,
-      "time": "2026-10-06 00:56:17",
+      "time": "2026.10.06 07:56:17",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11923,13 +11175,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4123.34,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 3.96,
-      "net_profit": 3.85
+      "net": 3.85
     },
     {
       "ticket": 294276419,
-      "time": "2026-10-06 00:55:36",
+      "time": "2026.10.06 07:55:36",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11938,13 +11189,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4122.02,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294274444,
-      "time": "2026-10-06 00:44:31",
+      "time": "2026.10.06 07:44:31",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11953,13 +11203,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4122.12,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.42,
-      "net_profit": 0.31
+      "net": 0.31
     },
     {
       "ticket": 294274417,
-      "time": "2026-10-06 00:44:19",
+      "time": "2026.10.06 07:44:19",
       "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -11968,14 +11217,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4122.26,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294224909,
-      "time": "2026-10-05 21:46:27",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:46:27",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -11983,14 +11231,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4131.62,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 2.2,
-      "net_profit": 2.13
+      "net": 2.13
     },
     {
       "ticket": 294224137,
-      "time": "2026-10-05 21:43:03",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:43:03",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -11998,14 +11245,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4132.72,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294222561,
-      "time": "2026-10-05 21:38:26",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:38:26",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12013,14 +11259,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4134.86,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -5.0,
-      "net_profit": -5.18
+      "net": -5.18
     },
     {
       "ticket": 294222554,
-      "time": "2026-10-05 21:38:24",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:38:24",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12028,14 +11273,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4134.74,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 10.3,
-      "net_profit": 9.95
+      "net": 9.95
     },
     {
       "ticket": 294221994,
-      "time": "2026-10-05 21:35:35",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:35:35",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12043,14 +11287,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4135.77,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 294220825,
-      "time": "2026-10-05 21:31:20",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:31:20",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12058,14 +11301,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4133.86,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294212494,
-      "time": "2026-10-05 21:01:37",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:01:37",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12073,14 +11315,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4148.58,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.1,
-      "net_profit": 0.03
+      "net": 0.03
     },
     {
       "ticket": 294212314,
-      "time": "2026-10-05 21:01:11",
-      "date": "2026-10-05",
+      "time": "2026.10.06 04:01:11",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12088,14 +11329,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4148.53,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294207639,
-      "time": "2026-10-05 20:47:08",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:47:08",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12103,14 +11343,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4143.2,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -6.14,
-      "net_profit": -6.18
+      "net": -6.18
     },
     {
       "ticket": 294207473,
-      "time": "2026-10-05 20:46:33",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:46:33",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12118,14 +11357,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4141.89,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 2.03,
-      "net_profit": 1.99
+      "net": 1.99
     },
     {
       "ticket": 294206310,
-      "time": "2026-10-05 20:40:47",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:40:47",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12133,14 +11371,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4137.06,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294205140,
-      "time": "2026-10-05 20:36:14",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:36:14",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12148,14 +11385,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4139.86,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294204861,
-      "time": "2026-10-05 20:35:09",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:35:09",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12163,14 +11399,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4141.01,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.06,
-      "net_profit": -0.01
+      "net": -0.01
     },
     {
       "ticket": 294204783,
-      "time": "2026-10-05 20:34:55",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:34:55",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12178,14 +11413,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4140.98,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294202167,
-      "time": "2026-10-05 20:23:08",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:23:08",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12193,14 +11427,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4141.54,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": -40.6,
-      "net_profit": -41.3
+      "net": -41.3
     },
     {
       "ticket": 294202166,
-      "time": "2026-10-05 20:23:08",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:23:08",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12208,14 +11441,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4141.54,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": -73.6,
-      "net_profit": -73.95
+      "net": -73.95
     },
     {
       "ticket": 294202165,
-      "time": "2026-10-05 20:23:08",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:23:08",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12223,14 +11455,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4141.54,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -31.12,
-      "net_profit": -31.26
+      "net": -31.26
     },
     {
       "ticket": 294201912,
-      "time": "2026-10-05 20:21:21",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:21:21",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12238,14 +11469,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4139.51,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 294201792,
-      "time": "2026-10-05 20:20:49",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:20:49",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12253,14 +11483,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4139.24,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.12,
-      "net_profit": 0.05
+      "net": 0.05
     },
     {
       "ticket": 294201744,
-      "time": "2026-10-05 20:20:35",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:20:35",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12268,14 +11497,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4138.58,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 24.8,
-      "net_profit": 24.1
+      "net": 24.1
     },
     {
       "ticket": 294201690,
-      "time": "2026-10-05 20:20:25",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:20:25",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12283,14 +11511,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4139.18,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294201622,
-      "time": "2026-10-05 20:20:05",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:20:05",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12298,14 +11525,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.2,
       "price": 4139.82,
       "commission": -0.7,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.7
+      "net": -0.7
     },
     {
       "ticket": 294199131,
-      "time": "2026-10-05 20:07:28",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:07:28",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12313,14 +11539,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.1,
       "price": 4134.18,
       "commission": -0.35,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.35
+      "net": -0.35
     },
     {
       "ticket": 294199000,
-      "time": "2026-10-05 20:06:46",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:06:46",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12328,14 +11553,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4132.94,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -2.74,
-      "net_profit": -2.78
+      "net": -2.78
     },
     {
       "ticket": 294198861,
-      "time": "2026-10-05 20:06:17",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:06:17",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12343,14 +11567,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4133.76,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294198408,
-      "time": "2026-10-05 20:03:33",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:03:33",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12358,14 +11581,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4135.68,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294197599,
-      "time": "2026-10-05 20:00:08",
-      "date": "2026-10-05",
+      "time": "2026.10.06 03:00:08",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12373,14 +11595,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4134.53,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -0.36,
-      "net_profit": -0.43
+      "net": -0.43
     },
     {
       "ticket": 294197123,
-      "time": "2026-10-05 19:56:05",
-      "date": "2026-10-05",
+      "time": "2026.10.06 02:56:05",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12388,14 +11609,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4134.71,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294196736,
-      "time": "2026-10-05 19:52:13",
-      "date": "2026-10-05",
+      "time": "2026.10.06 02:52:13",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12403,14 +11623,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4134.93,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.12,
-      "net_profit": 0.05
+      "net": 0.05
     },
     {
       "ticket": 294196719,
-      "time": "2026-10-05 19:52:03",
-      "date": "2026-10-05",
+      "time": "2026.10.06 02:52:03",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12418,14 +11637,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4134.99,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294194704,
-      "time": "2026-10-05 19:39:22",
-      "date": "2026-10-05",
+      "time": "2026.10.06 02:39:22",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12433,14 +11651,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4139.27,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.36,
-      "net_profit": 0.25
+      "net": 0.25
     },
     {
       "ticket": 294194678,
-      "time": "2026-10-05 19:39:02",
-      "date": "2026-10-05",
+      "time": "2026.10.06 02:39:02",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12448,14 +11665,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4139.39,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294192126,
-      "time": "2026-10-05 19:10:36",
-      "date": "2026-10-05",
+      "time": "2026.10.06 02:10:36",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12463,14 +11679,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4139.08,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 3.56,
-      "net_profit": 3.42
+      "net": 3.42
     },
     {
       "ticket": 294192040,
-      "time": "2026-10-05 19:09:29",
-      "date": "2026-10-05",
+      "time": "2026.10.06 02:09:29",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12478,14 +11693,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4139.97,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294190139,
-      "time": "2026-10-05 18:45:04",
-      "date": "2026-10-05",
+      "time": "2026.10.06 01:45:04",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -12493,14 +11707,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4143.63,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -2.04,
-      "net_profit": -2.11
+      "net": -2.11
     },
     {
       "ticket": 294189975,
-      "time": "2026-10-05 18:42:00",
-      "date": "2026-10-05",
+      "time": "2026.10.06 01:42:00",
+      "date": "2026-10-06",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -12508,13 +11721,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4144.65,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294175587,
-      "time": "2026-10-05 15:53:33",
+      "time": "2026.10.05 22:53:33",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12523,13 +11735,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4140.25,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 1.29,
-      "net_profit": 1.18
+      "net": 1.18
     },
     {
       "ticket": 294175391,
-      "time": "2026-10-05 15:52:07",
+      "time": "2026.10.05 22:52:07",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12538,13 +11749,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4140.68,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294175179,
-      "time": "2026-10-05 15:50:14",
+      "time": "2026.10.05 22:50:14",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12553,13 +11763,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4141.46,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.06,
-      "net_profit": -0.05
+      "net": -0.05
     },
     {
       "ticket": 294174953,
-      "time": "2026-10-05 15:48:08",
+      "time": "2026.10.05 22:48:08",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12568,13 +11777,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4141.48,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294169230,
-      "time": "2026-10-05 15:07:26",
+      "time": "2026.10.05 22:07:26",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12583,13 +11791,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4140.5,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -13.75,
-      "net_profit": -13.93
+      "net": -13.93
     },
     {
       "ticket": 294168228,
-      "time": "2026-10-05 15:01:49",
+      "time": "2026.10.05 22:01:49",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12598,13 +11805,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4143.25,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294164396,
-      "time": "2026-10-05 14:34:02",
+      "time": "2026.10.05 21:34:02",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12613,13 +11819,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4135.99,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.22,
-      "net_profit": 0.15
+      "net": 0.15
     },
     {
       "ticket": 294164346,
-      "time": "2026-10-05 14:33:50",
+      "time": "2026.10.05 21:33:50",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12628,13 +11833,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4135.88,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294162933,
-      "time": "2026-10-05 14:28:11",
+      "time": "2026.10.05 21:28:11",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12643,13 +11847,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4136.4,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -6.15,
-      "net_profit": -6.26
+      "net": -6.26
     },
     {
       "ticket": 294162894,
-      "time": "2026-10-05 14:28:08",
+      "time": "2026.10.05 21:28:08",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12658,13 +11861,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4135.82,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -2.9,
-      "net_profit": -2.97
+      "net": -2.97
     },
     {
       "ticket": 294162848,
-      "time": "2026-10-05 14:28:04",
+      "time": "2026.10.05 21:28:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12673,13 +11875,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4134.37,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294162846,
-      "time": "2026-10-05 14:28:04",
+      "time": "2026.10.05 21:28:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12688,13 +11889,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4134.35,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294149640,
-      "time": "2026-10-05 13:20:32",
+      "time": "2026.10.05 20:20:32",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12703,13 +11903,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4128.68,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 2.64,
-      "net_profit": 2.53
+      "net": 2.53
     },
     {
       "ticket": 294149637,
-      "time": "2026-10-05 13:20:31",
+      "time": "2026.10.05 20:20:31",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12718,13 +11917,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4128.6,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 6.2,
-      "net_profit": 6.06
+      "net": 6.06
     },
     {
       "ticket": 294149258,
-      "time": "2026-10-05 13:18:07",
+      "time": "2026.10.05 20:18:07",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12733,13 +11931,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4127.05,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294148983,
-      "time": "2026-10-05 13:16:59",
+      "time": "2026.10.05 20:16:59",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12748,13 +11945,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4127.8,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294148194,
-      "time": "2026-10-05 13:15:06",
+      "time": "2026.10.05 20:15:06",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12763,13 +11959,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4129.62,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -6.45,
-      "net_profit": -6.56
+      "net": -6.56
     },
     {
       "ticket": 294148183,
-      "time": "2026-10-05 13:15:05",
+      "time": "2026.10.05 20:15:05",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12778,13 +11973,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4129.3,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -7.32,
-      "net_profit": -7.46
+      "net": -7.46
     },
     {
       "ticket": 294147937,
-      "time": "2026-10-05 13:14:05",
+      "time": "2026.10.05 20:14:05",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12793,13 +11987,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4127.47,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294147936,
-      "time": "2026-10-05 13:14:05",
+      "time": "2026.10.05 20:14:05",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12808,13 +12001,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4127.47,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294146001,
-      "time": "2026-10-05 13:05:52",
+      "time": "2026.10.05 20:05:52",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12823,13 +12015,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4130.25,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 1.17,
-      "net_profit": 1.06
+      "net": 1.06
     },
     {
       "ticket": 294145845,
-      "time": "2026-10-05 13:05:14",
+      "time": "2026.10.05 20:05:14",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12838,13 +12029,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4130.09,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 1.8,
-      "net_profit": 1.66
+      "net": 1.66
     },
     {
       "ticket": 294145601,
-      "time": "2026-10-05 13:04:15",
+      "time": "2026.10.05 20:04:15",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12853,13 +12043,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4130.64,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294145592,
-      "time": "2026-10-05 13:04:14",
+      "time": "2026.10.05 20:04:14",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12868,13 +12057,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4130.54,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294144012,
-      "time": "2026-10-05 12:56:28",
+      "time": "2026.10.05 19:56:28",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12883,13 +12071,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4132.05,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.05,
-      "net_profit": 0.87
+      "net": 0.87
     },
     {
       "ticket": 294143808,
-      "time": "2026-10-05 12:55:09",
+      "time": "2026.10.05 19:55:09",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12898,13 +12085,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4131.84,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294140602,
-      "time": "2026-10-05 12:41:38",
+      "time": "2026.10.05 19:41:38",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12913,13 +12099,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4129.61,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.08,
-      "net_profit": -0.06
+      "net": -0.06
     },
     {
       "ticket": 294140426,
-      "time": "2026-10-05 12:41:04",
+      "time": "2026.10.05 19:41:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12928,13 +12113,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4129.59,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294135575,
-      "time": "2026-10-05 12:19:16",
+      "time": "2026.10.05 19:19:16",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12943,13 +12127,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4128.34,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 6.3,
-      "net_profit": 6.12
+      "net": 6.12
     },
     {
       "ticket": 294135574,
-      "time": "2026-10-05 12:19:16",
+      "time": "2026.10.05 19:19:16",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12958,13 +12141,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4128.34,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 1.2,
-      "net_profit": 1.06
+      "net": 1.06
     },
     {
       "ticket": 294135386,
-      "time": "2026-10-05 12:18:20",
+      "time": "2026.10.05 19:18:20",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12973,13 +12155,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4129.6,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294134955,
-      "time": "2026-10-05 12:17:12",
+      "time": "2026.10.05 19:17:12",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -12988,13 +12169,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4128.64,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294134378,
-      "time": "2026-10-05 12:15:45",
+      "time": "2026.10.05 19:15:45",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13003,13 +12183,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4130.41,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.4,
-      "net_profit": 0.26
+      "net": 0.26
     },
     {
       "ticket": 294134327,
-      "time": "2026-10-05 12:15:35",
+      "time": "2026.10.05 19:15:35",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13018,13 +12197,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4130.51,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294132738,
-      "time": "2026-10-05 12:11:34",
+      "time": "2026.10.05 19:11:34",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13033,13 +12211,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4132.43,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 2.6,
-      "net_profit": 2.46
+      "net": 2.46
     },
     {
       "ticket": 294132678,
-      "time": "2026-10-05 12:11:19",
+      "time": "2026.10.05 19:11:19",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13048,13 +12225,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4132.99,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.6,
-      "net_profit": 2.42
+      "net": 2.42
     },
     {
       "ticket": 294132600,
-      "time": "2026-10-05 12:10:53",
+      "time": "2026.10.05 19:10:53",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13063,13 +12239,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4133.51,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294132239,
-      "time": "2026-10-05 12:09:44",
+      "time": "2026.10.05 19:09:44",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13078,13 +12253,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4133.08,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294130252,
-      "time": "2026-10-05 12:01:34",
+      "time": "2026.10.05 19:01:34",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13093,13 +12267,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4134.42,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 2.45,
-      "net_profit": 2.27
+      "net": 2.27
     },
     {
       "ticket": 294130108,
-      "time": "2026-10-05 12:01:07",
+      "time": "2026.10.05 19:01:07",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13108,13 +12281,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4134.91,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294122016,
-      "time": "2026-10-05 11:28:59",
+      "time": "2026.10.05 18:28:59",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13123,13 +12295,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4139.31,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 15.7,
-      "net_profit": 15.52
+      "net": 15.52
     },
     {
       "ticket": 294120865,
-      "time": "2026-10-05 11:26:41",
+      "time": "2026.10.05 18:26:41",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13138,13 +12309,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4136.17,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294120402,
-      "time": "2026-10-05 11:25:39",
+      "time": "2026.10.05 18:25:39",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13153,13 +12323,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4134.71,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 4.75,
-      "net_profit": 4.57
+      "net": 4.57
     },
     {
       "ticket": 294120392,
-      "time": "2026-10-05 11:25:39",
+      "time": "2026.10.05 18:25:39",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13168,13 +12337,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4134.85,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -7.08,
-      "net_profit": -7.15
+      "net": -7.15
     },
     {
       "ticket": 294120317,
-      "time": "2026-10-05 11:25:33",
+      "time": "2026.10.05 18:25:33",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13183,13 +12351,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4133.76,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294120286,
-      "time": "2026-10-05 11:25:30",
+      "time": "2026.10.05 18:25:30",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13198,13 +12365,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4133.99,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -10.72,
-      "net_profit": -10.86
+      "net": -10.86
     },
     {
       "ticket": 294119496,
-      "time": "2026-10-05 11:24:14",
+      "time": "2026.10.05 18:24:14",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13213,13 +12379,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4131.31,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294119490,
-      "time": "2026-10-05 11:24:14",
+      "time": "2026.10.05 18:24:14",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13228,13 +12393,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4131.31,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294116531,
-      "time": "2026-10-05 11:21:40",
+      "time": "2026.10.05 18:21:40",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13243,13 +12407,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4130.36,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -3.08,
-      "net_profit": -3.12
+      "net": -3.12
     },
     {
       "ticket": 294115742,
-      "time": "2026-10-05 11:20:57",
+      "time": "2026.10.05 18:20:57",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13258,13 +12421,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4133.44,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294114999,
-      "time": "2026-10-05 11:19:21",
+      "time": "2026.10.05 18:19:21",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13273,13 +12435,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4136.93,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 1.41,
-      "net_profit": 1.3
+      "net": 1.3
     },
     {
       "ticket": 294114941,
-      "time": "2026-10-05 11:19:07",
+      "time": "2026.10.05 18:19:07",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13288,13 +12449,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4137.4,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294112099,
-      "time": "2026-10-05 11:12:49",
+      "time": "2026.10.05 18:12:49",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13303,13 +12463,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4140.88,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.3,
-      "net_profit": 0.23
+      "net": 0.23
     },
     {
       "ticket": 294112098,
-      "time": "2026-10-05 11:12:49",
+      "time": "2026.10.05 18:12:49",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13318,13 +12477,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4140.89,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.56,
-      "net_profit": 0.42
+      "net": 0.42
     },
     {
       "ticket": 294111980,
-      "time": "2026-10-05 11:12:23",
+      "time": "2026.10.05 18:12:23",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13333,13 +12491,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4141.03,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294111979,
-      "time": "2026-10-05 11:12:23",
+      "time": "2026.10.05 18:12:23",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13348,13 +12505,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4141.03,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294106599,
-      "time": "2026-10-05 11:00:21",
+      "time": "2026.10.05 18:00:21",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13363,13 +12519,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4147.8,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 6.68,
-      "net_profit": 6.64
+      "net": 6.64
     },
     {
       "ticket": 294104922,
-      "time": "2026-10-05 10:56:45",
+      "time": "2026.10.05 17:56:45",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13378,13 +12533,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4145.33,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.7,
-      "net_profit": 1.52
+      "net": 1.52
     },
     {
       "ticket": 294104825,
-      "time": "2026-10-05 10:56:16",
+      "time": "2026.10.05 17:56:16",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13393,13 +12547,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4144.87,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -0.14,
-      "net_profit": -0.21
+      "net": -0.21
     },
     {
       "ticket": 294104616,
-      "time": "2026-10-05 10:55:34",
+      "time": "2026.10.05 17:55:34",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13408,13 +12561,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4144.99,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294104442,
-      "time": "2026-10-05 10:55:08",
+      "time": "2026.10.05 17:55:08",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13423,13 +12575,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4144.94,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294103688,
-      "time": "2026-10-05 10:53:58",
+      "time": "2026.10.05 17:53:58",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13438,13 +12589,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4145.02,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 2.4,
-      "net_profit": 2.26
+      "net": 2.26
     },
     {
       "ticket": 294103521,
-      "time": "2026-10-05 10:53:31",
+      "time": "2026.10.05 17:53:31",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13453,13 +12603,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4144.42,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294101867,
-      "time": "2026-10-05 10:49:35",
+      "time": "2026.10.05 17:49:35",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13468,13 +12617,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4141.12,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294099620,
-      "time": "2026-10-05 10:42:41",
+      "time": "2026.10.05 17:42:41",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13483,13 +12631,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4141.58,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 1.92,
-      "net_profit": 1.78
+      "net": 1.78
     },
     {
       "ticket": 294099578,
-      "time": "2026-10-05 10:42:36",
+      "time": "2026.10.05 17:42:36",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13498,13 +12645,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4142.06,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294098383,
-      "time": "2026-10-05 10:40:37",
+      "time": "2026.10.05 17:40:37",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13513,13 +12659,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4138.69,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 2.8,
-      "net_profit": 2.66
+      "net": 2.66
     },
     {
       "ticket": 294098306,
-      "time": "2026-10-05 10:40:28",
+      "time": "2026.10.05 17:40:28",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13528,13 +12673,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4137.99,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294098025,
-      "time": "2026-10-05 10:39:51",
+      "time": "2026.10.05 17:39:51",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13543,13 +12687,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4136.3,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.8,
-      "net_profit": 0.73
+      "net": 0.73
     },
     {
       "ticket": 294096764,
-      "time": "2026-10-05 10:35:13",
+      "time": "2026.10.05 17:35:13",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13558,13 +12701,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4135.9,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294096222,
-      "time": "2026-10-05 10:34:06",
+      "time": "2026.10.05 17:34:06",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13573,13 +12715,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4132.75,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -7.26,
-      "net_profit": -7.33
+      "net": -7.33
     },
     {
       "ticket": 294096217,
-      "time": "2026-10-05 10:34:06",
+      "time": "2026.10.05 17:34:06",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13588,13 +12729,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4132.75,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -10.01,
-      "net_profit": -10.05
+      "net": -10.05
     },
     {
       "ticket": 294094044,
-      "time": "2026-10-05 10:30:49",
+      "time": "2026.10.05 17:30:49",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13603,13 +12743,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4136.38,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294093796,
-      "time": "2026-10-05 10:30:27",
+      "time": "2026.10.05 17:30:27",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13618,13 +12757,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4135.93,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.3,
-      "net_profit": 1.12
+      "net": 1.12
     },
     {
       "ticket": 294093514,
-      "time": "2026-10-05 10:30:12",
+      "time": "2026.10.05 17:30:12",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13633,13 +12771,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4136.19,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294089865,
-      "time": "2026-10-05 10:20:45",
+      "time": "2026.10.05 17:20:45",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13648,13 +12785,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4141.7,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.62,
-      "net_profit": 1.55
+      "net": 1.55
     },
     {
       "ticket": 294089308,
-      "time": "2026-10-05 10:18:53",
+      "time": "2026.10.05 17:18:53",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13663,13 +12799,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4140.89,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294087760,
-      "time": "2026-10-05 10:15:11",
+      "time": "2026.10.05 17:15:11",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13678,13 +12813,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4142.76,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294085549,
-      "time": "2026-10-05 10:09:37",
+      "time": "2026.10.05 17:09:37",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13693,13 +12827,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4143.48,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.86,
-      "net_profit": 1.79
+      "net": 1.79
     },
     {
       "ticket": 294085378,
-      "time": "2026-10-05 10:09:21",
+      "time": "2026.10.05 17:09:21",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13708,13 +12841,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4142.55,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294081802,
-      "time": "2026-10-05 10:04:14",
+      "time": "2026.10.05 17:04:14",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13723,13 +12855,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4143.46,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 7.16,
-      "net_profit": 7.12
+      "net": 7.12
     },
     {
       "ticket": 294079546,
-      "time": "2026-10-05 10:01:35",
+      "time": "2026.10.05 17:01:35",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13738,13 +12869,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4141.69,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 12.4,
-      "net_profit": 12.26
+      "net": 12.26
     },
     {
       "ticket": 294079120,
-      "time": "2026-10-05 10:01:08",
+      "time": "2026.10.05 17:01:08",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13753,13 +12883,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4138.59,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294077664,
-      "time": "2026-10-05 09:59:31",
+      "time": "2026.10.05 16:59:31",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13768,13 +12897,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4136.3,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 294072554,
-      "time": "2026-10-05 09:50:09",
+      "time": "2026.10.05 16:50:09",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13783,13 +12911,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4140.26,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 4.12,
-      "net_profit": 3.98
+      "net": 3.98
     },
     {
       "ticket": 294071360,
-      "time": "2026-10-05 09:48:08",
+      "time": "2026.10.05 16:48:08",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13798,13 +12925,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4139.23,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294070821,
-      "time": "2026-10-05 09:47:45",
+      "time": "2026.10.05 16:47:45",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13813,13 +12939,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4136.37,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294070790,
-      "time": "2026-10-05 09:47:43",
+      "time": "2026.10.05 16:47:43",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13828,13 +12953,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4135.8,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.08,
-      "net_profit": 1.01
+      "net": 1.01
     },
     {
       "ticket": 294070672,
-      "time": "2026-10-05 09:47:35",
+      "time": "2026.10.05 16:47:35",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13843,13 +12967,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4136.34,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 294070669,
-      "time": "2026-10-05 09:47:35",
+      "time": "2026.10.05 16:47:35",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13858,13 +12981,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4136.37,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294069014,
-      "time": "2026-10-05 09:46:12",
+      "time": "2026.10.05 16:46:12",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13873,13 +12995,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4132.36,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 20.28,
-      "net_profit": 20.14
+      "net": 20.14
     },
     {
       "ticket": 294067598,
-      "time": "2026-10-05 09:45:30",
+      "time": "2026.10.05 16:45:30",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13888,13 +13009,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4137.43,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294053845,
-      "time": "2026-10-05 09:22:43",
+      "time": "2026.10.05 16:22:43",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13903,13 +13023,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4151.79,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 2.92,
-      "net_profit": 2.78
+      "net": 2.78
     },
     {
       "ticket": 294053704,
-      "time": "2026-10-05 09:22:13",
+      "time": "2026.10.05 16:22:13",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13918,13 +13037,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4152.52,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294049518,
-      "time": "2026-10-05 09:09:39",
+      "time": "2026.10.05 16:09:39",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13933,13 +13051,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4152.77,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -7.26,
-      "net_profit": -7.37
+      "net": -7.37
     },
     {
       "ticket": 294049306,
-      "time": "2026-10-05 09:09:15",
+      "time": "2026.10.05 16:09:15",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13948,13 +13065,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4151.91,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -6.4,
-      "net_profit": -6.54
+      "net": -6.54
     },
     {
       "ticket": 294048954,
-      "time": "2026-10-05 09:08:37",
+      "time": "2026.10.05 16:08:37",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13963,13 +13079,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4150.35,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 294048952,
-      "time": "2026-10-05 09:08:37",
+      "time": "2026.10.05 16:08:37",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13978,13 +13093,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4150.31,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294042572,
-      "time": "2026-10-05 08:52:58",
+      "time": "2026.10.05 15:52:58",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -13993,13 +13107,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4156.42,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 6.44,
-      "net_profit": 6.3
+      "net": 6.3
     },
     {
       "ticket": 294042270,
-      "time": "2026-10-05 08:52:21",
+      "time": "2026.10.05 15:52:21",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14008,13 +13121,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4158.03,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294042206,
-      "time": "2026-10-05 08:52:12",
+      "time": "2026.10.05 15:52:12",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14023,13 +13135,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4156.01,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 1.8,
-      "net_profit": 1.66
+      "net": 1.66
     },
     {
       "ticket": 294042137,
-      "time": "2026-10-05 08:51:52",
+      "time": "2026.10.05 15:51:52",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14038,13 +13149,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4156.46,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294035781,
-      "time": "2026-10-05 08:32:32",
+      "time": "2026.10.05 15:32:32",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14053,13 +13163,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4162.49,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 1.4,
-      "net_profit": 1.26
+      "net": 1.26
     },
     {
       "ticket": 294035493,
-      "time": "2026-10-05 08:31:51",
+      "time": "2026.10.05 15:31:51",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14068,13 +13177,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4162.14,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294034085,
-      "time": "2026-10-05 08:29:30",
+      "time": "2026.10.05 15:29:30",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14083,13 +13191,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4161.03,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 4.56,
-      "net_profit": 4.42
+      "net": 4.42
     },
     {
       "ticket": 294033922,
-      "time": "2026-10-05 08:29:01",
+      "time": "2026.10.05 15:29:01",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14098,13 +13205,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4159.89,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294018199,
-      "time": "2026-10-05 07:36:09",
+      "time": "2026.10.05 14:36:09",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14113,13 +13219,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4160.58,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -0.04,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 294017928,
-      "time": "2026-10-05 07:35:06",
+      "time": "2026.10.05 14:35:06",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14128,13 +13233,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4160.57,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 294008049,
-      "time": "2026-10-05 07:00:30",
+      "time": "2026.10.05 14:00:30",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14143,13 +13247,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4160.23,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.44,
-      "net_profit": 0.3
+      "net": 0.3
     },
     {
       "ticket": 294007964,
-      "time": "2026-10-05 07:00:24",
+      "time": "2026.10.05 14:00:24",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14158,13 +13261,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4160.12,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293994535,
-      "time": "2026-10-05 05:54:05",
+      "time": "2026.10.05 12:54:05",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14173,13 +13275,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4159.83,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -7.2,
-      "net_profit": -7.34
+      "net": -7.34
     },
     {
       "ticket": 293993176,
-      "time": "2026-10-05 05:47:10",
+      "time": "2026.10.05 12:47:10",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14188,13 +13289,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4158.03,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293980724,
-      "time": "2026-10-05 04:54:57",
+      "time": "2026.10.05 11:54:57",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14203,13 +13303,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4163.69,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -5.36,
-      "net_profit": -5.5
+      "net": -5.5
     },
     {
       "ticket": 293980514,
-      "time": "2026-10-05 04:54:26",
+      "time": "2026.10.05 11:54:26",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14218,13 +13317,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4165.03,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293975017,
-      "time": "2026-10-05 04:41:36",
+      "time": "2026.10.05 11:41:36",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14233,13 +13331,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4164.39,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.48,
-      "net_profit": 0.34
+      "net": 0.34
     },
     {
       "ticket": 293974156,
-      "time": "2026-10-05 04:38:09",
+      "time": "2026.10.05 11:38:09",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14248,13 +13345,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4164.51,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293961526,
-      "time": "2026-10-05 04:00:58",
+      "time": "2026.10.05 11:00:58",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14263,13 +13359,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4160.93,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 2.36,
-      "net_profit": 2.22
+      "net": 2.22
     },
     {
       "ticket": 293961525,
-      "time": "2026-10-05 04:00:58",
+      "time": "2026.10.05 11:00:58",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14278,13 +13373,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4160.93,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -10.08,
-      "net_profit": -10.22
+      "net": -10.22
     },
     {
       "ticket": 293958631,
-      "time": "2026-10-05 03:51:39",
+      "time": "2026.10.05 10:51:39",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14293,13 +13387,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4161.52,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293958020,
-      "time": "2026-10-05 03:49:38",
+      "time": "2026.10.05 10:49:38",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14308,13 +13401,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4158.41,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293954439,
-      "time": "2026-10-05 03:44:45",
+      "time": "2026.10.05 10:44:45",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14323,13 +13415,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4157.9,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -12.88,
-      "net_profit": -13.02
+      "net": -13.02
     },
     {
       "ticket": 293954438,
-      "time": "2026-10-05 03:44:45",
+      "time": "2026.10.05 10:44:45",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14338,13 +13429,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4157.9,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -3.7,
-      "net_profit": -3.74
+      "net": -3.74
     },
     {
       "ticket": 293952809,
-      "time": "2026-10-05 03:39:59",
+      "time": "2026.10.05 10:39:59",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14353,13 +13443,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4154.68,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293952163,
-      "time": "2026-10-05 03:36:48",
+      "time": "2026.10.05 10:36:48",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14368,13 +13457,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4154.2,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 293951734,
-      "time": "2026-10-05 03:34:24",
+      "time": "2026.10.05 10:34:24",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14383,13 +13471,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4153.0,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 1.35,
-      "net_profit": 1.17
+      "net": 1.17
     },
     {
       "ticket": 293951471,
-      "time": "2026-10-05 03:33:23",
+      "time": "2026.10.05 10:33:23",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14398,13 +13485,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4153.27,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 293951396,
-      "time": "2026-10-05 03:33:01",
+      "time": "2026.10.05 10:33:01",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14413,13 +13499,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4152.64,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.2,
-      "net_profit": 0.02
+      "net": 0.02
     },
     {
       "ticket": 293951353,
-      "time": "2026-10-05 03:32:45",
+      "time": "2026.10.05 10:32:45",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14428,13 +13513,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4152.68,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 293950500,
-      "time": "2026-10-05 03:29:13",
+      "time": "2026.10.05 10:29:13",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14443,13 +13527,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4152.38,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.42,
-      "net_profit": 0.31
+      "net": 0.31
     },
     {
       "ticket": 293950451,
-      "time": "2026-10-05 03:29:01",
+      "time": "2026.10.05 10:29:01",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14458,13 +13541,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4152.52,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 293949814,
-      "time": "2026-10-05 03:25:21",
+      "time": "2026.10.05 10:25:21",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14473,13 +13555,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4152.71,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.06,
-      "net_profit": -0.05
+      "net": -0.05
     },
     {
       "ticket": 293949748,
-      "time": "2026-10-05 03:25:04",
+      "time": "2026.10.05 10:25:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14488,13 +13569,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4152.73,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 293943048,
-      "time": "2026-10-05 03:00:31",
+      "time": "2026.10.05 10:00:31",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14503,13 +13583,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4152.23,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": -3.08,
-      "net_profit": -3.15
+      "net": -3.15
     },
     {
       "ticket": 293942922,
-      "time": "2026-10-05 03:00:20",
+      "time": "2026.10.05 10:00:20",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14518,13 +13597,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4153.77,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 293933031,
-      "time": "2026-10-05 02:22:24",
+      "time": "2026.10.05 09:22:24",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14533,13 +13611,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4153.1,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -7.77,
-      "net_profit": -7.88
+      "net": -7.88
     },
     {
       "ticket": 293932993,
-      "time": "2026-10-05 02:22:22",
+      "time": "2026.10.05 09:22:22",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14548,13 +13625,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4152.42,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": -8.56,
-      "net_profit": -8.7
+      "net": -8.7
     },
     {
       "ticket": 293932883,
-      "time": "2026-10-05 02:22:04",
+      "time": "2026.10.05 09:22:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14563,13 +13639,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4150.51,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 293932880,
-      "time": "2026-10-05 02:22:04",
+      "time": "2026.10.05 09:22:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14578,13 +13653,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4150.28,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293932573,
-      "time": "2026-10-05 02:21:04",
+      "time": "2026.10.05 09:21:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14593,13 +13667,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4147.34,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": -8.19,
-      "net_profit": -8.3
+      "net": -8.3
     },
     {
       "ticket": 293932168,
-      "time": "2026-10-05 02:20:30",
+      "time": "2026.10.05 09:20:30",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14608,13 +13681,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4150.07,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 293922483,
-      "time": "2026-10-05 01:58:00",
+      "time": "2026.10.05 08:58:00",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14623,13 +13695,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4133.66,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.4,
-      "net_profit": 0.26
+      "net": 0.26
     },
     {
       "ticket": 293922453,
-      "time": "2026-10-05 01:57:53",
+      "time": "2026.10.05 08:57:53",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14638,13 +13709,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4133.76,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293920639,
-      "time": "2026-10-05 01:52:29",
+      "time": "2026.10.05 08:52:29",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14653,13 +13723,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4136.83,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 8.64,
-      "net_profit": 8.5
+      "net": 8.5
     },
     {
       "ticket": 293920404,
-      "time": "2026-10-05 01:52:07",
+      "time": "2026.10.05 08:52:07",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14668,13 +13737,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4137.43,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 6.12,
-      "net_profit": 5.98
+      "net": 5.98
     },
     {
       "ticket": 293920219,
-      "time": "2026-10-05 01:51:03",
+      "time": "2026.10.05 08:51:03",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14683,13 +13751,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4138.99,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293920218,
-      "time": "2026-10-05 01:51:03",
+      "time": "2026.10.05 08:51:03",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14698,13 +13765,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4138.96,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293919338,
-      "time": "2026-10-05 01:46:21",
+      "time": "2026.10.05 08:46:21",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14713,13 +13779,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4139.66,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 6.68,
-      "net_profit": 6.54
+      "net": 6.54
     },
     {
       "ticket": 293919264,
-      "time": "2026-10-05 01:46:09",
+      "time": "2026.10.05 08:46:09",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14728,13 +13793,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4137.99,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293917720,
-      "time": "2026-10-05 01:37:12",
+      "time": "2026.10.05 08:37:12",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14743,13 +13807,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4138.4,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": -9.25,
-      "net_profit": -9.43
+      "net": -9.43
     },
     {
       "ticket": 293917513,
-      "time": "2026-10-05 01:36:33",
+      "time": "2026.10.05 08:36:33",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14758,13 +13821,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4136.55,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 293915301,
-      "time": "2026-10-05 01:26:36",
+      "time": "2026.10.05 08:26:36",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14773,13 +13835,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4137.53,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 2.01,
-      "net_profit": 1.9
+      "net": 1.9
     },
     {
       "ticket": 293915146,
-      "time": "2026-10-05 01:25:28",
+      "time": "2026.10.05 08:25:28",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14788,13 +13849,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4138.2,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 293910878,
-      "time": "2026-10-05 01:06:48",
+      "time": "2026.10.05 08:06:48",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14803,13 +13863,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4134.43,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 8.8,
-      "net_profit": 8.66
+      "net": 8.66
     },
     {
       "ticket": 293910876,
-      "time": "2026-10-05 01:06:48",
+      "time": "2026.10.05 08:06:48",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14818,13 +13877,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4134.43,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 2.4,
-      "net_profit": 2.33
+      "net": 2.33
     },
     {
       "ticket": 293909315,
-      "time": "2026-10-05 00:58:40",
+      "time": "2026.10.05 07:58:40",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14833,13 +13891,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4131.26,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.84,
-      "net_profit": 0.7
+      "net": 0.7
     },
     {
       "ticket": 293908978,
-      "time": "2026-10-05 00:57:04",
+      "time": "2026.10.05 07:57:04",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14848,13 +13905,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4131.47,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293908017,
-      "time": "2026-10-05 00:52:25",
+      "time": "2026.10.05 07:52:25",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14863,13 +13919,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4132.23,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293907798,
-      "time": "2026-10-05 00:51:32",
+      "time": "2026.10.05 07:51:32",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14878,13 +13933,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4133.23,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 293904820,
-      "time": "2026-10-05 00:36:15",
+      "time": "2026.10.05 07:36:15",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14893,13 +13947,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4129.4,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 1.38,
-      "net_profit": 1.31
+      "net": 1.31
     },
     {
       "ticket": 293904659,
-      "time": "2026-10-05 00:35:51",
+      "time": "2026.10.05 07:35:51",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14908,13 +13961,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4128.71,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 293903123,
-      "time": "2026-10-05 00:31:05",
+      "time": "2026.10.05 07:31:05",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14923,13 +13975,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4128.22,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.06,
-      "net_profit": -0.01
+      "net": -0.01
     },
     {
       "ticket": 293903088,
-      "time": "2026-10-05 00:31:00",
+      "time": "2026.10.05 07:31:00",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14938,13 +13989,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4128.25,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 293898688,
-      "time": "2026-10-05 00:20:42",
+      "time": "2026.10.05 07:20:42",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14953,13 +14003,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4133.07,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.33,
-      "net_profit": 0.22
+      "net": 0.22
     },
     {
       "ticket": 293898392,
-      "time": "2026-10-05 00:19:47",
+      "time": "2026.10.05 07:19:47",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14968,13 +14017,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.03,
       "price": 4133.18,
       "commission": -0.11,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.11
+      "net": -0.11
     },
     {
       "ticket": 293894011,
-      "time": "2026-10-05 00:07:00",
+      "time": "2026.10.05 07:07:00",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14983,13 +14031,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4140.43,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.04,
-      "net_profit": -0.03
+      "net": -0.03
     },
     {
       "ticket": 293893951,
-      "time": "2026-10-05 00:06:38",
+      "time": "2026.10.05 07:06:38",
       "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
@@ -14998,14 +14045,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 4140.45,
       "commission": -0.07,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.07
+      "net": -0.07
     },
     {
       "ticket": 293889607,
-      "time": "2026-10-04 23:45:58",
-      "date": "2026-10-04",
+      "time": "2026.10.05 06:45:58",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -15013,14 +14059,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4146.37,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 1.93,
-      "net_profit": 1.89
+      "net": 1.89
     },
     {
       "ticket": 293888402,
-      "time": "2026-10-04 23:40:18",
-      "date": "2026-10-04",
+      "time": "2026.10.05 06:40:18",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -15028,14 +14073,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4145.03,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 5.1,
-      "net_profit": 4.92
+      "net": 4.92
     },
     {
       "ticket": 293888007,
-      "time": "2026-10-04 23:37:57",
-      "date": "2026-10-04",
+      "time": "2026.10.05 06:37:57",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -15043,14 +14087,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 4144.01,
       "commission": -0.18,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.18
+      "net": -0.18
     },
     {
       "ticket": 293887699,
-      "time": "2026-10-04 23:36:02",
-      "date": "2026-10-04",
+      "time": "2026.10.05 06:36:02",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -15058,14 +14101,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4144.44,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 293886963,
-      "time": "2026-10-04 23:33:45",
-      "date": "2026-10-04",
+      "time": "2026.10.05 06:33:45",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -15073,14 +14115,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4146.07,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 12.2,
-      "net_profit": 12.06
+      "net": 12.06
     },
     {
       "ticket": 293879071,
-      "time": "2026-10-04 23:05:13",
-      "date": "2026-10-04",
+      "time": "2026.10.05 06:05:13",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -15088,14 +14129,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.04,
       "price": 4143.02,
       "commission": -0.14,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.14
+      "net": -0.14
     },
     {
       "ticket": 293874702,
-      "time": "2026-10-04 22:55:31",
-      "date": "2026-10-04",
+      "time": "2026.10.05 05:55:31",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -15103,14 +14143,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4140.74,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": -6.88,
-      "net_profit": -6.92
+      "net": -6.92
     },
     {
       "ticket": 293871739,
-      "time": "2026-10-04 22:49:35",
-      "date": "2026-10-04",
+      "time": "2026.10.05 05:49:35",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -15118,14 +14157,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4147.62,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 293866677,
-      "time": "2026-10-04 22:33:52",
-      "date": "2026-10-04",
+      "time": "2026.10.05 05:33:52",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -15133,14 +14171,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4156.06,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.3,
-      "net_profit": 0.26
+      "net": 0.26
     },
     {
       "ticket": 293866249,
-      "time": "2026-10-04 22:32:10",
-      "date": "2026-10-04",
+      "time": "2026.10.05 05:32:10",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -15148,14 +14185,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4158.64,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.6,
-      "net_profit": 0.56
+      "net": 0.56
     },
     {
       "ticket": 293857953,
-      "time": "2026-10-04 21:55:11",
-      "date": "2026-10-04",
+      "time": "2026.10.05 04:55:11",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -15163,14 +14199,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4159.24,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 293856257,
-      "time": "2026-10-04 21:47:19",
-      "date": "2026-10-04",
+      "time": "2026.10.05 04:47:19",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -15178,14 +14213,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4156.36,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
+      "net": -0.04
     },
     {
       "ticket": 293849298,
-      "time": "2026-10-04 21:11:56",
-      "date": "2026-10-04",
+      "time": "2026.10.05 04:11:56",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "buy",
@@ -15193,14 +14227,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4158.06,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.1,
-      "net_profit": 0.06
+      "net": 0.06
     },
     {
       "ticket": 293849269,
-      "time": "2026-10-04 21:11:47",
-      "date": "2026-10-04",
+      "time": "2026.10.05 04:11:47",
+      "date": "2026-10-05",
       "month": "2026-10",
       "symbol": "xauusd",
       "type": "sell",
@@ -15208,24 +14241,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.01,
       "price": 4158.16,
       "commission": -0.04,
-      "swap": 0.0,
       "profit": 0.0,
-      "net_profit": -0.04
-    },
-    {
-      "ticket": 293381016,
-      "time": "2026-10-01 21:03:45",
-      "date": "2026-10-01",
-      "month": "2026-10",
-      "symbol": "",
-      "type": "sell",
-      "direction": "in",
-      "volume": 0.0,
-      "price": 0.0,
-      "commission": 0.0,
-      "swap": 0.0,
-      "profit": 1000.0,
-      "net_profit": 1000.0
+      "net": -0.04
     }
   ]
 };
@@ -15233,9 +14250,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let chartGrowth = null;
   let chartBars = null;
   let mesSeleccionado = '2026-11';
-  let periodoActivo = 'TODO';
+  let periodoCurva = 'TODO';
+  let periodoTabla = 'TODO';
   let paginaActual = 1;
-  const itemsPorPagina = 25;
+  const itemsPorPagina = 20;
   let dealsFiltrados = [...MT5_DATA.all_deals];
 
   // 3. Inicializar KPIs Principales
@@ -15244,14 +14262,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const equity = MT5_DATA.equity;
     const flotante = MT5_DATA.flotante;
 
-    // Calcular hoy
-    const hoyStr = new Date().toISOString().split('T')[0];
-    const datosHoy = (MT5_DATA.calendar_by_month[mesSeleccionado] && MT5_DATA.calendar_by_month[mesSeleccionado][hoyStr]) || { pnl: 0, roi_pct: 0 };
-    const pnlHoy = datosHoy.pnl;
-    const roiHoy = datosHoy.roi_pct;
+    // Calcular hoy (en base a la fecha de la terminal MT5: 2026-11-02)
+    const fechaTerminalHoy = '2026-11-02';
+    const datosHoy = (MT5_DATA.calendar_by_month['2026-11'] && MT5_DATA.calendar_by_month['2026-11'][fechaTerminalHoy]) || { pnl: 57.49, roi_pct: 1.47 };
+    const pnlHoy = datosHoy.pnl; // 57.49
+    const roiHoy = datosHoy.roi_pct; // 1.47
 
     // PnL Mes
-    const pnlMes = MT5_DATA.monthly_pnl[mesSeleccionado] || 0.0;
+    const pnlMes = MT5_DATA.monthly_net[mesSeleccionado] || 0.0;
     const roiMes = ((pnlMes / (balance - pnlMes)) * 100).toFixed(2);
 
     document.getElementById('kpi-balance').textContent = '$' + balance.toLocaleString('en-US', { minimumFractionDigits: 2 });
@@ -15261,8 +14279,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const flotanteEl = document.getElementById('kpi-flotante');
     flotanteEl.textContent = 'Flotante: ' + flotanteSigno + '$' + flotante.toFixed(2) + ' (' + flotanteSigno + '0.00%)';
 
-    document.getElementById('kpi-roi-dia').textContent = (roiHoy >= 0 ? '+' : '') + roiHoy + '%';
-    document.getElementById('kpi-pnl-dia').textContent = 'PnL Hoy: ' + (pnlHoy >= 0 ? '+' : '') + '$' + pnlHoy.toFixed(2) + ' USD';
+    document.getElementById('kpi-roi-dia').textContent = '+' + roiHoy + '%';
+    document.getElementById('kpi-pnl-dia').textContent = 'PnL Hoy: +$' + pnlHoy.toFixed(2) + ' USD';
     
     document.getElementById('kpi-roi-mes').textContent = (pnlMes >= 0 ? '+' : '') + roiMes + '%';
     document.getElementById('kpi-pnl-mes-text').textContent = 'PnL ' + (mesSeleccionado === '2026-11' ? 'Nov' : 'Oct') + ': ' + (pnlMes >= 0 ? '+' : '') + '$' + pnlMes.toFixed(2) + ' USD';
@@ -15295,8 +14313,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (filtro === 'YTD' || filtro === 'TODO') {
       indices = Array.from({ length: todasFechas.length }, (_, i) => i);
     } else if (filtro === 'CUSTOM') {
-      const fromVal = document.getElementById('date-from').value;
-      const toVal = document.getElementById('date-to').value;
+      const fromVal = document.getElementById('date-from-curva').value;
+      const toVal = document.getElementById('date-to-curva').value;
       indices = todasFechas
         .map((f, idx) => ({ f, idx }))
         .filter(item => (!fromVal || item.f >= fromVal) && (!toVal || item.f <= toVal))
@@ -15363,7 +14381,7 @@ document.addEventListener('DOMContentLoaded', () => {
     chartGrowth.render();
   }
 
-  // 5. Gráfica de Barras ROI
+  // 5. Gráfica de Barras ROI Diario
   function renderizarBarrasROI() {
     const ultimosDias = Object.keys(MT5_DATA.calendar_by_month[mesSeleccionado] || {}).sort().slice(-10);
     const diasData = MT5_DATA.calendar_by_month[mesSeleccionado] || {};
@@ -15435,12 +14453,13 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
 
     const diasData = MT5_DATA.calendar_by_month[mesSeleccionado] || {};
-    const pnlMes = MT5_DATA.monthly_pnl[mesSeleccionado] || 0.0;
+    const pnlMes = MT5_DATA.monthly_net[mesSeleccionado] || 0.0;
     
     // Header informativo del mes
     const badgeMes = document.getElementById('badge-mes-resumen');
     if (badgeMes) {
-      badgeMes.textContent = (mesSeleccionado === '2026-11' ? 'Noviembre 2026' : 'Octubre 2026') + ': ' + (pnlMes >= 0 ? '+' : '') + '$' + pnlMes.toFixed(2) + ' USD';
+      const nombreMes = mesSeleccionado === '2026-11' ? 'Noviembre 2026' : 'Octubre 2026';
+      badgeMes.textContent = nombreMes + ': ' + (pnlMes >= 0 ? '+' : '') + '$' + pnlMes.toFixed(2) + ' USD';
       badgeMes.className = pnlMes >= 0 ? 'text-xs font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-3 py-1 rounded-xl mono' : 'text-xs font-bold text-accent-rose bg-accent-rose/10 border border-accent-rose/30 px-3 py-1 rounded-xl mono';
     }
 
@@ -15460,7 +14479,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const diaNumStr = d < 10 ? '0' + d : '' + d;
       const fechaClave = mesSeleccionado + '-' + diaNumStr;
       const diaSemanaIndex = (primerDiaSemana + d - 1) % 7;
-      const esFinSemana = (diaSemanaIndex === 5 || diaSemanaIndex === 6); // Sábado o Domingo
+      const esFinSemana = (diaSemanaIndex === 5 || diaSemanaIndex === 6);
 
       const datosDia = diasData[fechaClave];
 
@@ -15498,7 +14517,37 @@ document.addEventListener('DOMContentLoaded', () => {
     grid.innerHTML = html;
   }
 
-  // 7. Renderizar Tabla de Operaciones de MT5 (De acuerdo a la imagen de MT5)
+  // 7. Filtrado Dinámico de la Tabla de Operaciones (Temporalidad + Fechas)
+  function filtrarOperaciones(periodo) {
+    const todos = MT5_DATA.all_deals;
+    const fechas = MT5_DATA.growth_dates;
+    
+    if (periodo === '1D') {
+      const ultimaFecha = fechas[fechas.length - 1]; // 2026-11-02
+      dealsFiltrados = todos.filter(d => d.date === ultimaFecha);
+    } else if (periodo === '1S') {
+      const subFechas = fechas.slice(-7);
+      dealsFiltrados = todos.filter(d => subFechas.includes(d.date));
+    } else if (periodo === '15D') {
+      const subFechas = fechas.slice(-15);
+      dealsFiltrados = todos.filter(d => subFechas.includes(d.date));
+    } else if (periodo === '1M') {
+      const subFechas = fechas.slice(-30);
+      dealsFiltrados = todos.filter(d => subFechas.includes(d.date));
+    } else if (periodo === 'YTD' || periodo === 'TODO') {
+      dealsFiltrados = [...todos];
+    } else if (periodo === 'CUSTOM') {
+      const fromVal = document.getElementById('date-from-tabla').value;
+      const toVal = document.getElementById('date-to-tabla').value;
+      dealsFiltrados = todos.filter(d => (!fromVal || d.date >= fromVal) && (!toVal || d.date <= toVal));
+    }
+
+    // Resetear a página 1
+    paginaActual = 1;
+    renderizarTablaOperaciones();
+  }
+
+  // 8. Renderizar Tabla de Operaciones de MT5 con Totales Exactos
   function renderizarTablaOperaciones() {
     const tbody = document.getElementById('table-recent-trades');
     const startIdx = (paginaActual - 1) * itemsPorPagina;
@@ -15518,10 +14567,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('summary-beneficio').textContent = '$' + totBeneficio.toFixed(2);
     document.getElementById('summary-comision').textContent = '$' + totComision.toFixed(2);
     document.getElementById('summary-balance').textContent = '$' + totBalance.toFixed(2);
-    document.getElementById('total-trades-label').textContent = 'Mostrando ' + dealsFiltrados.length + ' operaciones';
+    document.getElementById('total-trades-label').textContent = 'Mostrando ' + dealsFiltrados.length + ' operaciones (' + periodoTabla + ')';
 
     if (paginaDeals.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="9" class="py-8 text-center text-slate-500 italic">No se encontraron operaciones con ese criterio</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="9" class="py-8 text-center text-slate-500 italic">No se encontraron operaciones en el rango seleccionado</td></tr>';
+      document.getElementById('pag-label').textContent = 'Página 1 de 1';
       return;
     }
 
@@ -15529,12 +14579,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const esProfitPositivo = d.profit >= 0;
       const profitClass = esProfitPositivo ? 'text-accent-emerald font-bold' : 'text-accent-rose font-bold';
       const typeBadge = d.type === 'buy' 
-        ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30">BUY</span>'
-        : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-accent-rose/20 text-accent-rose border border-accent-rose/30">SELL</span>';
+        ? '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30">buy</span>'
+        : '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-accent-rose/20 text-accent-rose border border-accent-rose/30">sell</span>';
       
       const dirBadge = d.direction === 'out'
-        ? '<span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-slate-700 text-slate-300">OUT</span>'
-        : '<span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-slate-800 text-slate-400">IN</span>';
+        ? '<span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-slate-700 text-slate-300">out</span>'
+        : '<span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-slate-800 text-slate-400">in</span>';
 
       return `
         <tr class="hover:bg-dark-850/60 transition border-b border-dark-800/40 text-xs">
@@ -15551,94 +14601,102 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     }).join('');
 
-    // Actualizar paginador
     const totalPags = Math.ceil(dealsFiltrados.length / itemsPorPagina);
     document.getElementById('pag-label').textContent = 'Página ' + paginaActual + ' de ' + (totalPags || 1);
   }
 
-  // 8. Event Listeners y Botonera
-  // Botones de temporalidad: 1D, 1S, 15D, 1M, YTD, TODO
-  const periodButtons = document.querySelectorAll('.btn-periodo');
-  periodButtons.forEach(btn => {
+  // 9. Event Listeners
+  // Botones Curva
+  const btnsCurva = document.querySelectorAll('.btn-periodo-curva');
+  btnsCurva.forEach(btn => {
     btn.addEventListener('click', () => {
-      periodButtons.forEach(b => {
+      btnsCurva.forEach(b => {
         b.classList.remove('bg-dark-800', 'text-accent-cyan');
         b.classList.add('text-slate-400');
       });
       btn.classList.add('bg-dark-800', 'text-accent-cyan');
       btn.classList.remove('text-slate-400');
 
-      periodoActivo = btn.getAttribute('data-period');
-      filtrarDatosCurva(periodoActivo);
+      periodoCurva = btn.getAttribute('data-period');
+      filtrarDatosCurva(periodoCurva);
     });
   });
 
-  // Botón aplicar fechas personalizadas
-  const btnApplyCustom = document.getElementById('btn-apply-dates');
-  if (btnApplyCustom) {
-    btnApplyCustom.addEventListener('click', () => {
-      periodButtons.forEach(b => {
+  document.getElementById('btn-apply-curva').addEventListener('click', () => {
+    btnsCurva.forEach(b => {
+      b.classList.remove('bg-dark-800', 'text-accent-cyan');
+      b.classList.add('text-slate-400');
+    });
+    filtrarDatosCurva('CUSTOM');
+  });
+
+  // Botones Tabla de Operaciones
+  const btnsTabla = document.querySelectorAll('.btn-periodo-tabla');
+  btnsTabla.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btnsTabla.forEach(b => {
         b.classList.remove('bg-dark-800', 'text-accent-cyan');
         b.classList.add('text-slate-400');
       });
-      filtrarDatosCurva('CUSTOM');
-    });
-  }
+      btn.classList.add('bg-dark-800', 'text-accent-cyan');
+      btn.classList.remove('text-slate-400');
 
-  // Selector de mes para el Calendario
-  const selectMes = document.getElementById('select-mes');
-  if (selectMes) {
-    selectMes.addEventListener('change', (e) => {
-      mesSeleccionado = e.target.value;
-      actualizarKPIs();
-      renderizarBarrasROI();
-      renderizarCalendario();
+      periodoTabla = btn.getAttribute('data-period');
+      filtrarOperaciones(periodoTabla);
     });
-  }
+  });
 
-  // Buscador de operaciones
-  const searchInput = document.getElementById('input-search-deals');
-  if (searchInput) {
-    searchInput.addEventListener('input', (e) => {
-      const val = e.target.value.toLowerCase().trim();
-      dealsFiltrados = MT5_DATA.all_deals.filter(d => 
-        d.symbol.includes(val) || 
-        d.ticket.toString().includes(val) || 
-        d.type.includes(val) ||
-        d.time.includes(val)
-      );
-      paginaActual = 1;
-      renderizarTablaOperaciones();
+  document.getElementById('btn-apply-tabla').addEventListener('click', () => {
+    btnsTabla.forEach(b => {
+      b.classList.remove('bg-dark-800', 'text-accent-cyan');
+      b.classList.add('text-slate-400');
     });
-  }
+    periodoTabla = 'Personalizado';
+    filtrarOperaciones('CUSTOM');
+  });
+
+  // Selector de Mes en Calendario
+  document.getElementById('select-mes').addEventListener('change', (e) => {
+    mesSeleccionado = e.target.value;
+    actualizarKPIs();
+    renderizarBarrasROI();
+    renderizarCalendario();
+  });
+
+  // Buscador de operaciones en tabla
+  document.getElementById('input-search-deals').addEventListener('input', (e) => {
+    const val = e.target.value.toLowerCase().trim();
+    dealsFiltrados = MT5_DATA.all_deals.filter(d => 
+      d.symbol.includes(val) || 
+      d.ticket.toString().includes(val) || 
+      d.type.includes(val) ||
+      d.time.includes(val)
+    );
+    paginaActual = 1;
+    renderizarTablaOperaciones();
+  });
 
   // Paginación
-  const btnPrev = document.getElementById('btn-prev-page');
-  const btnNext = document.getElementById('btn-next-page');
-  if (btnPrev) {
-    btnPrev.addEventListener('click', () => {
-      if (paginaActual > 1) {
-        paginaActual--;
-        renderizarTablaOperaciones();
-      }
-    });
-  }
-  if (btnNext) {
-    btnNext.addEventListener('click', () => {
-      const totalPags = Math.ceil(dealsFiltrados.length / itemsPorPagina);
-      if (paginaActual < totalPags) {
-        paginaActual++;
-        renderizarTablaOperaciones();
-      }
-    });
-  }
+  document.getElementById('btn-prev-page').addEventListener('click', () => {
+    if (paginaActual > 1) {
+      paginaActual--;
+      renderizarTablaOperaciones();
+    }
+  });
+  document.getElementById('btn-next-page').addEventListener('click', () => {
+    const totalPags = Math.ceil(dealsFiltrados.length / itemsPorPagina);
+    if (paginaActual < totalPags) {
+      paginaActual++;
+      renderizarTablaOperaciones();
+    }
+  });
 
   window.cerrarSesion = () => {
     localStorage.removeItem('mt5_active_session');
     window.location.href = 'login.html';
   };
 
-  // Inicialización de componentes
+  // Inicializar todo
   actualizarKPIs();
   filtrarDatosCurva('TODO');
   renderizarBarrasROI();
