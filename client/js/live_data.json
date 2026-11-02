@@ -1,0 +1,17 @@
+{
+  "login": 61602115,
+  "broker": "Pepperstone Group Limited",
+  "server": "Pepperstone-Demo",
+  "currency": "USD",
+  "balance": 25531.88,
+  "equity": 25531.88,
+  "flotante": 0.0,
+  "flotante_pct": 0.0,
+  "margin": 0.0,
+  "free_margin": 25531.88,
+  "pnl_hoy": 0.0,
+  "roi_diario_pct": 0.0,
+  "trades_hoy": 0,
+  "winrate_hoy": 0.0,
+  "timestamp": "2026-11-01T23:01:04.518346"
+}
