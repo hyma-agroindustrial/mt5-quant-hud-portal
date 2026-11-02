@@ -1,13 +1,28 @@
 KNOWN_SL_TP = {
+    301755112: {'sl': '', 'tp': ''},
     301769082: {'sl': '', 'tp': '3906.46'},
+    301780009: {'sl': '', 'tp': ''},
+    301791770: {'sl': '', 'tp': ''},
+    301795977: {'sl': '', 'tp': ''},
+    301804830: {'sl': '', 'tp': ''},
     301808161: {'sl': '', 'tp': '3920.79'},
     301808162: {'sl': '', 'tp': '3920.94'},
     301808163: {'sl': '', 'tp': '3920.85'},
     301808164: {'sl': '', 'tp': '3912.56'},
+    301810384: {'sl': '', 'tp': ''},
     301812246: {'sl': '', 'tp': '3906.08'},
     301830494: {'sl': '3912.62', 'tp': '3914.96'},
     301830725: {'sl': '3912.62', 'tp': '3914.96'},
-    301836124: {'sl': '3912.93', 'tp': ''},
+    301835579: {'sl': '', 'tp': ''},
+    301836124: {'sl': '', 'tp': '3912.93'},
+    301849023: {'sl': '', 'tp': ''},
+    301849206: {'sl': '', 'tp': ''},
+    301849478: {'sl': '', 'tp': '3906.01'},
+    301849479: {'sl': '', 'tp': '3906.01'},
+    301853171: {'sl': '', 'tp': ''},
+    301853224: {'sl': '', 'tp': '3906.54'},
+    301858360: {'sl': '', 'tp': ''},
+    301858420: {'sl': '', 'tp': '3901.85'},
 }
 
 """
@@ -24,6 +39,7 @@ import time
 import json
 import datetime
 import subprocess
+import re
 from collections import defaultdict
 
 try:
@@ -87,6 +103,24 @@ def extraer_telemetria_completa():
                 order_tp[o.ticket] = o.tp
                 pos_tp[o.position_id] = o.tp
 
+    open_pos = mt5.positions_get()
+    if open_pos:
+        for p in open_pos:
+            if p.sl > 0:
+                pos_sl[p.identifier] = p.sl
+            if p.tp > 0:
+                pos_tp[p.identifier] = p.tp
+
+    open_orders = mt5.orders_get()
+    if open_orders:
+        for o in open_orders:
+            if o.sl > 0:
+                order_sl[o.ticket] = o.sl
+                pos_sl[o.position_id] = o.sl
+            if o.tp > 0:
+                order_tp[o.ticket] = o.tp
+                pos_tp[o.position_id] = o.tp
+
     closed_deals = [d for d in deals if d.entry == 1]
     total_closed = len(closed_deals)
     total_wins = 0
@@ -124,6 +158,15 @@ def extraer_telemetria_completa():
             tp_num = order_tp.get(d.order, 0.0) or pos_tp.get(d.position_id, 0.0)
             sl_val = f"{sl_num:.2f}" if sl_num > 0 else ""
             tp_val = f"{tp_num:.2f}" if tp_num > 0 else ""
+
+            if not tp_val and d.comment:
+                m_tp = re.search(r'\[tp\s+([\d\.]+)\]', d.comment, re.IGNORECASE)
+                if m_tp:
+                    tp_val = m_tp.group(1)
+            if not sl_val and d.comment:
+                m_sl = re.search(r'\[sl\s+([\d\.]+)\]', d.comment, re.IGNORECASE)
+                if m_sl:
+                    sl_val = m_sl.group(1)
 
         all_deals_list.append({
             'ticket': d.ticket,
