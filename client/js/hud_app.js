@@ -16503,7 +16503,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ],
   "total_deals_raw": 1009,
-  "last_updated": "2026-11-02 10:26:50"
+  "last_updated": "2026-11-02 10:27:44"
 };
 
   let chartGrowth = null;
