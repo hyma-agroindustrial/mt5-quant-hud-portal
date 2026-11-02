@@ -14401,7 +14401,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ],
   "total_deals_raw": 1003,
-  "last_updated": "2026-11-02 00:51:41"
+  "last_updated": "2026-11-02 00:57:16"
 };
 
   let chartGrowth = null;
@@ -14960,7 +14960,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (indicator && !indicator.textContent.includes('Detectado')) {
               indicator.innerHTML = '<span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span> En Vivo (' + (data.last_updated ? data.last_updated.substring(11) : 'Sync') + ')';
             }
-          }
           }
         }
       }

@@ -2,16 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MT5 Quant HUD Portal</title>
-  <meta http-equiv="refresh" content="0; url=client/login.html">
   <script>
-    // Redirección inteligente según estado de sesión
+    const ts = Date.now();
     const session = localStorage.getItem('mt5_active_session');
     if (session) {
-      window.location.replace('./client/index.html');
+      window.location.replace('./client/index.html?v=' + ts);
     } else {
-      window.location.replace('./client/login.html');
+      window.location.replace('./client/login.html?v=' + ts);
     }
   </script>
 </head>
