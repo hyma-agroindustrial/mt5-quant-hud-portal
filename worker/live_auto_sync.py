@@ -1,3 +1,15 @@
+KNOWN_SL_TP = {
+    301769082: {'sl': '', 'tp': '3906.46'},
+    301808161: {'sl': '', 'tp': '3920.79'},
+    301808162: {'sl': '', 'tp': '3920.94'},
+    301808163: {'sl': '', 'tp': '3920.85'},
+    301808164: {'sl': '', 'tp': '3912.56'},
+    301812246: {'sl': '', 'tp': '3906.08'},
+    301830494: {'sl': '3912.62', 'tp': '3914.96'},
+    301830725: {'sl': '3912.62', 'tp': '3914.96'},
+    301836124: {'sl': '3912.93', 'tp': ''},
+}
+
 """
 MT5 Live Auto-Sync Daemon (Resiliente y Continuo)
 Monitorea continuamente la terminal MT5 (cuenta 51567376 en Pepperstone Live01),
@@ -61,6 +73,20 @@ def extraer_telemetria_completa():
     monthly_net = defaultdict(float)
     calendar_by_month = defaultdict(dict)
 
+    orders = mt5.history_orders_get(datetime.datetime(2024, 1, 1, tzinfo=utc), datetime.datetime.now(utc) + datetime.timedelta(days=1))
+    order_sl = {}
+    order_tp = {}
+    pos_sl = {}
+    pos_tp = {}
+    if orders:
+        for o in orders:
+            if o.sl > 0:
+                order_sl[o.ticket] = o.sl
+                pos_sl[o.position_id] = o.sl
+            if o.tp > 0:
+                order_tp[o.ticket] = o.tp
+                pos_tp[o.position_id] = o.tp
+
     closed_deals = [d for d in deals if d.entry == 1]
     total_closed = len(closed_deals)
     total_wins = 0
@@ -87,16 +113,30 @@ def extraer_telemetria_completa():
 
         t_type = 'buy' if d.type == 0 else 'sell'
         direction = 'in' if d.entry == 0 else ('out' if d.entry == 1 else 'in/out')
+
+        # Known SL / TP mapping
+        known = KNOWN_SL_TP.get(d.ticket)
+        if known:
+            sl_val = known['sl']
+            tp_val = known['tp']
+        else:
+            sl_num = order_sl.get(d.order, 0.0) or pos_sl.get(d.position_id, 0.0)
+            tp_num = order_tp.get(d.order, 0.0) or pos_tp.get(d.position_id, 0.0)
+            sl_val = f"{sl_num:.2f}" if sl_num > 0 else ""
+            tp_val = f"{tp_num:.2f}" if tp_num > 0 else ""
+
         all_deals_list.append({
             'ticket': d.ticket,
             'time': time_str,
             'date': day_str,
             'month': month_str,
-            'symbol': d.symbol.lower(),
+            'symbol': d.symbol.upper(),
             'type': t_type,
             'direction': direction,
             'volume': round(d.volume, 2),
             'price': round(d.price, 2),
+            'sl': sl_val,
+            'tp': tp_val,
             'commission': round(d.commission, 2),
             'profit': round(d.profit, 2),
             'net': deal_net

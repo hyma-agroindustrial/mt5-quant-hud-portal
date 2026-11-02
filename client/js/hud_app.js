@@ -14401,7 +14401,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ],
   "total_deals_raw": 1003,
-  "last_updated": "2026-11-02 00:46:26"
+  "last_updated": "2026-11-02 00:51:41"
 };
 
   let chartGrowth = null;
@@ -14874,20 +14874,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const esBuy = d.type.toLowerCase() === 'buy';
 
       html += `
-        <tr class="hover:bg-dark-900/60 transition border-b border-dark-800/40 text-xs mono">
-          <td class="py-2.5 px-3 text-slate-400 font-medium">${d.time}</td>
+        <tr class="hover:bg-dark-900/70 transition border-b border-dark-800/40 text-xs mono">
+          <td class="py-2.5 px-3 text-slate-400 font-medium whitespace-nowrap">${d.time}</td>
           <td class="py-2.5 px-3 text-white font-bold uppercase tracking-wider">${d.symbol}</td>
           <td class="py-2.5 px-3 text-slate-500">${d.ticket}</td>
-          <td class="py-2.5 px-3">
+          <td class="py-2.5 px-3 text-center">
             <span class="px-2 py-0.5 rounded text-[10px] font-black ${esBuy ? 'bg-accent-emerald/10 text-accent-emerald border border-accent-emerald/30' : 'bg-accent-rose/10 text-accent-rose border border-accent-rose/30'}">
               ${d.type.toUpperCase()}
             </span>
           </td>
-          <td class="py-2.5 px-3 text-slate-400">${d.direction}</td>
-          <td class="py-2.5 px-3 text-slate-300 font-semibold">${d.volume.toFixed(2)}</td>
-          <td class="py-2.5 px-3 text-slate-200">${d.price.toFixed(2)}</td>
-          <td class="py-2.5 px-3 text-slate-400 font-semibold">${d.commission < 0 ? '-' : ''}$${Math.abs(d.commission).toFixed(2)}</td>
-          <td class="py-2.5 px-3 font-bold ${d.profit >= 0 ? 'text-accent-emerald' : 'text-accent-rose'}">
+          <td class="py-2.5 px-3 text-center text-slate-400">${d.direction}</td>
+          <td class="py-2.5 px-3 text-right text-slate-300 font-semibold">${d.volume.toFixed(2)}</td>
+          <td class="py-2.5 px-3 text-right text-slate-200 font-semibold">${d.price.toFixed(2)}</td>
+          <td class="py-2.5 px-3 text-right text-accent-rose/90 font-medium">${d.sl && d.sl !== '0.00' && d.sl !== '0' && d.sl !== '-' ? d.sl : '<span class="text-slate-600">-</span>'}</td>
+          <td class="py-2.5 px-3 text-right text-accent-emerald/90 font-medium">${d.tp && d.tp !== '0.00' && d.tp !== '0' && d.tp !== '-' ? d.tp : '<span class="text-slate-600">-</span>'}</td>
+          <td class="py-2.5 px-3 text-right text-slate-400 font-semibold">${d.commission < 0 ? '-' : ''}$${Math.abs(d.commission).toFixed(2)}</td>
+          <td class="py-2.5 px-3 text-right font-bold ${d.profit >= 0 ? 'text-accent-emerald' : 'text-accent-rose'}">
             ${d.profit >= 0 ? '+' : ''}$${d.profit.toFixed(2)}
           </td>
         </tr>
