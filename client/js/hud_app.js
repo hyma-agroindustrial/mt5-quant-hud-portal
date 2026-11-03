@@ -14,8 +14,8 @@ function iniciarQuantHUD() {
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
   "balance": 4277.26,
-  "equity": 4275.81,
-  "flotante": -1.45,
+  "equity": 4281.91,
+  "flotante": 4.65,
   "winrate": 72.8,
   "total_trades": 534,
   "total_wins": 389,
@@ -89,7 +89,7 @@ function iniciarQuantHUD() {
     3744.85,
     3912.72,
     4011.23,
-    4275.81
+    4281.91
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -17574,7 +17574,7 @@ function iniciarQuantHUD() {
     }
   ],
   "total_deals_raw": 1075,
-  "last_updated": "2026-11-02 19:00:19"
+  "last_updated": "2026-11-02 19:00:20"
 };
 
   let chartGrowth = null;
