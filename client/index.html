@@ -2,12 +2,13 @@
 <html lang="es" class="dark">
 <head>
   <script>
-    const APP_BUILD = '20261102_release_v25';
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('v') !== APP_BUILD) {
-      params.set('v', APP_BUILD);
-      window.location.replace(window.location.pathname + '?' + params.toString());
-    }
+    // Mantener siempre el enlace limpio en https://hyma-agroindustrial.github.io/mt5-quant-hud-portal/
+    try {
+      if (window.history && window.history.replaceState) {
+        const cleanPath = window.location.pathname.replace(/\/client(\/index\.html)?$/, '/').replace(/\/index\.html$/, '/');
+        window.history.replaceState(null, document.title, window.location.origin + cleanPath);
+      }
+    } catch (e) {}
   </script>
 
   <meta charset="UTF-8">
@@ -430,6 +431,6 @@
   </footer>
 
   <!-- Script con Rompedor de Caché Actualizado -->
-  <script src="./js/hud_app.js?v=20261102_release_v25"></script>
+  <script src="./js/hud_app.js?v=20261103_clean"></script>
 </body>
 </html>

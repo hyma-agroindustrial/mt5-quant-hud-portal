@@ -1,26 +1,436 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
+  <script>
+    // Mantener siempre el enlace limpio en https://hyma-agroindustrial.github.io/mt5-quant-hud-portal/
+    try {
+      if (window.history && window.history.replaceState) {
+        const cleanPath = window.location.pathname.replace(/\/client(\/index\.html)?$/, '/').replace(/\/index\.html$/, '/');
+        window.history.replaceState(null, document.title, window.location.origin + cleanPath);
+      }
+    } catch (e) {}
+  </script>
+
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MT5 Quant HUD Portal</title>
+
+  <title>51567376 - pepperstoneBS-MT5 | MT5 Quant HUD</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    const ts = Date.now();
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              950: '#070a12',
+              900: '#0c1222',
+              850: '#11192e',
+              800: '#18233d',
+              700: '#263559'
+            },
+            accent: {
+              emerald: '#10b981',
+              emeraldLight: '#34d399',
+              rose: '#f43f5e',
+              roseLight: '#fb7185',
+              cyan: '#06b6d4',
+              indigo: '#6366f1',
+              amber: '#f59e0b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fuentes e Iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- ApexCharts CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #070a12; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #334155; }
+  </style>
+
+  <script>
     const session = localStorage.getItem('mt5_active_session');
-    if (session) {
-      window.location.replace('./client/index.html?v=' + ts);
-    } else {
-      window.location.replace('./client/login.html?v=' + ts);
+    if (!session) {
+      window.location.href = 'login.html';
     }
   </script>
 </head>
-<body style="background-color: #070a12; color: #94a3b8; font-family: system-ui, -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
-  <div style="text-align: center;">
-    <h2 style="color: #06b6d4; font-size: 20px; font-weight: 800; letter-spacing: 1px; margin-bottom: 8px;">MT5 QUANT HUD PORTAL</h2>
-    <p style="font-size: 13px; color: #64748b;">Iniciando terminal y verificando sesión...</p>
-  </div>
+<body class="bg-dark-950 text-slate-100 min-h-screen antialiased flex flex-col">
+
+  <!-- Barra Superior del HUD (Header) -->
+  <header class="bg-dark-900/95 border-b border-dark-800 sticky top-0 z-50 backdrop-blur-md px-4 sm:px-6 py-3.5">
+    <div class="max-w-[1700px] mx-auto flex flex-wrap items-center justify-between gap-4">
+      
+      <!-- Logo y Título -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accent-indigo to-accent-cyan p-0.5 shadow-md shadow-accent-cyan/20">
+          <div class="w-full h-full bg-dark-900 rounded-[10px] flex items-center justify-center font-black text-xl text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-emerald">
+            Q
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-base font-extrabold tracking-tight text-white leading-none">MT5 QUANT HUD</h1>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-accent-emerald/10 text-accent-emerald border border-accent-emerald/30">
+              v2.6 LIVE
+            </span>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-0.5 mono">Valyrian Gold | SMC Specialist</p>
+        </div>
+      </div>
+
+      <!-- Cuenta Única: 51567376 - pepperstoneBS-MT5 -->
+      <div class="flex items-center gap-2 bg-dark-950 border border-dark-800 px-3.5 py-1.5 rounded-xl shadow-inner">
+        <span class="w-2.5 h-2.5 rounded-full bg-accent-emerald animate-pulse"></span>
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Cuenta:</span>
+        <span class="text-xs font-black text-white mono tracking-wide">51567376 - pepperstoneBS-MT5</span>
+      </div>
+
+      <!-- Estado de Sincronización y Usuario -->
+      <div class="flex items-center gap-4">
+        <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-dark-950 border border-dark-800 text-xs">
+          <span class="w-2 h-2 rounded-full bg-accent-emerald"></span>
+          <span class="text-slate-300 font-medium">Hora MT5:</span>
+          <span class="text-accent-emerald font-bold mono">2026.11.02 Terminal</span>
+        </div>
+
+        <div class="flex items-center gap-2 pl-2 border-l border-dark-800">
+          <div class="text-right">
+            <span id="user-display" class="block text-xs font-bold text-white mono">admin</span>
+            <span class="block text-[10px] text-slate-500 uppercase font-semibold">Master Access</span>
+          </div>
+          <button onclick="cerrarSesion()" title="Cerrar Sesión" class="p-2 rounded-xl bg-dark-950 hover:bg-accent-rose/10 hover:text-accent-rose border border-dark-800 text-slate-400 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal del HUD -->
+  <main class="flex-1 max-w-[1700px] w-full mx-auto p-4 sm:p-6 space-y-6">
+
+    <!-- Fila 1: KPIs Principales -->
+    <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      
+      <!-- Balance Total -->
+      <div class="bg-dark-900/80 border border-dark-800 rounded-2xl p-4 shadow-sm hover:border-dark-700 transition">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">Balance Actual</p>
+        <p id="kpi-balance" class="text-xl sm:text-2xl font-black text-white mono">$3,971.39</p>
+        <p class="text-[11px] text-slate-500 mt-1 flex items-center gap-1">
+          <span>Servidor:</span>
+          <span class="mono font-semibold">Live01</span>
+        </p>
+      </div>
+
+      <!-- Equity y Flotante -->
+      <div class="bg-dark-900/80 border border-dark-800 rounded-2xl p-4 shadow-sm hover:border-dark-700 transition">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">Equity (Patrimonio)</p>
+        <p id="kpi-equity" class="text-xl sm:text-2xl font-black text-accent-cyan mono">$3,971.39</p>
+        <p id="kpi-flotante" class="text-[11px] font-bold text-accent-emerald mt-1 mono">
+          Flotante: $0.00 (0.00%)
+        </p>
+      </div>
+
+      <!-- ROI Diario (Hoy: 2 Noviembre) -->
+      <div class="bg-dark-900/80 border border-dark-800 rounded-2xl p-4 shadow-sm hover:border-accent-emerald/40 transition relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-16 h-16 bg-accent-emerald/5 rounded-full blur-xl pointer-events-none"></div>
+        <p id="kpi-roi-label" class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">ROI Diario (2 Nov)</p>
+        <p id="kpi-roi-dia" class="text-xl sm:text-2xl font-black text-accent-emerald mono">+1.50%</p>
+        <p id="kpi-pnl-dia" class="text-[11px] text-accent-emerald font-semibold mt-1 mono">
+          PnL Hoy: +$57.67 USD
+        </p>
+      </div>
+
+      <!-- ROI Mes Noviembre Acumulado -->
+      <div class="bg-dark-900/80 border border-dark-800 rounded-2xl p-4 shadow-sm hover:border-accent-emerald/40 transition relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-16 h-16 bg-accent-indigo/10 rounded-full blur-xl pointer-events-none"></div>
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">ROI Mes (Acumulado)</p>
+        <p id="kpi-roi-mes" class="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-emerald mono">
+          +1.50%
+        </p>
+        <p id="kpi-pnl-mes-text" class="text-[11px] text-slate-400 mt-1 mono">
+          PnL Nov: +$57.67 USD
+        </p>
+      </div>
+
+      <!-- Win Rate & Trades -->
+      <div class="bg-dark-900/80 border border-dark-800 rounded-2xl p-4 shadow-sm hover:border-dark-700 transition">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">Win Rate %</p>
+        <p id="kpi-winrate" class="text-xl sm:text-2xl font-black text-white mono">71.6%</p>
+        <p class="text-[11px] text-slate-400 mt-1 flex items-center justify-between">
+          <span>Profit Factor:</span>
+          <span id="kpi-pf" class="text-accent-emerald font-bold mono">2.45</span>
+        </p>
+      </div>
+
+      <!-- Max Drawdown Histórico -->
+      <div class="bg-dark-900/80 border border-dark-800 rounded-2xl p-4 shadow-sm hover:border-dark-700 transition">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">Max Drawdown</p>
+        <p id="kpi-drawdown" class="text-xl sm:text-2xl font-black text-accent-rose mono">-2.80%</p>
+        <p class="text-[11px] text-slate-400 mt-1 flex items-center justify-between">
+          <span>Trades Ganados:</span>
+          <span id="kpi-trades-count" class="text-slate-300 font-semibold mono">353 de 493</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Fila 2: Curva de Crecimiento con Rango de Fechas y Retorno Diario -->
+    <section class="grid lg:grid-cols-12 gap-6">
+      
+      <!-- Curva de Crecimiento (Balance vs Equity) -->
+      <div class="lg:col-span-8 bg-dark-900/90 border border-dark-800 rounded-2xl p-5 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 class="text-sm font-extrabold text-white uppercase tracking-wider flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-accent-cyan"></span>
+              Curva de Crecimiento (Balance vs Equity)
+            </h2>
+            <p class="text-xs text-slate-400">Evolución del capital histórico y preservación de flotante</p>
+          </div>
+
+          <!-- Botonera de Temporalidades Curva: 1D 1S 15D 1M YTD TODO -->
+          <div class="flex bg-dark-950 p-1 rounded-xl border border-dark-800 text-xs font-bold mono">
+            <button class="btn-periodo-curva px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="1D">1D</button>
+            <button class="btn-periodo-curva px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="1S">1S</button>
+            <button class="btn-periodo-curva px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="15D">15D</button>
+            <button class="btn-periodo-curva px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="1M">1M</button>
+            <button class="btn-periodo-curva px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="YTD">YTD</button>
+            <button class="btn-periodo-curva px-2.5 py-1 rounded-lg bg-dark-800 text-accent-cyan" data-period="TODO">TODO</button>
+          </div>
+        </div>
+
+        <!-- Personalizador de Fechas de la Curva -->
+        <div class="flex flex-wrap items-center gap-3 bg-dark-950/70 p-2.5 rounded-xl border border-dark-800/80 text-xs">
+          <span class="text-slate-400 font-bold uppercase tracking-wider text-[10px]">Personalizar Fechas:</span>
+          <div class="flex items-center gap-1.5">
+            <label for="date-from-curva" class="text-slate-500">Desde:</label>
+            <input type="date" id="date-from-curva" value="2026-10-01" class="bg-dark-900 border border-dark-800 rounded-lg px-2 py-1 text-slate-200 mono text-xs focus:outline-none focus:border-accent-cyan">
+          </div>
+          <div class="flex items-center gap-1.5">
+            <label for="date-to-curva" class="text-slate-500">Hasta:</label>
+            <input type="date" id="date-to-curva" value="2026-11-02" class="bg-dark-900 border border-dark-800 rounded-lg px-2 py-1 text-slate-200 mono text-xs focus:outline-none focus:border-accent-cyan">
+          </div>
+          <button id="btn-apply-curva" class="px-3 py-1 bg-accent-cyan/15 hover:bg-accent-cyan/25 text-accent-cyan border border-accent-cyan/30 rounded-lg font-bold transition">
+            Aplicar Rango
+          </button>
+        </div>
+
+        <div id="chart-growth" class="w-full h-80"></div>
+      </div>
+
+                  <!-- Retorno por Sesión con Selector de Día y Mes -->
+      <div class="lg:col-span-4 bg-dark-900/90 border border-dark-800 rounded-2xl p-5 shadow-sm space-y-4">
+        <div>
+          <div class="flex items-center justify-between">
+            <h2 class="text-sm font-extrabold text-white uppercase tracking-wider flex items-center gap-2">
+              <span id="dot-retorno-bars" class="w-2.5 h-2.5 rounded-full bg-accent-emerald"></span>
+              <span id="titulo-retorno-bars">Retorno por Sesión</span>
+            </h2>
+            <span id="sync-status-indicator" class="flex items-center gap-1.5 text-[10px] font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-2 py-0.5 rounded-lg mono">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent-emerald animate-pulse"></span>
+              En Vivo
+            </span>
+          </div>
+          <p id="subtitulo-retorno-bars" class="text-xs text-slate-400 mt-0.5">Auditoría y cálculo de % seleccionando Día y Mes</p>
+        </div>
+
+        <!-- Controles para Escoger Mes y Día + Botón Aplicar Rango -->
+        <div class="bg-dark-950/80 p-3 rounded-xl border border-dark-800 space-y-2.5 text-xs">
+          <div class="grid grid-cols-2 gap-2">
+            <!-- Selector de Mes -->
+            <div>
+              <label for="retorno-select-mes" class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Escoger Mes:</label>
+              <select id="retorno-select-mes" class="w-full bg-dark-900 border border-dark-700 text-white rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-accent-emerald font-bold mono">
+                <option value="2026-11" selected>Noviembre 2026</option>
+                <option value="2026-10">Octubre 2026</option>
+              </select>
+            </div>
+
+            <!-- Selector de Día -->
+            <div>
+              <label for="retorno-select-dia" class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Escoger Día:</label>
+              <select id="retorno-select-dia" class="w-full bg-dark-900 border border-dark-700 text-white rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-accent-emerald font-bold mono">
+                <option value="2026-11-02" selected>Día 02 (+$57.67)</option>
+                <option value="TODO_MES">Todo el Mes</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Botón Aplicar Rango / Calcular -->
+          <button id="btn-aplicar-retorno" class="w-full py-1.5 px-3 bg-accent-emerald/15 hover:bg-accent-emerald/25 border border-accent-emerald/40 hover:border-accent-emerald text-accent-emerald font-bold rounded-lg transition text-xs flex items-center justify-center gap-1.5 mono">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7l6 6-6 6"></path></svg>
+            Aplicar y Calcular %
+          </button>
+        </div>
+
+        <!-- Encabezado con Resultado Calculado -->
+        <div class="flex items-center justify-between bg-dark-950/90 px-3.5 py-2.5 rounded-xl border border-dark-800 text-xs mono">
+          <span id="label-retorno-calc" class="text-slate-400 font-bold uppercase tracking-wider text-[11px]">Resultado Calculado:</span>
+          <span id="badge-retorno-resultado" class="font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-2.5 py-1 rounded-lg text-xs">
+            +1.50% (+$57.67 USD)
+          </span>
+        </div>
+
+        <div id="chart-daily-bars" class="w-full h-64"></div>
+      </div>
+    </section>
+
+    <!-- Fila 3: Calendario de desempeño (% diario y Mensual) con Selector de Mes -->
+    <section class="bg-dark-900/90 border border-dark-800 rounded-2xl p-6 shadow-sm space-y-5">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h2 class="text-base font-extrabold text-white uppercase tracking-wider flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-accent-emerald"></span>
+            Calendario de desempeño (% diario y Mensual)
+          </h2>
+          <p class="text-xs text-slate-400">Auditoría diaria con porcentaje de rendimiento y beneficio en dólares de cada jornada (Fecha de Servidor MT5)</p>
+        </div>
+
+        <!-- Selector de Mes y Badges -->
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="flex items-center gap-2 bg-dark-950 border border-dark-800 px-3 py-1.5 rounded-xl">
+            <label for="select-mes" class="text-xs font-bold text-slate-400 uppercase">Mes:</label>
+            <select id="select-mes" class="bg-transparent text-xs font-bold text-white focus:outline-none cursor-pointer mono">
+              <option value="2026-11" selected class="bg-dark-900">Noviembre 2026</option>
+              <option value="2026-10" class="bg-dark-900">Octubre 2026</option>
+            </select>
+          </div>
+          <span id="badge-mes-resumen" class="text-xs font-bold text-accent-emerald bg-accent-emerald/10 border border-accent-emerald/30 px-3 py-1 rounded-xl mono">
+            Noviembre 2026: +$57.67 USD
+          </span>
+        </div>
+      </div>
+
+      <!-- Cuadrícula del Calendario -->
+      <div class="overflow-x-auto">
+        <div class="min-w-[750px] grid grid-cols-7 gap-2.5" id="calendar-heatmap-grid">
+          <!-- Inyectado dinámicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fila 4: Operaciones Realizadas MT5 (Historial Completo) con Filtros y Temporalidades -->
+    <section class="bg-dark-900/90 border border-dark-800 rounded-2xl p-5 shadow-sm space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h2 class="text-base font-extrabold text-white uppercase tracking-wider flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-accent-cyan"></span>
+            Operaciones Realizadas MT5 (Historial Completo)
+          </h2>
+          <p id="total-trades-label" class="text-xs text-slate-400">Mostrando operaciones de la cuenta 51567376</p>
+        </div>
+
+        <!-- Botonera de Temporalidades Tabla: 1D 1S 15D 1M YTD TODO -->
+        <div class="flex bg-dark-950 p-1 rounded-xl border border-dark-800 text-xs font-bold mono">
+          <button class="btn-periodo-tabla px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="1D">1D</button>
+          <button class="btn-periodo-tabla px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="1S">1S</button>
+          <button class="btn-periodo-tabla px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="15D">15D</button>
+          <button class="btn-periodo-tabla px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="1M">1M</button>
+          <button class="btn-periodo-tabla px-2.5 py-1 rounded-lg text-slate-400 hover:text-white" data-period="YTD">YTD</button>
+          <button class="btn-periodo-tabla px-2.5 py-1 rounded-lg bg-dark-800 text-accent-cyan" data-period="TODO">TODO</button>
+        </div>
+      </div>
+
+      <!-- Barra de Personalización de Fechas para la Tabla y Buscador -->
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-dark-950/70 p-2.5 rounded-xl border border-dark-800/80 text-xs">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="text-slate-400 font-bold uppercase tracking-wider text-[10px]">Personalizar Fechas:</span>
+          <div class="flex items-center gap-1.5">
+            <label for="date-from-tabla" class="text-slate-500">Desde:</label>
+            <input type="date" id="date-from-tabla" value="2026-10-01" class="bg-dark-900 border border-dark-800 rounded-lg px-2 py-1 text-slate-200 mono text-xs focus:outline-none focus:border-accent-cyan">
+          </div>
+          <div class="flex items-center gap-1.5">
+            <label for="date-to-tabla" class="text-slate-500">Hasta:</label>
+            <input type="date" id="date-to-tabla" value="2026-11-02" class="bg-dark-900 border border-dark-800 rounded-lg px-2 py-1 text-slate-200 mono text-xs focus:outline-none focus:border-accent-cyan">
+          </div>
+          <button id="btn-apply-tabla" class="px-3 py-1 bg-accent-cyan/15 hover:bg-accent-cyan/25 text-accent-cyan border border-accent-cyan/30 rounded-lg font-bold transition">
+            Aplicar Rango
+          </button>
+        </div>
+
+        <!-- Buscador por ticket / símbolo -->
+        <div class="w-full sm:w-64">
+          <input type="text" id="input-search-deals" placeholder="Buscar ticket, símbolo, buy/sell..." 
+                 class="w-full px-3 py-1.5 bg-dark-900 border border-dark-800 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-accent-cyan mono">
+        </div>
+      </div>
+
+      <!-- Tabla Estilo MT5 -->
+      <div class="overflow-x-auto border border-dark-800 rounded-xl">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-dark-950/90 border-b border-dark-800 text-slate-400 uppercase tracking-wider text-[11px] mono">
+            <tr class="text-slate-400">
+              <th class="py-3 px-3 text-left">Fecha / Hora</th>
+              <th class="py-3 px-3 text-left">Símbolo</th>
+              <th class="py-3 px-3 text-left">Transacción</th>
+              <th class="py-3 px-3 text-center">Tipo</th>
+              <th class="py-3 px-3 text-center">Dirección</th>
+              <th class="py-3 px-3 text-right">Volumen</th>
+              <th class="py-3 px-3 text-right">Precio</th>
+              <th class="py-3 px-3 text-right text-accent-rose/90">S / L</th>
+              <th class="py-3 px-3 text-right text-accent-emerald/90">T / P</th>
+              <th class="py-3 px-3 text-right">Comisión</th>
+              <th class="py-3 px-3 text-right">Beneficio</th>
+            </tr>
+          </thead>
+          <tbody id="table-recent-trades" class="divide-y divide-dark-800/40 mono">
+            <!-- Operaciones renderizadas con fechas UTC de servidor MT5 -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Paginador y Barra Inferior de Totales Idéntica a MT5 -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+        <div class="flex items-center gap-2 text-xs mono">
+          <button id="btn-prev-page" class="px-3 py-1 bg-dark-950 border border-dark-800 rounded-lg hover:border-slate-600 text-slate-300">Anterior</button>
+          <span id="pag-label" class="text-slate-400 px-2">Página 1</span>
+          <button id="btn-next-page" class="px-3 py-1 bg-dark-950 border border-dark-800 rounded-lg hover:border-slate-600 text-slate-300">Siguiente</button>
+        </div>
+
+        <!-- Barra de Estado de MT5 -->
+        <div class="bg-dark-950 px-4 py-2 rounded-xl border border-dark-800 flex items-center gap-4 text-xs mono">
+          <div>
+            <span class="text-slate-500">Beneficio:</span>
+            <span id="summary-beneficio" class="font-bold text-accent-emerald ml-1">$61.55</span>
+          </div>
+          <div class="border-l border-dark-800 pl-4">
+            <span class="text-slate-500">Comisión:</span>
+            <span id="summary-comision" class="font-bold text-accent-rose ml-1">-$3.74</span>
+          </div>
+          <div class="border-l border-dark-800 pl-4">
+            <span class="text-slate-500">Balance / Neto:</span>
+            <span id="summary-balance" class="font-bold text-white ml-1">$57.67</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark-900 border-t border-dark-800 py-4 px-6 text-center text-xs text-slate-500 mono">
+    <p>© 2026 MT5 Quant HUD Portal | Cuenta 51567376 - pepperstoneBS-MT5</p>
+  </footer>
+
+  <!-- Script con Rompedor de Caché Actualizado -->
+  <script src="./client/js/hud_app.js?v=20261103_clean"></script>
 </body>
 </html>

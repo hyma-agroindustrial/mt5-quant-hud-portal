@@ -17510,7 +17510,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ],
   "total_deals_raw": 1071,
-  "last_updated": "2026-11-02 18:39:01"
+  "last_updated": "2026-11-02 18:47:31"
 };
 
   let chartGrowth = null;
@@ -17895,7 +17895,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const esPositivo = pnl >= 0;
 
         html += `
-          <div class="p-3 rounded-xl ${esPositivo ? 'bg-emerald-950/40 border-emerald-500/40 hover:border-emerald-400' : 'bg-rose-950/40 border-rose-500/40 hover:border-rose-400'} border transition cursor-pointer flex flex-col justify-between min-h-[75px]" onclick="seleccionarDiaEnRetorno('${mesSeleccionado}', '${fechaClave}')">
+          <div class="p-3 rounded-xl ${esPositivo ? 'bg-emerald-950/40 border-emerald-500/40 hover:border-emerald-400' : 'bg-rose-950/40 border-rose-500/40 hover:border-rose-400'} border transition cursor-pointer flex flex-col justify-between min-h-[115px]" onclick="seleccionarDiaEnRetorno('${mesSeleccionado}', '${fechaClave}')">
             <div class="flex items-center justify-between">
               <span class="text-xs font-black text-white mono">${d}</span>
               <span class="text-[10px] font-extrabold ${esPositivo ? 'text-accent-emerald' : 'text-accent-rose'} mono bg-dark-950/80 px-1.5 py-0.5 rounded">
@@ -17906,13 +17906,17 @@ document.addEventListener('DOMContentLoaded', () => {
               <p class="text-xs font-bold ${esPositivo ? 'text-accent-emerald' : 'text-accent-rose'} mono">
                 ${esPositivo ? '+' : ''}$${Math.abs(pnl).toFixed(2)}
               </p>
-              <p class="text-[9px] text-slate-400 mono">${datosDia.trades} ops</p>
+              <div class="mt-1.5 pt-1 border-t border-dark-800/60 text-[10px] mono leading-tight space-y-0.5 text-right">
+                <p class="text-slate-300 font-semibold"># ops = <span class="font-bold text-white">${datosDia.trades || 0}</span></p>
+                <p class="text-accent-emerald font-semibold">Win = <span class="font-bold">${datosDia.wins || 0}</span></p>
+                <p class="text-accent-rose font-semibold">Loss = <span class="font-bold">${datosDia.losses || 0}</span></p>
+              </div>
             </div>
           </div>
         `;
       } else {
         html += `
-          <div class="p-3 rounded-xl bg-dark-950/40 border border-dark-800/40 flex flex-col justify-between min-h-[75px] opacity-40">
+          <div class="p-3 rounded-xl bg-dark-950/40 border border-dark-800/40 flex flex-col justify-between min-h-[115px] opacity-40">
             <span class="text-xs font-bold text-slate-500 mono">${d}</span>
             <div class="text-right">
               <p class="text-[10px] text-slate-600 mono">${esFinSemana ? 'CIERRE' : '0.00%'}</p>
@@ -18038,7 +18042,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 8. Auto-Sync Polling en Vivo
   async function pollLiveData() {
     try {
-      const res = await fetch(`./js/live_data.json?t=${Date.now()}`, { cache: 'no-store' });
+      const dataUrl = window.location.pathname.includes('/client') ? `./js/live_data.json` : `./client/js/live_data.json`;
+      const res = await fetch(`${dataUrl}?t=${Date.now()}`, { cache: 'no-store' });
       if (res.ok) {
         const data = await res.json();
         if (data && data.balance) {
