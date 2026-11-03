@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4252.42,
-  "equity": 4252.0,
-  "flotante": -0.42,
-  "winrate": 72.5,
-  "total_trades": 528,
-  "total_wins": 383,
+  "balance": 4258.94,
+  "equity": 4258.94,
+  "flotante": 0.0,
+  "winrate": 72.6,
+  "total_trades": 530,
+  "total_wins": 385,
   "growth_dates": [
     "2026-10-02",
     "2026-10-05",
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4252.42
+    4258.94
   ],
   "equity_curve": [
     1000.0,
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4252.0
+    4258.94
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
     "2026-11-02": 98.51,
-    "2026-11-03": 241.19
+    "2026-11-03": 247.71
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": 70.66,
     "2026-10-30": 178.41,
     "2026-11-02": 107.03,
-    "2026-11-03": 264.51
+    "2026-11-03": 271.17
   },
   "daily_comm": {
     "2026-10-02": 0.0,
@@ -161,11 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
     "2026-11-02": -8.52,
-    "2026-11-03": -23.32
+    "2026-11-03": -23.46
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 339.7
+    "2026-11": 346.22
   },
   "calendar_by_month": {
     "2026-10": {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 23.52,
+        "roi_pct": 23.48,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -361,17 +361,49 @@ document.addEventListener('DOMContentLoaded', () => {
         "losses": 3
       },
       "2026-11-03": {
-        "pnl": 241.19,
-        "gross": 264.51,
-        "commission": -23.32,
-        "roi_pct": 6.01,
-        "trades": 22,
-        "wins": 18,
+        "pnl": 247.71,
+        "gross": 271.17,
+        "commission": -23.46,
+        "roi_pct": 6.18,
+        "trades": 24,
+        "wins": 20,
         "losses": 4
       }
     }
   },
   "all_deals": [
+    {
+      "ticket": 302178298,
+      "time": "2026.11.03 03:13:03",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.02,
+      "price": 3953.5,
+      "sl": "",
+      "tp": "3953.40",
+      "commission": -0.07,
+      "profit": 4.4,
+      "net": 4.33
+    },
+    {
+      "ticket": 302178295,
+      "time": "2026.11.03 03:13:03",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.02,
+      "price": 3953.5,
+      "sl": "",
+      "tp": "3953.43",
+      "commission": -0.07,
+      "profit": 2.26,
+      "net": 2.19
+    },
     {
       "ticket": 302178102,
       "time": "2026.11.03 03:12:45",
@@ -415,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3951.3,
       "sl": "",
-      "tp": "3953.40",
+      "tp": "",
       "commission": -0.07,
       "profit": 0.0,
       "net": -0.07
@@ -447,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.02,
       "price": 3952.37,
       "sl": "",
-      "tp": "3953.43",
+      "tp": "",
       "commission": -0.07,
       "profit": 0.0,
       "net": -0.07
@@ -17381,8 +17413,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1063,
-  "last_updated": "2026-11-02 18:12:48"
+  "total_deals_raw": 1065,
+  "last_updated": "2026-11-02 18:13:06"
 };
 
   let chartGrowth = null;
