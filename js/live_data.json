@@ -3,12 +3,12 @@
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4468.9,
-  "equity": 4464.43,
-  "flotante": -4.47,
-  "winrate": 73.9,
-  "total_trades": 563,
-  "total_wins": 416,
+  "balance": 4504.31,
+  "equity": 4504.31,
+  "flotante": 0.0,
+  "winrate": 73.5,
+  "total_trades": 569,
+  "total_wins": 418,
   "growth_dates": [
     "2026-10-02",
     "2026-10-05",
@@ -55,7 +55,7 @@
     3744.85,
     3912.72,
     4011.23,
-    4468.9
+    4504.31
   ],
   "equity_curve": [
     1000.0,
@@ -79,7 +79,7 @@
     3744.85,
     3912.72,
     4011.23,
-    4464.43
+    4504.31
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -103,7 +103,7 @@
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
     "2026-11-02": 98.51,
-    "2026-11-03": 457.67
+    "2026-11-03": 493.08
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -127,7 +127,7 @@
     "2026-10-29": 70.66,
     "2026-10-30": 178.41,
     "2026-11-02": 107.03,
-    "2026-11-03": 498.29
+    "2026-11-03": 534.42
   },
   "daily_comm": {
     "2026-10-02": 0.0,
@@ -151,11 +151,11 @@
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
     "2026-11-02": -8.52,
-    "2026-11-03": -40.62
+    "2026-11-03": -41.34
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 556.18
+    "2026-11": 591.59
   },
   "calendar_by_month": {
     "2026-10": {
@@ -163,7 +163,7 @@
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 22.38,
+        "roi_pct": 22.2,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -351,17 +351,113 @@
         "losses": 3
       },
       "2026-11-03": {
-        "pnl": 457.67,
-        "gross": 498.29,
-        "commission": -40.62,
-        "roi_pct": 11.41,
-        "trades": 57,
-        "wins": 51,
-        "losses": 6
+        "pnl": 493.08,
+        "gross": 534.42,
+        "commission": -41.34,
+        "roi_pct": 12.29,
+        "trades": 63,
+        "wins": 53,
+        "losses": 10
       }
     }
   },
   "all_deals": [
+    {
+      "ticket": 302321426,
+      "time": "2026.11.03 11:37:32",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.05,
+      "price": 3908.25,
+      "sl": "3906.52",
+      "tp": "3924.49",
+      "commission": -0.18,
+      "profit": 40.25,
+      "net": 40.07
+    },
+    {
+      "ticket": 302321425,
+      "time": "2026.11.03 11:37:32",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.05,
+      "price": 3908.25,
+      "sl": "3906.57",
+      "tp": "3909.58",
+      "commission": -0.18,
+      "profit": 16.25,
+      "net": 16.07
+    },
+    {
+      "ticket": 302321424,
+      "time": "2026.11.03 11:37:32",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.05,
+      "price": 3908.25,
+      "sl": "",
+      "tp": "3909.64",
+      "commission": -0.18,
+      "profit": -4.05,
+      "net": -4.23
+    },
+    {
+      "ticket": 302321423,
+      "time": "2026.11.03 11:37:32",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.02,
+      "price": 3908.25,
+      "sl": "",
+      "tp": "3915.62",
+      "commission": -0.07,
+      "profit": -4.64,
+      "net": -4.71
+    },
+    {
+      "ticket": 302321422,
+      "time": "2026.11.03 11:37:32",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.02,
+      "price": 3908.25,
+      "sl": "",
+      "tp": "3915.59",
+      "commission": -0.07,
+      "profit": -7.38,
+      "net": -7.45
+    },
+    {
+      "ticket": 302321421,
+      "time": "2026.11.03 11:37:32",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.01,
+      "price": 3908.25,
+      "sl": "",
+      "tp": "3915.58",
+      "commission": -0.04,
+      "profit": -4.3,
+      "net": -4.34
+    },
     {
       "ticket": 302319622,
       "time": "2026.11.03 11:32:10",
@@ -436,8 +532,8 @@
       "direction": "in",
       "volume": 0.05,
       "price": 3900.2,
-      "sl": "",
-      "tp": "3915.46",
+      "sl": "3906.52",
+      "tp": "3924.49",
       "commission": -0.18,
       "profit": 0.0,
       "net": -0.18
@@ -452,7 +548,7 @@
       "direction": "in",
       "volume": 0.05,
       "price": 3905.0,
-      "sl": "",
+      "sl": "3906.57",
       "tp": "3909.58",
       "commission": -0.18,
       "profit": 0.0,
@@ -18555,6 +18651,6 @@
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1137,
-  "last_updated": "2026-11-03 02:32:40"
+  "total_deals_raw": 1143,
+  "last_updated": "2026-11-03 02:37:33"
 }
