@@ -255,22 +255,30 @@ def extraer_telemetria_completa():
     }
 
 def guardar_telemetria(data):
-    with open(JSON_PATH, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2)
+    root_json = os.path.join(REPO_DIR, "js", "live_data.json")
+    root_js = os.path.join(REPO_DIR, "js", "hud_app.js")
+    
+    for p in [JSON_PATH, root_json]:
+        try:
+            with open(p, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2)
+        except Exception as e:
+            pass
 
-    try:
-        with open(JS_PATH, 'r', encoding='utf-8') as f:
-            js_text = f.read()
-
-        start_idx = js_text.find('const MT5_DATA = ')
-        end_idx = js_text.find('let chartGrowth = null;')
-        if start_idx != -1 and end_idx != -1:
-            json_str = json.dumps(data, indent=2)
-            new_js = js_text[:start_idx] + 'const MT5_DATA = ' + json_str + ';\n\n  ' + js_text[end_idx:]
-            with open(JS_PATH, 'w', encoding='utf-8') as f:
-                f.write(new_js)
-    except Exception as e:
-        print(f"[WARN] Error actualizando hud_app.js: {e}", flush=True)
+    for p in [JS_PATH, root_js]:
+        try:
+            if os.path.exists(p):
+                with open(p, 'r', encoding='utf-8') as f:
+                    js_text = f.read()
+                start_idx = js_text.find('const MT5_DATA = ')
+                end_idx = js_text.find('let chartGrowth = null;')
+                if start_idx != -1 and end_idx != -1:
+                    json_str = json.dumps(data, indent=2)
+                    new_js = js_text[:start_idx] + 'const MT5_DATA = ' + json_str + ';\n\n  ' + js_text[end_idx:]
+                    with open(p, 'w', encoding='utf-8') as f:
+                        f.write(new_js)
+        except Exception as e:
+            print(f"[WARN] Error actualizando {p}: {e}", flush=True)
 
 def intentar_subir_a_github(cur_bal, cur_deals):
     global last_git_push, pending_push, last_pushed_deals, last_pushed_balance
