@@ -18320,7 +18320,7 @@ function iniciarQuantHUD() {
     }
   ],
   "total_deals_raw": 1121,
-  "last_updated": "2026-11-02 23:27:41"
+  "last_updated": "2026-11-02 23:49:44"
 };
 
   let chartGrowth = null;

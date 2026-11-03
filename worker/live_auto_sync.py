@@ -23,6 +23,10 @@ KNOWN_SL_TP = {
     301853224: {'sl': '', 'tp': '3906.54'},
     301858360: {'sl': '', 'tp': ''},
     301858420: {'sl': '', 'tp': '3901.85'},
+    302237349: {'sl': '', 'tp': '3961.68'},
+    302237350: {'sl': '', 'tp': '3937.58'},
+    302237351: {'sl': '', 'tp': '3928.61'},
+    302237967: {'sl': '', 'tp': '3929.09'},
 }
 
 """
@@ -103,13 +107,47 @@ def extraer_telemetria_completa():
                 order_tp[o.ticket] = o.tp
                 pos_tp[o.position_id] = o.tp
 
+    # Cache persistente de SL y TP de posiciones en disco
+    pos_cache_file = os.path.join(os.path.dirname(__file__), "positions_sltp_cache.json")
+    pos_cache = {}
+    if os.path.exists(pos_cache_file):
+        try:
+            with open(pos_cache_file, "r") as f:
+                pos_cache = json.load(f)
+        except Exception:
+            pass
+
+    for k, v in pos_cache.items():
+        try:
+            pid = int(k)
+            if v.get('sl'): pos_sl[pid] = float(v['sl'])
+            if v.get('tp'): pos_tp[pid] = float(v['tp'])
+        except Exception:
+            pass
+
     open_pos = mt5.positions_get()
+    cache_dirty = False
     if open_pos:
         for p in open_pos:
             if p.sl > 0:
                 pos_sl[p.identifier] = p.sl
             if p.tp > 0:
                 pos_tp[p.identifier] = p.tp
+            if p.sl > 0 or p.tp > 0:
+                s_pid = str(p.identifier)
+                if s_pid not in pos_cache or pos_cache[s_pid].get('sl') != p.sl or pos_cache[s_pid].get('tp') != p.tp:
+                    pos_cache[s_pid] = {
+                        'sl': f"{p.sl:.2f}" if p.sl > 0 else "",
+                        'tp': f"{p.tp:.2f}" if p.tp > 0 else ""
+                    }
+                    cache_dirty = True
+
+    if cache_dirty:
+        try:
+            with open(pos_cache_file, "w") as f:
+                json.dump(pos_cache, f, indent=2)
+        except Exception:
+            pass
 
     open_orders = mt5.orders_get()
     if open_orders:
