@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4062.02,
-  "equity": 3535.52,
-  "flotante": -526.5,
-  "winrate": 72.0,
-  "total_trades": 518,
-  "total_wins": 373,
+  "balance": 4219.02,
+  "equity": 4219.02,
+  "flotante": 0.0,
+  "winrate": 72.1,
+  "total_trades": 520,
+  "total_wins": 375,
   "growth_dates": [
     "2026-10-02",
     "2026-10-05",
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4062.02
+    4219.02
   ],
   "equity_curve": [
     1000.0,
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    3535.52
+    4219.02
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
     "2026-11-02": 98.51,
-    "2026-11-03": 50.79
+    "2026-11-03": 207.79
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": 70.66,
     "2026-10-30": 178.41,
     "2026-11-02": 107.03,
-    "2026-11-03": 69.25
+    "2026-11-03": 229.75
   },
   "daily_comm": {
     "2026-10-02": 0.0,
@@ -161,11 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
     "2026-11-02": -8.52,
-    "2026-11-03": -18.46
+    "2026-11-03": -21.96
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 149.3
+    "2026-11": 306.3
   },
   "calendar_by_month": {
     "2026-10": {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 24.62,
+        "roi_pct": 23.7,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -361,17 +361,49 @@ document.addEventListener('DOMContentLoaded', () => {
         "losses": 3
       },
       "2026-11-03": {
-        "pnl": 50.79,
-        "gross": 69.25,
-        "commission": -18.46,
-        "roi_pct": 1.27,
-        "trades": 12,
-        "wins": 8,
+        "pnl": 207.79,
+        "gross": 229.75,
+        "commission": -21.96,
+        "roi_pct": 5.18,
+        "trades": 14,
+        "wins": 10,
         "losses": 4
       }
     }
   },
   "all_deals": [
+    {
+      "ticket": 302168253,
+      "time": "2026.11.03 02:43:55",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "buy",
+      "direction": "out",
+      "volume": 0.5,
+      "price": 3949.96,
+      "sl": "",
+      "tp": "",
+      "commission": -1.75,
+      "profit": 144.5,
+      "net": 142.75
+    },
+    {
+      "ticket": 302168252,
+      "time": "2026.11.03 02:43:55",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "buy",
+      "direction": "out",
+      "volume": 0.5,
+      "price": 3949.96,
+      "sl": "",
+      "tp": "",
+      "commission": -1.75,
+      "profit": 16.0,
+      "net": 14.25
+    },
     {
       "ticket": 302166373,
       "time": "2026.11.03 02:40:45",
@@ -527,7 +559,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 3952.85,
       "sl": "",
-      "tp": "3948.12",
+      "tp": "",
       "commission": -1.75,
       "profit": 0.0,
       "net": -1.75
@@ -543,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.5,
       "price": 3950.28,
       "sl": "",
-      "tp": "3948.34",
+      "tp": "",
       "commission": -1.75,
       "profit": 0.0,
       "net": -1.75
@@ -17061,8 +17093,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1043,
-  "last_updated": "2026-11-02 17:40:48"
+  "total_deals_raw": 1045,
+  "last_updated": "2026-11-02 17:43:56"
 };
 
   let chartGrowth = null;
