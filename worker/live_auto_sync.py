@@ -1,6 +1,6 @@
 KNOWN_SL_TP = {
     301755112: {'sl': '', 'tp': ''},
-    301769082: {'sl': '', 'tp': '3906.46'},
+    301769082: {'sl': '', 'tp': '3936.46'},
     301780009: {'sl': '', 'tp': ''},
     301791770: {'sl': '', 'tp': ''},
     301795977: {'sl': '', 'tp': ''},
@@ -10,8 +10,8 @@ KNOWN_SL_TP = {
     301808163: {'sl': '', 'tp': '3920.85'},
     301808164: {'sl': '', 'tp': '3912.56'},
     301810384: {'sl': '', 'tp': ''},
-    301812246: {'sl': '', 'tp': '3906.08'},
-    301830494: {'sl': '3912.62', 'tp': '3914.96'},
+    301812246: {'sl': '', 'tp': '3996.08'},
+    301830494: {'sl': '', 'tp': ''},
     301830725: {'sl': '3912.62', 'tp': '3914.96'},
     301835579: {'sl': '', 'tp': ''},
     301836124: {'sl': '', 'tp': '3912.93'},
@@ -287,12 +287,12 @@ def intentar_subir_a_github(cur_bal, cur_deals):
 
     now = time.time()
     # Esperar al menos 15 segundos entre pushes para no sobrecargar git
-    if now - last_git_push < 15:
+    if now - last_git_push < 60:
         pending_push = True
         return
 
     try:
-        subprocess.run([GIT_PATH, "add", "client/js/live_data.json", "client/js/hud_app.js"], cwd=REPO_DIR, capture_output=True)
+        subprocess.run([GIT_PATH, "add", "client/js/live_data.json", "client/js/hud_app.js", "js/live_data.json", "js/hud_app.js", "index.html", "client/index.html"], cwd=REPO_DIR, capture_output=True)
         subprocess.run([GIT_PATH, "commit", "-m", f"live: MT5 sync bal=${cur_bal:.2f} deals={cur_deals} ({datetime.datetime.now().strftime('%H:%M:%S')})"], cwd=REPO_DIR, capture_output=True)
         res = subprocess.run([GIT_PATH, "push", "origin", "main"], cwd=REPO_DIR, capture_output=True, text=True, timeout=20)
         if res.returncode == 0:
