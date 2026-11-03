@@ -1,5 +1,5 @@
 // MT5 Quant HUD - Motor Oficial Cuenta 51567376 - pepperstoneBS-MT5
-document.addEventListener('DOMContentLoaded', () => {
+function iniciarQuantHUD() {
   // 1. Validar sesión
   const session = JSON.parse(localStorage.getItem('mt5_active_session') || '{}');
   const userDisplay = document.getElementById('user-display');
@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4263.8,
-  "equity": 4260.2,
-  "flotante": -3.6,
+  "balance": 4263.62,
+  "equity": 4260.17,
+  "flotante": -3.45,
   "winrate": 72.8,
   "total_trades": 533,
   "total_wins": 388,
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4263.8
+    4263.62
   ],
   "equity_curve": [
     1000.0,
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4260.2
+    4260.17
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
     "2026-11-02": 98.51,
-    "2026-11-03": 252.57
+    "2026-11-03": 252.39
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -161,11 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
     "2026-11-02": -8.52,
-    "2026-11-03": -23.94
+    "2026-11-03": -24.12
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 351.08
+    "2026-11": 350.9
   },
   "calendar_by_month": {
     "2026-10": {
@@ -361,10 +361,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "losses": 3
       },
       "2026-11-03": {
-        "pnl": 252.57,
+        "pnl": 252.39,
         "gross": 276.51,
-        "commission": -23.94,
-        "roi_pct": 6.3,
+        "commission": -24.12,
+        "roi_pct": 6.29,
         "trades": 27,
         "wins": 23,
         "losses": 4
@@ -372,6 +372,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   },
   "all_deals": [
+    {
+      "ticket": 302188626,
+      "time": "2026.11.03 03:57:59",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "in",
+      "volume": 0.05,
+      "price": 3948.93,
+      "sl": "",
+      "tp": "",
+      "commission": -0.18,
+      "profit": 0.0,
+      "net": -0.18
+    },
     {
       "ticket": 302188377,
       "time": "2026.11.03 03:56:40",
@@ -383,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
       "volume": 0.05,
       "price": 3948.3,
       "sl": "",
-      "tp": "",
+      "tp": "3947.52",
       "commission": -0.18,
       "profit": 0.0,
       "net": -0.18
@@ -17525,8 +17541,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1072,
-  "last_updated": "2026-11-02 18:56:42"
+  "total_deals_raw": 1073,
+  "last_updated": "2026-11-02 18:58:01"
 };
 
   let chartGrowth = null;
@@ -17544,8 +17560,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const equity = MT5_DATA.equity;
     const flotante = MT5_DATA.flotante;
 
-    const fechaTerminalHoy = '2026-11-02';
-    const datosHoy = (MT5_DATA.calendar_by_month['2026-11'] && MT5_DATA.calendar_by_month['2026-11'][fechaTerminalHoy]) || { pnl: 57.69, roi_pct: 1.48 };
+    const diasNov = Object.keys((MT5_DATA.calendar_by_month && MT5_DATA.calendar_by_month['2026-11']) || {}).sort();
+    const fechaTerminalHoy = diasNov.length > 0 ? diasNov[diasNov.length - 1] : '2026-11-03';
+    const datosHoy = (MT5_DATA.calendar_by_month['2026-11'] && MT5_DATA.calendar_by_month['2026-11'][fechaTerminalHoy]) || { pnl: 0, roi_pct: 0 };
     const pnlHoy = datosHoy.pnl;
     const roiHoy = datosHoy.roi_pct;
 
@@ -17563,9 +17580,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (flotanteEl) flotanteEl.textContent = 'Flotante: ' + flotanteSigno + '$' + flotante.toFixed(2) + ' (' + flotanteSigno + '0.00%)';
 
     const roiDiaEl = document.getElementById('kpi-roi-dia');
-    if (roiDiaEl) roiDiaEl.textContent = '+' + roiHoy + '%';
+    if (roiDiaEl) roiDiaEl.textContent = (roiHoy >= 0 ? '+' : '') + roiHoy.toFixed(2) + '%';
     const pnlDiaEl = document.getElementById('kpi-pnl-dia');
-    if (pnlDiaEl) pnlDiaEl.textContent = 'PnL Hoy: +$' + pnlHoy.toFixed(2) + ' USD';
+    if (pnlDiaEl) pnlDiaEl.textContent = 'PnL Hoy: ' + (pnlHoy >= 0 ? '+$' : '-$') + Math.abs(pnlHoy).toFixed(2) + ' USD';
+    
+    const roiDiaLabel = document.getElementById('kpi-roi-dia-label');
+    if (roiDiaLabel && fechaTerminalHoy) {
+      const parts = fechaTerminalHoy.split('-');
+      const dNum = parseInt(parts[2], 10);
+      roiDiaLabel.textContent = 'ROI DIARIO (' + dNum + ' NOV)';
+    }
+
+    const horaTerminalEl = document.getElementById('hora-terminal-text');
+    if (horaTerminalEl && fechaTerminalHoy) {
+      horaTerminalEl.textContent = fechaTerminalHoy.replace(/-/g, '.') + ' Terminal';
+    }
     
     const roiMesEl = document.getElementById('kpi-roi-mes');
     if (roiMesEl) roiMesEl.textContent = (pnlMes >= 0 ? '+' : '') + roiMes + '%';
@@ -17662,9 +17691,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    if (chartGrowth) chartGrowth.destroy();
-    chartGrowth = new ApexCharts(document.getElementById('chart-growth'), growthOptions);
-    chartGrowth.render();
+    if (typeof ApexCharts === 'undefined') {
+      setTimeout(() => renderizarGraficaCrecimiento(fechas, balances, equities), 200);
+      return;
+    }
+    const chartEl = document.getElementById('chart-growth');
+    if (!chartEl) return;
+    try {
+      if (chartGrowth) chartGrowth.destroy();
+      chartGrowth = new ApexCharts(chartEl, growthOptions);
+      chartGrowth.render();
+    } catch (e) {
+      console.warn('Error renderizando grafica de crecimiento:', e);
+    }
   }
 
   // 5. Apartado Retorno por Sesión: Escoger Día y Mes, y Aplicar Cálculo
@@ -18249,4 +18288,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Iniciar sondeo de actualización en vivo cada 3.5 segundos
   pollLiveData();
   setInterval(pollLiveData, 3000);
-});
+}
+
+// Inicializar inmediatamente o al dispararse DOMContentLoaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', iniciarQuantHUD);
+} else {
+  iniciarQuantHUD();
+}
