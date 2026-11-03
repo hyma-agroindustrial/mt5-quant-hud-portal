@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso | MT5 Quant HUD Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              950: '#070a12',
+              900: '#0c1222',
+              850: '#11192e',
+              800: '#18233d',
+              700: '#263559'
+            },
+            accent: {
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              rose: '#f43f5e',
+              indigo: '#6366f1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-dark-950 text-slate-100 min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+
+  <!-- Glows ambientales de fondo -->
+  <div class="absolute -top-32 -left-32 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-accent-indigo/15 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="w-full max-w-md bg-dark-900/90 border border-dark-800 rounded-3xl p-8 shadow-2xl backdrop-blur-xl relative z-10">
+    
+    <!-- Header de Marca -->
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-tr from-accent-indigo to-accent-cyan p-0.5 shadow-lg shadow-accent-cyan/20 mb-4">
+        <div class="w-full h-full bg-dark-900 rounded-[14px] flex items-center justify-center">
+          <span class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-emerald">Q</span>
+        </div>
+      </div>
+      <h1 class="text-2xl font-extrabold tracking-tight text-white">MT5 QUANT HUD</h1>
+      <p class="text-xs text-slate-400 mt-1">Portal Institucional de Auditoría y Desempeño</p>
+    </div>
+
+    <!-- Pestañas Login / Registro -->
+    <div class="flex rounded-xl bg-dark-950 p-1 mb-6 border border-dark-800">
+      <button id="tab-login" onclick="cambiarModo('login')" class="flex-1 py-2 text-xs font-bold rounded-lg bg-dark-800 text-white transition shadow-sm">
+        Iniciar Sesión
+      </button>
+      <button id="tab-register" onclick="cambiarModo('register')" class="flex-1 py-2 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition">
+        Crear Usuario
+      </button>
+    </div>
+
+    <!-- Mensaje de Notificación -->
+    <div id="alert-box" class="hidden mb-4 p-3 rounded-xl text-xs font-medium border"></div>
+
+    <!-- Formulario -->
+    <form id="auth-form" onsubmit="procesarAuth(event)" class="space-y-4">
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Nombre de Usuario</label>
+        <div class="relative">
+          <input type="text" id="username" value="admin" required placeholder="ej. frias_trader" 
+                 class="w-full px-4 py-3 bg-dark-950 border border-dark-800 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan transition mono">
+        </div>
+      </div>
+
+      <div id="field-email" class="hidden">
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Correo Electrónico</label>
+        <input type="email" id="email" placeholder="operador@quantfund.com" 
+               class="w-full px-4 py-3 bg-dark-950 border border-dark-800 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan transition">
+      </div>
+
+      <div>
+        <div class="flex justify-between items-center mb-1.5">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400">Contraseña</label>
+          <span class="text-[10px] text-slate-500 mono">Por defecto: admin123</span>
+        </div>
+        <input type="password" id="password" value="admin123" required placeholder="••••••••••••" 
+               class="w-full px-4 py-3 bg-dark-950 border border-dark-800 rounded-xl text-sm text-white placeholder-slate-600 focus:outline-none focus:border-accent-cyan focus:ring-1 focus:ring-accent-cyan transition">
+      </div>
+
+      <button type="submit" id="submit-btn" 
+              class="w-full py-3.5 bg-gradient-to-r from-accent-cyan to-accent-emerald hover:opacity-95 text-dark-950 font-black rounded-xl text-sm transition shadow-lg shadow-accent-emerald/20 hover:scale-[1.01]">
+        Ingresar al Terminal
+      </button>
+    </form>
+
+    <!-- Footer del Login -->
+    <div class="mt-8 pt-6 border-t border-dark-800 text-center">
+      <div class="flex items-center justify-center gap-2 text-[11px] text-slate-500">
+        <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+        <span>Servidor de Telemetría MT5 Activo</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let modoActual = 'login';
+
+    function cambiarModo(modo) {
+      modoActual = modo;
+      const tabLogin = document.getElementById('tab-login');
+      const tabReg = document.getElementById('tab-register');
+      const fieldEmail = document.getElementById('field-email');
+      const submitBtn = document.getElementById('submit-btn');
+      const alertBox = document.getElementById('alert-box');
+      alertBox.classList.add('hidden');
+
+      if (modo === 'login') {
+        tabLogin.className = "flex-1 py-2 text-xs font-bold rounded-lg bg-dark-800 text-white transition shadow-sm";
+        tabReg.className = "flex-1 py-2 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition";
+        fieldEmail.classList.add('hidden');
+        submitBtn.textContent = "Ingresar al Terminal";
+      } else {
+        tabReg.className = "flex-1 py-2 text-xs font-bold rounded-lg bg-dark-800 text-white transition shadow-sm";
+        tabLogin.className = "flex-1 py-2 text-xs font-bold rounded-lg text-slate-400 hover:text-white transition";
+        fieldEmail.classList.remove('hidden');
+        submitBtn.textContent = "Registrar y Crear Cuenta";
+      }
+    }
+
+    function mostrarAlerta(msg, tipo = 'error') {
+      const box = document.getElementById('alert-box');
+      box.className = `mb-4 p-3 rounded-xl text-xs font-medium border ${
+        tipo === 'success' 
+          ? 'bg-accent-emerald/10 border-accent-emerald/30 text-accent-emerald' 
+          : 'bg-accent-rose/10 border-accent-rose/30 text-accent-rose'
+      }`;
+      box.textContent = msg;
+      box.classList.remove('hidden');
+    }
+
+    function procesarAuth(e) {
+      e.preventDefault();
+      const user = document.getElementById('username').value.trim();
+      const pass = document.getElementById('password').value;
+      const email = document.getElementById('email').value.trim();
+
+      // Almacenamiento local de usuarios nativo del portal
+      let usuarios = JSON.parse(localStorage.getItem('mt5_portal_users') || '[]');
+
+      if (modoActual === 'register') {
+        if (usuarios.some(u => u.username.toLowerCase() === user.toLowerCase())) {
+          mostrarAlerta("El usuario ya existe en este portal. Elige otro nombre.");
+          return;
+        }
+        usuarios.push({ username: user, email: email, pass: pass, createdAt: new Date().toISOString() });
+        localStorage.setItem('mt5_portal_users', JSON.stringify(usuarios));
+        mostrarAlerta("¡Usuario creado con éxito! Iniciando sesión...", "success");
+        setTimeout(() => loguear(user), 1000);
+      } else {
+        // Validación de login
+        const existe = usuarios.find(u => u.username.toLowerCase() === user.toLowerCase() && u.pass === pass);
+        // Usuario demo por defecto
+        if (existe || (user.toLowerCase() === 'admin' && pass === 'admin123') || (usuarios.length === 0)) {
+          loguear(user);
+        } else {
+          mostrarAlerta("Credenciales incorrectas. Verifica tu contraseña o crea un usuario nuevo.");
+        }
+      }
+    }
+
+    function loguear(username) {
+      localStorage.setItem('mt5_active_session', JSON.stringify({
+        user: username,
+        token: 'jwt_mock_' + Math.random().toString(36).substring(2),
+        loginTime: new Date().toISOString()
+      }));
+      window.location.href = 'index.html';
+    }
+
+    // Si ya tiene sesión activa, redirigir directo al HUD
+    if (localStorage.getItem('mt5_active_session')) {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
