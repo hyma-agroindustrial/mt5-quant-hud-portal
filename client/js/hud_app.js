@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4263.98,
-  "equity": 4263.98,
-  "flotante": 0.0,
+  "balance": 4263.8,
+  "equity": 4260.2,
+  "flotante": -3.6,
   "winrate": 72.8,
   "total_trades": 533,
   "total_wins": 388,
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4263.98
+    4263.8
   ],
   "equity_curve": [
     1000.0,
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     3744.85,
     3912.72,
     4011.23,
-    4263.98
+    4260.2
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
     "2026-11-02": 98.51,
-    "2026-11-03": 252.75
+    "2026-11-03": 252.57
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -161,11 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
     "2026-11-02": -8.52,
-    "2026-11-03": -23.76
+    "2026-11-03": -23.94
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 351.26
+    "2026-11": 351.08
   },
   "calendar_by_month": {
     "2026-10": {
@@ -361,9 +361,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "losses": 3
       },
       "2026-11-03": {
-        "pnl": 252.75,
+        "pnl": 252.57,
         "gross": 276.51,
-        "commission": -23.76,
+        "commission": -23.94,
         "roi_pct": 6.3,
         "trades": 27,
         "wins": 23,
@@ -372,6 +372,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   },
   "all_deals": [
+    {
+      "ticket": 302188377,
+      "time": "2026.11.03 03:56:40",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "in",
+      "volume": 0.05,
+      "price": 3948.3,
+      "sl": "",
+      "tp": "",
+      "commission": -0.18,
+      "profit": 0.0,
+      "net": -0.18
+    },
     {
       "ticket": 302184708,
       "time": "2026.11.03 03:38:59",
@@ -17509,8 +17525,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1071,
-  "last_updated": "2026-11-02 18:48:00"
+  "total_deals_raw": 1072,
+  "last_updated": "2026-11-02 18:56:42"
 };
 
   let chartGrowth = null;
