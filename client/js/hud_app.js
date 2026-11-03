@@ -1806,8 +1806,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.18,
       "price": 3913.98,
-      "sl": "3912.62",
-      "tp": "3914.96",
+      "sl": "",
+      "tp": "",
       "commission": -0.63,
       "profit": 0.0,
       "net": -0.63
@@ -1823,7 +1823,7 @@ function iniciarQuantHUD() {
       "volume": 0.01,
       "price": 3905.74,
       "sl": "",
-      "tp": "3906.08",
+      "tp": "3996.08",
       "commission": -0.04,
       "profit": 3.72,
       "net": 3.68
@@ -1983,7 +1983,7 @@ function iniciarQuantHUD() {
       "volume": 0.01,
       "price": 3909.2,
       "sl": "",
-      "tp": "3906.46",
+      "tp": "3936.46",
       "commission": -0.04,
       "profit": 9.58,
       "net": 9.54
@@ -17670,7 +17670,7 @@ function iniciarQuantHUD() {
     }
   ],
   "total_deals_raw": 1081,
-  "last_updated": "2026-11-02 19:07:10"
+  "last_updated": "2026-11-02 19:07:54"
 };
 
   let chartGrowth = null;
