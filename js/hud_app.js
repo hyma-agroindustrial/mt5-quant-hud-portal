@@ -23,9 +23,9 @@ function iniciarQuantHUD() {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4380.72,
+  "balance": 4380.68,
   "equity": 4380.72,
-  "flotante": 0.0,
+  "flotante": 0.04,
   "winrate": 73.5,
   "total_trades": 550,
   "total_wins": 404,
@@ -75,7 +75,7 @@ function iniciarQuantHUD() {
     3744.85,
     3912.72,
     4011.23,
-    4380.72
+    4380.68
   ],
   "equity_curve": [
     1000.0,
@@ -123,7 +123,7 @@ function iniciarQuantHUD() {
     "2026-10-29": 68.48,
     "2026-10-30": 167.87,
     "2026-11-02": 98.51,
-    "2026-11-03": 369.49
+    "2026-11-03": 369.45
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -171,11 +171,11 @@ function iniciarQuantHUD() {
     "2026-10-29": -2.18,
     "2026-10-30": -10.54,
     "2026-11-02": -8.52,
-    "2026-11-03": -32.2
+    "2026-11-03": -32.24
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 468.0
+    "2026-11": 467.96
   },
   "calendar_by_month": {
     "2026-10": {
@@ -371,9 +371,9 @@ function iniciarQuantHUD() {
         "losses": 3
       },
       "2026-11-03": {
-        "pnl": 369.49,
+        "pnl": 369.45,
         "gross": 401.69,
-        "commission": -32.2,
+        "commission": -32.24,
         "roi_pct": 9.21,
         "trades": 44,
         "wins": 39,
@@ -382,6 +382,22 @@ function iniciarQuantHUD() {
     }
   },
   "all_deals": [
+    {
+      "ticket": 302220018,
+      "time": "2026.11.03 05:48:57",
+      "date": "2026-11-03",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "buy",
+      "direction": "in",
+      "volume": 0.01,
+      "price": 3929.38,
+      "sl": "",
+      "tp": "",
+      "commission": -0.04,
+      "profit": 0.0,
+      "net": -0.04
+    },
     {
       "ticket": 302208111,
       "time": "2026.11.03 05:21:43",
@@ -18063,8 +18079,8 @@ function iniciarQuantHUD() {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1105,
-  "last_updated": "2026-11-02 20:21:45"
+  "total_deals_raw": 1106,
+  "last_updated": "2026-11-02 20:48:59"
 };
 
   let chartGrowth = null;
