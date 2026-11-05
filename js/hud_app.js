@@ -23,9 +23,9 @@ function iniciarQuantHUD() {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 4015.88,
-  "equity": 4015.88,
-  "flotante": 0.0,
+  "balance": 4015.53,
+  "equity": 4014.93,
+  "flotante": -0.6,
   "winrate": 73.1,
   "total_trades": 657,
   "total_wins": 480,
@@ -79,7 +79,7 @@ function iniciarQuantHUD() {
     4011.23,
     4507.07,
     3863.8,
-    4015.88
+    4015.53
   ],
   "equity_curve": [
     1000.0,
@@ -105,7 +105,7 @@ function iniciarQuantHUD() {
     4011.23,
     4507.07,
     3863.8,
-    4015.88
+    4014.93
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -131,7 +131,7 @@ function iniciarQuantHUD() {
     "2026-11-02": 98.51,
     "2026-11-03": 495.84,
     "2026-11-04": -643.27,
-    "2026-11-05": 152.08
+    "2026-11-05": 151.73
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -183,11 +183,11 @@ function iniciarQuantHUD() {
     "2026-11-02": -8.52,
     "2026-11-03": -41.48,
     "2026-11-04": -88.28,
-    "2026-11-05": -22.72
+    "2026-11-05": -23.07
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": 103.16
+    "2026-11": 102.81
   },
   "calendar_by_month": {
     "2026-10": {
@@ -401,10 +401,10 @@ function iniciarQuantHUD() {
         "losses": 21
       },
       "2026-11-05": {
-        "pnl": 152.08,
+        "pnl": 151.73,
         "gross": 174.8,
-        "commission": -22.72,
-        "roi_pct": 3.94,
+        "commission": -23.07,
+        "roi_pct": 3.93,
         "trades": 29,
         "wins": 24,
         "losses": 5
@@ -412,6 +412,22 @@ function iniciarQuantHUD() {
     }
   },
   "all_deals": [
+    {
+      "ticket": 303218970,
+      "time": "2026.11.05 08:10:13",
+      "date": "2026-11-05",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "in",
+      "volume": 0.1,
+      "price": 4123.22,
+      "sl": "",
+      "tp": "",
+      "commission": -0.35,
+      "profit": 0.0,
+      "net": -0.35
+    },
     {
       "ticket": 303217363,
       "time": "2026.11.05 08:06:44",
@@ -21533,8 +21549,8 @@ function iniciarQuantHUD() {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1320,
-  "last_updated": "2026-11-04 23:06:47"
+  "total_deals_raw": 1321,
+  "last_updated": "2026-11-04 23:10:15"
 };
 
   let chartGrowth = null;
