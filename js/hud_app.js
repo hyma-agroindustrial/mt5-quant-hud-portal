@@ -23,12 +23,12 @@ function iniciarQuantHUD() {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 2153.55,
-  "equity": 2153.4,
-  "flotante": -0.15,
+  "balance": 2154.3,
+  "equity": 2154.3,
+  "flotante": 0.0,
   "winrate": 73.6,
-  "total_trades": 811,
-  "total_wins": 597,
+  "total_trades": 812,
+  "total_wins": 598,
   "growth_dates": [
     "2026-10-02",
     "2026-10-05",
@@ -89,7 +89,7 @@ function iniciarQuantHUD() {
     4500.0,
     4503.95,
     2088.77,
-    2153.55
+    2154.3
   ],
   "equity_curve": [
     1000.0,
@@ -120,7 +120,7 @@ function iniciarQuantHUD() {
     4500.0,
     4503.95,
     2088.77,
-    2153.4
+    2154.3
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -151,7 +151,7 @@ function iniciarQuantHUD() {
     "2026-11-07": -175.45,
     "2026-11-08": 3.95,
     "2026-11-09": -2415.18,
-    "2026-11-10": 64.78
+    "2026-11-10": 65.53
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -182,7 +182,7 @@ function iniciarQuantHUD() {
     "2026-11-07": -175.45,
     "2026-11-08": 3.95,
     "2026-11-09": -2373.44,
-    "2026-11-10": 88.06
+    "2026-11-10": 88.85
   },
   "daily_comm": {
     "2026-10-02": 0.0,
@@ -213,11 +213,11 @@ function iniciarQuantHUD() {
     "2026-11-07": 0.0,
     "2026-11-08": 0.0,
     "2026-11-09": -41.74,
-    "2026-11-10": -23.28
+    "2026-11-10": -23.32
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": -1759.17
+    "2026-11": -1758.42
   },
   "calendar_by_month": {
     "2026-10": {
@@ -225,7 +225,7 @@ function iniciarQuantHUD() {
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 46.43,
+        "roi_pct": 46.42,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -476,17 +476,33 @@ function iniciarQuantHUD() {
         "losses": 7
       },
       "2026-11-10": {
-        "pnl": 64.78,
-        "gross": 88.06,
-        "commission": -23.28,
-        "roi_pct": 3.1,
-        "trades": 55,
-        "wins": 44,
+        "pnl": 65.53,
+        "gross": 88.85,
+        "commission": -23.32,
+        "roi_pct": 3.14,
+        "trades": 56,
+        "wins": 45,
         "losses": 11
       }
     }
   },
   "all_deals": [
+    {
+      "ticket": 305052184,
+      "time": "2026.11.10 22:52:36",
+      "date": "2026-11-10",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "out",
+      "volume": 0.01,
+      "price": 4034.44,
+      "sl": "4023.52",
+      "tp": "4045.61",
+      "commission": -0.04,
+      "profit": 0.79,
+      "net": 0.75
+    },
     {
       "ticket": 305047073,
       "time": "2026.11.10 22:22:33",
@@ -498,7 +514,7 @@ function iniciarQuantHUD() {
       "volume": 0.01,
       "price": 4033.65,
       "sl": "4023.52",
-      "tp": "",
+      "tp": "4045.61",
       "commission": -0.04,
       "profit": 0.0,
       "net": -0.04
@@ -26680,8 +26696,8 @@ function iniciarQuantHUD() {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1637,
-  "last_updated": "2026-11-10 13:22:42"
+  "total_deals_raw": 1638,
+  "last_updated": "2026-11-10 13:52:37"
 };
 
   let chartGrowth = null;
