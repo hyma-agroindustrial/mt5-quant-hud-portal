@@ -23,9 +23,9 @@ function iniciarQuantHUD() {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 2112.63,
-  "equity": 2112.63,
-  "flotante": 0.0,
+  "balance": 2112.59,
+  "equity": 2112.38,
+  "flotante": -0.21,
   "winrate": 73.6,
   "total_trades": 807,
   "total_wins": 594,
@@ -89,7 +89,7 @@ function iniciarQuantHUD() {
     4500.0,
     4503.95,
     2088.77,
-    2112.63
+    2112.59
   ],
   "equity_curve": [
     1000.0,
@@ -120,7 +120,7 @@ function iniciarQuantHUD() {
     4500.0,
     4503.95,
     2088.77,
-    2112.63
+    2112.38
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -151,7 +151,7 @@ function iniciarQuantHUD() {
     "2026-11-07": -175.45,
     "2026-11-08": 3.95,
     "2026-11-09": -2415.18,
-    "2026-11-10": 23.86
+    "2026-11-10": 23.82
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -213,11 +213,11 @@ function iniciarQuantHUD() {
     "2026-11-07": 0.0,
     "2026-11-08": 0.0,
     "2026-11-09": -41.74,
-    "2026-11-10": -22.24
+    "2026-11-10": -22.28
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": -1800.09
+    "2026-11": -1800.13
   },
   "calendar_by_month": {
     "2026-10": {
@@ -225,7 +225,7 @@ function iniciarQuantHUD() {
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 47.33,
+        "roi_pct": 47.34,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -476,9 +476,9 @@ function iniciarQuantHUD() {
         "losses": 7
       },
       "2026-11-10": {
-        "pnl": 23.86,
+        "pnl": 23.82,
         "gross": 46.1,
-        "commission": -22.24,
+        "commission": -22.28,
         "roi_pct": 1.14,
         "trades": 51,
         "wins": 41,
@@ -487,6 +487,22 @@ function iniciarQuantHUD() {
     }
   },
   "all_deals": [
+    {
+      "ticket": 304975862,
+      "time": "2026.11.10 18:17:28",
+      "date": "2026-11-10",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "buy",
+      "direction": "in",
+      "volume": 0.01,
+      "price": 4036.84,
+      "sl": "",
+      "tp": "",
+      "commission": -0.04,
+      "profit": 0.0,
+      "net": -0.04
+    },
     {
       "ticket": 304969177,
       "time": "2026.11.10 18:02:27",
@@ -1729,8 +1745,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": 199.45,
       "net": 199.45
@@ -1761,8 +1777,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": 199.45,
       "net": 199.45
@@ -1777,8 +1793,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": -383.0,
       "net": -383.0
@@ -2369,8 +2385,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": -300.0,
       "net": -300.0
@@ -3281,8 +3297,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": -175.45,
       "net": -175.45
@@ -3841,8 +3857,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": -63.98,
       "net": -63.98
@@ -4593,8 +4609,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": 136.0,
       "net": 136.0
@@ -5281,8 +5297,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": -77.57,
       "net": -77.57
@@ -7185,8 +7201,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": -136.0,
       "net": -136.0
@@ -20113,8 +20129,8 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": 2993.13,
       "net": 2993.13
@@ -26529,15 +26545,15 @@ function iniciarQuantHUD() {
       "direction": "in",
       "volume": 0.0,
       "price": 0.0,
-      "sl": "4020.42",
-      "tp": "4112.00",
+      "sl": "4012.36",
+      "tp": "4103.94",
       "commission": 0.0,
       "profit": 1000.0,
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1628,
-  "last_updated": "2026-11-10 09:03:21"
+  "total_deals_raw": 1629,
+  "last_updated": "2026-11-10 09:17:29"
 };
 
   let chartGrowth = null;
