@@ -26776,7 +26776,7 @@ function iniciarQuantHUD() {
     }
   ],
   "total_deals_raw": 1642,
-  "last_updated": "2026-11-10 20:49:29"
+  "last_updated": "2026-11-10 20:49:35"
 };
 
   let chartGrowth = null;
