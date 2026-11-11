@@ -23,12 +23,12 @@ function iniciarQuantHUD() {
   "account_name": "51567376 - pepperstoneBS-MT5",
   "server": "PepperstoneBS-MT5-Live01",
   "company": "Pepperstone Markets Limited",
-  "balance": 2198.17,
-  "equity": 2196.61,
-  "flotante": -1.56,
-  "winrate": 73.8,
-  "total_trades": 821,
-  "total_wins": 606,
+  "balance": 2203.75,
+  "equity": 2203.75,
+  "flotante": 0.0,
+  "winrate": 73.9,
+  "total_trades": 824,
+  "total_wins": 609,
   "growth_dates": [
     "2026-10-02",
     "2026-10-05",
@@ -91,7 +91,7 @@ function iniciarQuantHUD() {
     4503.95,
     2088.77,
     2154.3,
-    2198.17
+    2203.75
   ],
   "equity_curve": [
     1000.0,
@@ -123,7 +123,7 @@ function iniciarQuantHUD() {
     4503.95,
     2088.77,
     2154.3,
-    2196.61
+    2203.75
   ],
   "daily_net": {
     "2026-10-02": 1000.0,
@@ -155,7 +155,7 @@ function iniciarQuantHUD() {
     "2026-11-08": 3.95,
     "2026-11-09": -2415.18,
     "2026-11-10": 65.53,
-    "2026-11-11": 43.87
+    "2026-11-11": 49.45
   },
   "daily_gross": {
     "2026-10-02": 1000.0,
@@ -187,7 +187,7 @@ function iniciarQuantHUD() {
     "2026-11-08": 3.95,
     "2026-11-09": -2373.44,
     "2026-11-10": 88.85,
-    "2026-11-11": 49.99
+    "2026-11-11": 56.07
   },
   "daily_comm": {
     "2026-10-02": 0.0,
@@ -219,11 +219,11 @@ function iniciarQuantHUD() {
     "2026-11-08": 0.0,
     "2026-11-09": -41.74,
     "2026-11-10": -23.32,
-    "2026-11-11": -6.12
+    "2026-11-11": -6.62
   },
   "monthly_net": {
     "2026-10": 3912.72,
-    "2026-11": -1714.55
+    "2026-11": -1708.97
   },
   "calendar_by_month": {
     "2026-10": {
@@ -231,7 +231,7 @@ function iniciarQuantHUD() {
         "pnl": 1000.0,
         "gross": 1000.0,
         "commission": 0.0,
-        "roi_pct": 45.49,
+        "roi_pct": 45.38,
         "trades": 0,
         "wins": 0,
         "losses": 0
@@ -491,17 +491,81 @@ function iniciarQuantHUD() {
         "losses": 11
       },
       "2026-11-11": {
-        "pnl": 43.87,
-        "gross": 49.99,
-        "commission": -6.12,
-        "roi_pct": 2.04,
-        "trades": 9,
-        "wins": 8,
+        "pnl": 49.45,
+        "gross": 56.07,
+        "commission": -6.62,
+        "roi_pct": 2.3,
+        "trades": 12,
+        "wins": 11,
         "losses": 1
       }
     }
   },
   "all_deals": [
+    {
+      "ticket": 305335487,
+      "time": "2026.11.11 16:54:03",
+      "date": "2026-11-11",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "buy",
+      "direction": "out",
+      "volume": 0.05,
+      "price": 4014.37,
+      "sl": "",
+      "tp": "4014.40",
+      "commission": -0.18,
+      "profit": 2.7,
+      "net": 2.52
+    },
+    {
+      "ticket": 305335368,
+      "time": "2026.11.11 16:53:55",
+      "date": "2026-11-11",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "sell",
+      "direction": "in",
+      "volume": 0.05,
+      "price": 4014.91,
+      "sl": "",
+      "tp": "4014.40",
+      "commission": -0.18,
+      "profit": 0.0,
+      "net": -0.18
+    },
+    {
+      "ticket": 305335212,
+      "time": "2026.11.11 16:53:39",
+      "date": "2026-11-11",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "buy",
+      "direction": "out",
+      "volume": 0.02,
+      "price": 4015.71,
+      "sl": "4018.95",
+      "tp": "4015.71",
+      "commission": -0.07,
+      "profit": 1.08,
+      "net": 1.01
+    },
+    {
+      "ticket": 305335152,
+      "time": "2026.11.11 16:53:26",
+      "date": "2026-11-11",
+      "month": "2026-11",
+      "symbol": "XAUUSD",
+      "type": "buy",
+      "direction": "out",
+      "volume": 0.02,
+      "price": 4016.16,
+      "sl": "",
+      "tp": "4016.44",
+      "commission": -0.07,
+      "profit": 2.3,
+      "net": 2.23
+    },
     {
       "ticket": 305335129,
       "time": "2026.11.11 16:53:20",
@@ -27079,8 +27143,8 @@ function iniciarQuantHUD() {
       "net": 1000.0
     }
   ],
-  "total_deals_raw": 1661,
-  "last_updated": "2026-11-11 07:53:23"
+  "total_deals_raw": 1665,
+  "last_updated": "2026-11-11 07:54:24"
 };
 
   let chartGrowth = null;
